@@ -4,6 +4,7 @@
   python -m scorer.admin remove    --competition house-price --id 12 [--id 15]   # 제출 삭제
   python -m scorer.admin recompute --competition house-price              # Public 리더보드 재계산
   python -m scorer.admin private   --competition house-price              # Private 리더보드 미리보기 (키 필요, 공개 안 됨)
+  python -m scorer.admin refresh-template                                 # 이슈 제출 양식의 대회 목록 다시 생성
 """
 from __future__ import annotations
 
@@ -16,11 +17,19 @@ from .leaderboard import compute_private_board, compute_public_board, load_leade
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["list", "remove", "recompute", "private"])
-    ap.add_argument("--competition", required=True)
+    ap.add_argument("cmd", choices=["list", "remove", "recompute", "private", "refresh-template"])
+    ap.add_argument("--competition")
     ap.add_argument("--id", type=int, action="append", default=[], help="삭제할 제출 번호 (여러 번 지정 가능)")
     args = ap.parse_args(argv)
 
+    if args.cmd == "refresh-template":
+        from .new_competition import write_issue_template
+        write_issue_template()
+        print(".github/ISSUE_TEMPLATE/submission.yml 의 대회 목록을 갱신했습니다. 커밋·푸시하세요.")
+        return 0
+    if not args.competition:
+        print("--competition 을 지정하세요.")
+        return 1
     cfg = load_config(args.competition)
     lb = load_leaderboard(cfg)
 

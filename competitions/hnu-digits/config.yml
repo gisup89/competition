@@ -1,0 +1,17 @@
+title: 손글씨 숫자 인식 (HNU Digits)
+subtitle: 우리 수업 중간고사 답안지에서 추출한 손글씨 숫자 이미지(28×28)를 0~9로 분류합니다
+metric: accuracy
+id_column: id
+target_column: label
+pos_label: 1
+timezone: Asia/Seoul
+start: '2026-11-11T00:00:00+09:00'
+deadline: '2026-12-14T23:59:59+09:00'
+daily_limit: 5
+max_final_submissions: 2
+teams: true
+score_decimals: 5
+max_file_mb: 20
+allow_unregistered: false
+published: false
+public_ratio: 0.3
