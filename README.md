@@ -1,6 +1,6 @@
-# 머신러닝 경진대회 플랫폼
+# 머신러닝 경진대회 플랫폼 (GitHub Pages + GitHub Actions)
 
-본 페이지는 캐글(Kaggle)과 비슷한 '머신러닝' 수업 내 경진대회를 GitHub 저장소에서 운영하기 위한 템플릿입니다.
+캐글(Kaggle)과 비슷한 수업용 예측 경진대회를 **서버 없이** GitHub 저장소 하나로 운영하기 위한 템플릿입니다.
 
 - **사이트**: GitHub Pages 에 올라가는 정적 페이지 (대회 목록·설명·데이터 다운로드·리더보드·제출 기록)
 - **채점**: 학생이 제출 이슈를 열면 GitHub Actions 가 자동 채점하고, 이슈에 점수 댓글을 단 뒤 리더보드를 갱신·재배포
@@ -34,7 +34,7 @@
 
 ## 2. 준비물
 
-- GitHub 계정, 학생별 GitHub 계정이 필요합니다.
+- GitHub 계정 (교수자). 학생도 각자 GitHub 계정이 필요합니다.
 - 로컬 PC 에 Python 3.11 이상과 git. (대회 생성·암호화는 로컬에서 한 번 실행하면 됩니다)
 
 ```bash
@@ -88,13 +88,25 @@ kim-ds,20231235,김데이터,,Alpha
 lee-ml,20231236,이머신,,Alpha
 ```
 
-- `github` 만 필수. `display_name` 은 리더보드 표시명(비우면 `name`, 그것도 없으면 GitHub 아이디). `team` 이 같은 학생들은 한 팀으로 집계됩니다.
+- `github` 만 필수. `display_name` 은 리더보드 표시명(닉네임)입니다. 사이트가 공개되므로 구글 폼에서 받은 **닉네임**을 넣고 실명은 `name` 에만 두십시오. 리더보드의 팀원 목록과 제출 기록에는 이 닉네임만 표시되고 GitHub 아이디·실명은 보이지 않습니다(비우면 `name`, 그것도 없으면 GitHub 아이디가 대신 표시되므로 반드시 채우는 것이 좋습니다). `team` 이 같은 학생들은 한 팀으로 집계됩니다.
+- **팀 운영 방식**: 캐글처럼 학생이 직접 팀을 만들지는 못하고, 교수자가 이 명단의 `team` 열로 지정합니다(학생은 폼·이슈로 요청). 팀원 가운데 누가 제출하든 팀 기록으로 들어가고, 하루 제출 한도는 팀 전체가 공유하며, 리더보드에는 팀 이름과 구성원 표시명이 함께 나옵니다. `team` 을 비운 학생은 개인으로 참가해 팀들과 같은 리더보드에서 경쟁합니다. 대회마다 팀을 다르게 하려면 `team_<대회슬러그>` 열(예: `team_hnu-digits`)을 추가하십시오 — 그 열이 있는 대회에서는 그 열이 우선하고, 비어 있으면 개인 참가입니다. 대회별로 팀 기능 자체를 끄려면 해당 `config.yml` 의 `teams: false`.
+- 팀을 바꾸면 **그 이후 제출부터** 새 팀으로 기록됩니다(이전 제출은 이전 소속에 남음). 팀 구성은 첫 제출 전에 확정하는 것이 좋습니다.
 - **공개 저장소라면 명단을 암호화해서 올리십시오.** 학번·이름이 공개되지 않습니다.
   ```bash
   python -m scorer.crypto_tool encrypt participants.csv     # → participants.csv.enc (이것만 커밋)
   ```
   평문 `participants.csv` 가 저장소에 있으면 그것이 우선 사용됩니다(비공개 저장소라면 평문도 무방).
 - 명단을 고친 뒤에는 다시 암호화해서 커밋·푸시하면 다음 제출부터 반영됩니다.
+
+### 3-4-1. 제출 파일 암호화 (다른 학생이 제출 내용을 못 보게)
+
+공개 저장소에서는 이슈에 첨부된 파일을 누구나 내려받을 수 있습니다. 그래서 학생이 **사이트의 "제출 파일 암호화" 페이지**(`encrypt.html`)에서 CSV 를 브라우저 안에서 암호화해 `.enc.txt` 로 내려받은 뒤 그 파일을 첨부하도록 되어 있습니다. 채점 시스템만 풀 수 있고, 다른 참가자에게는 암호문만 보입니다.
+
+- 키: `python -m scorer.crypto_tool keygen-submission` 이 RSA 키쌍을 만듭니다. 공개키 `site/assets/submission_public.pem` 과, `COMPETITION_KEY` 로 암호화한 개인키 `submission_private.pem.enc` 는 **커밋**합니다(Actions 가 사용). 평문 개인키 `.submission_private.pem` 은 커밋되지 않으며 로컬 보관용입니다. 배포본에는 이미 생성되어 있습니다.
+- 강제 여부: `site.yml` 의 `require_encrypted: true` 면 암호화되지 않은 CSV 는 안내 댓글과 함께 거부됩니다. `false` 면 둘 다 받습니다.
+- 암호화 페이지는 열 이름과 행 수도 미리 검사해 주므로 형식 오류 제출이 줄어듭니다.
+- 특정 제출 파일을 확인하고 싶으면 이슈에서 `.enc.txt` 를 내려받아 `python -m scorer.crypto_tool decrypt-submission 파일.enc.txt` 로 풀어 볼 수 있습니다.
+- 중복 파일 감지는 복호화한 내용 기준이므로 그대로 동작합니다.
 
 ### 3-5. 사이트 확인과 시험 제출
 
@@ -208,7 +220,7 @@ python -m scorer.new_competition \
 ### 알아 둘 점
 - 채점은 순차 처리(동시 실행 1개)입니다. 마감 직전 수십 명이 몰리면 결과 댓글이 수십 분 늦어질 수 있지만, 마감 판정은 **이슈 생성 시각** 기준이므로 불이익은 없습니다. 학생들에게 미리 알려 주십시오.
 - 봇의 커밋은 `competition-bot` 이름으로 `leaderboard.json` 만 바꿉니다. 교수자가 같은 파일을 로컬에서 고칠 때는 먼저 `git pull` 하십시오.
-- 공개 저장소에서는 이슈에 첨부된 제출 CSV 를 누구나 내려받을 수 있습니다. 다른 사람 파일을 그대로 내면 `duplicate` 라벨과 리더보드 표시가 남습니다(단, `sample_submission.csv` 와 같은 파일은 예외). 최종 성적에 코드·보고서 평가를 함께 두는 것을 권장합니다.
+- 제출 파일은 암호화되어 첨부되므로 다른 학생이 내용을 볼 수 없습니다(3-4-1). 그래도 파일을 서로 건네 내는 경우를 위해 복호화 내용 기준 중복 감지가 동작하며, 같은 파일이면 `duplicate` 라벨과 리더보드 표시가 남습니다(`sample_submission.csv` 와 같은 파일은 예외). 최종 성적에 코드·보고서 평가를 함께 두는 것을 권장합니다.
 
 ---
 
@@ -224,6 +236,17 @@ python -m scorer.new_competition \
    ```
    이 평문 파일은 `.gitignore` 에 있어 커밋되지 않습니다.
 4. 공개를 취소하려면 같은 워크플로에서 `unfinalize` 를 체크하고 실행합니다.
+
+
+### 6-1. 노트북 제출과 재현 검증
+
+- 학생은 LMS 과제함에 노트북(`.ipynb`)을 제출합니다. 배포용 템플릿은 `docs/notebooks/template_<대회>.ipynb` 두 개이며, 첫 셀(팀·기여·최종 제출 번호 표), 환경 설정(시드 고정), 데이터 불러오기 → EDA → 검증 전략 → 전처리 파이프라인 → 모델 비교 → 튜닝 → `submission.csv` 생성 → 정리 순서로 되어 있습니다. 두 템플릿 모두 "모두 실행"으로 끝까지 도는 것을 확인했습니다.
+- 재현 검증: 학생 노트북을 Colab 에서 실행해 얻은 `submission.csv` 를 리더보드의 원 제출물과 비교합니다.
+  ```bash
+  python -m scorer.verify_reproduction --competition hnu-digits --id 12 --rerun ./rerun/submission.csv
+  # GitHub API 를 쓸 수 없으면 이슈에서 .enc.txt 를 직접 내려받아 --encfile 로 지정
+  ```
+  두 예측의 일치율(분류) 또는 차이 RMSE(회귀)와, 두 파일 각각의 Public/Private 점수를 표로 보여 주고 참고 판정을 냅니다. 랜덤포레스트처럼 환경에 따라 수치가 조금 달라지는 모델은 점수 차이 1% 안팎이면 재현된 것으로 보시면 됩니다.
 
 ---
 
@@ -292,6 +315,9 @@ site/                             정적 사이트 원본 (index.html, competiti
 site.yml                          사이트 제목·설명·제출 방식
 participants.csv(.enc)            참가자 명단 (github, student_id, name, display_name, team)
 .competition.key                  암호화 키 (커밋 금지, Secret 과 동일 값)
+.submission_private.pem           제출 파일 복호화용 개인키 평문 (커밋 금지)
+submission_private.pem.enc        위 개인키를 COMPETITION_KEY 로 암호화한 것 (커밋, Actions 사용)
+site/encrypt.html                 학생용 제출 파일 암호화 페이지 (공개키 site/assets/submission_public.pem)
 examples/                         데모 합성 데이터 원본 (커밋 금지)
 docs/STUDENT_GUIDE.md             학생 배포용 안내문
 docs/KAGGLE_COMMUNITY.md          캐글 Community Competition 으로 운영할 때의 절차 비교

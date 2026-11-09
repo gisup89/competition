@@ -237,7 +237,7 @@ const App = (() => {
         ${rows.map((s) => `<tr>
           <td class="num">${s.id}</td>
           <td>${fmtDate(s.created_at, c.timezone)}</td>
-          <td class="name">${s.participant_type === "team" ? '<span class="badge team">팀</span> ' : ""}${esc(s.display)}${s.participant_type === "team" ? `<div class="members">${esc(s.github)}</div>` : ""}</td>
+          <td class="name">${s.participant_type === "team" ? '<span class="badge team">팀</span> ' : ""}${esc(s.display)}${s.participant_type === "team" && s.submitter ? `<div class="members">${esc(s.submitter)}</div>` : ""}</td>
           <td class="num score">${fmtScore(s.public_score, dec)}</td>
           <td class="note">${esc(s.note || "")}${s.duplicate_of ? ` <span class="badge dup">#${s.duplicate_of}과 동일 파일</span>` : ""}</td>
           <td>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.source === "pr" ? "PR" : "이슈"} #${s.number}</a>` : ""}</td></tr>`).join("")}

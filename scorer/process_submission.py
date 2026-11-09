@@ -213,7 +213,7 @@ def site_url(site_cfg: dict) -> str:
 def success_comment(cfg, part, rec, board, remaining, site, duplicate_of, same_as_own) -> str:
     metric = get_metric(cfg["metric"])
     rank = rank_of(board, part["key"])
-    who = part["display"] if part["type"] == "user" else f"팀 {part['display']} ({rec['github']})"
+    who = part["display"] if part["type"] == "user" else f"팀 {part['display']} ({rec.get('submitter') or rec['github']})"
     lines = [
         "✅ **채점이 완료되었습니다.**",
         "",
@@ -393,6 +393,7 @@ def main(argv=None) -> int:
             "number": number,
             "url": ctx["url"],
             "github": ctx["login"],
+            "submitter": (row or {}).get("display_name") or ctx["login"],
             "participant_key": part["key"],
             "participant_type": part["type"],
             "display": part["display"],
