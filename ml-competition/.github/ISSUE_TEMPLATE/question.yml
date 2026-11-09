@@ -1,0 +1,21 @@
+name: "💬 질문 / 문의"
+description: "대회 규칙, 데이터, 제출 오류 등에 대한 질문"
+title: "[질문] "
+labels: ["question"]
+body:
+  - type: dropdown
+    id: competition
+    attributes:
+      label: 관련 대회
+      options:
+        - "공통"
+        - "특정 대회 (아래에 적어 주세요)"
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 질문 내용
+      description: 제출 오류라면 해당 제출 이슈 번호(#번호)를 함께 적어 주세요.
+    validations:
+      required: true

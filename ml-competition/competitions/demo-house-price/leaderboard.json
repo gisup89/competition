@@ -1,0 +1,11 @@
+{
+ "competition": "demo-house-price",
+ "metric": "rmse",
+ "metric_name": "RMSE",
+ "higher_is_better": false,
+ "updated_at": "2026-11-09T13:21:42+00:00",
+ "finalized": false,
+ "next_id": 1,
+ "submissions": [],
+ "public_leaderboard": []
+}

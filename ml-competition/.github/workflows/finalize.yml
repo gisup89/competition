@@ -1,0 +1,68 @@
+name: 최종 결과 공개 (Finalize)
+
+# 마감 후 교수자가 Actions 탭에서 수동 실행합니다.
+# Private 점수를 복호화해 최종 리더보드(private_leaderboard.json)와
+# 교수자용 성적 파일(final_results.csv.enc, 암호화)을 만들고 사이트를 재배포합니다.
+on:
+  workflow_dispatch:
+    inputs:
+      competition:
+        description: "대회 슬러그 (competitions/ 아래 폴더 이름)"
+        required: true
+        type: string
+      unfinalize:
+        description: "체크하면 최종 결과 공개를 취소합니다"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: scoring
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scorer/requirements.txt
+      - run: pip install -r scorer/requirements.txt
+
+      - name: 최종 리더보드 계산
+        run: |
+          if [ "${{ inputs.unfinalize }}" = "true" ]; then
+            python -m scorer.finalize --competition "${{ inputs.competition }}" --unfinalize
+          else
+            python -m scorer.finalize --competition "${{ inputs.competition }}"
+          fi
+        env:
+          COMPETITION_KEY: ${{ secrets.COMPETITION_KEY }}
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "competition-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A competitions/${{ inputs.competition }}/
+          git commit -m "finalize: ${{ inputs.competition }}" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 5; done
+
+      - run: python -m scorer.build_site --out _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

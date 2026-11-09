@@ -1,0 +1,15 @@
+# 절대 커밋하면 안 되는 것들
+.competition.key
+participants.csv
+competitions/*/solution.csv
+competitions/*/final_results.csv
+
+# 빌드 산출물 / 임시
+_site/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# 데모 원본 데이터(정답 포함) — 저장소에 올리지 않음
+examples/

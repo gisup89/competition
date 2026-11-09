@@ -1,0 +1,8 @@
+# 사이트 전체 설정
+title: "머신러닝 경진대회"
+description: "2026-2학기 머신러닝 기말 프로젝트"
+organizer: "AI데이터사이언스학과"
+# GitHub 저장소 (owner/repo). 비워 두면 Actions 실행 시 자동으로 채워집니다.
+repo: "gisup89/competition"
+# 학생에게 안내할 제출 방식: issue (이슈 첨부, 기본) | pr (Pull Request) | both
+submission_mode: issue

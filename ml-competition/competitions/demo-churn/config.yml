@@ -1,0 +1,17 @@
+title: 통신사 고객 이탈 예측
+subtitle: 고객 정보로 이탈 확률을 예측합니다 (합성 데이터)
+metric: auc
+id_column: customer_id
+target_column: churn
+pos_label: 1
+timezone: Asia/Seoul
+start: '2026-11-10T00:00:00+09:00'
+deadline: '2026-12-14T23:59:59+09:00'
+daily_limit: 3
+max_final_submissions: 2
+teams: true
+score_decimals: 5
+max_file_mb: 20
+allow_unregistered: false
+published: true
+public_ratio: 0.3

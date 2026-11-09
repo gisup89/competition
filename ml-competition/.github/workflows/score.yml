@@ -1,0 +1,85 @@
+name: 제출 채점 (Score submission)
+
+# 학생이 '제출' 이슈를 열거나(첨부 방식) submissions/ 폴더에 CSV 를 추가하는 PR 을 열면 실행됩니다.
+# 채점 → 이슈/PR 댓글 → leaderboard.json 커밋 → 사이트 재배포
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+# 여러 제출이 동시에 들어와도 한 번에 하나씩 처리해 leaderboard.json 충돌을 막습니다.
+concurrency:
+  group: scoring
+  cancel-in-progress: false
+
+jobs:
+  score:
+    if: github.event_name == 'pull_request_target' || contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.score.outputs.changed }}
+    steps:
+      # 보안: PR 이벤트에서도 항상 기본 브랜치(교수자 코드)만 체크아웃합니다. 학생 PR 의 코드는 실행하지 않습니다.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scorer/requirements.txt
+
+      - run: pip install -r scorer/requirements.txt
+
+      - name: 채점
+        id: score
+        run: python -m scorer.process_submission
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMPETITION_KEY: ${{ secrets.COMPETITION_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: 리더보드 커밋
+        if: steps.score.outputs.changed == 'true'
+        run: |
+          git config user.name "competition-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add competitions/*/leaderboard.json
+          git commit -m "score: #${{ github.event.pull_request.number || github.event.issue.number }} (${{ steps.score.outputs.competition }})" || exit 0
+          for i in 1 2 3; do
+            git pull --rebase origin ${{ github.event.repository.default_branch }} && git push && break || sleep 5
+          done
+
+      - name: 사이트 조립
+        if: steps.score.outputs.changed == 'true'
+        run: python -m scorer.build_site --out _site
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.score.outputs.changed == 'true'
+        with:
+          path: _site
+
+  deploy:
+    needs: score
+    if: needs.score.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

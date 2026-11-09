@@ -1,0 +1,44 @@
+name: 사이트 배포 (Deploy site)
+
+# 교수자가 대회 설정·설명·데이터·사이트 코드를 수정해 푸시하면 Pages 를 다시 배포합니다.
+# (봇이 커밋한 leaderboard.json 변경은 score.yml 이 직접 배포하므로 여기서는 다루지 않습니다)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "competitions/**"
+      - "site.yml"
+      - "scorer/build_site.py"
+      - ".github/workflows/deploy-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scorer/requirements.txt
+      - run: pip install -r scorer/requirements.txt
+      - run: python -m scorer.build_site --out _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
