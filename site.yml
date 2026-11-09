@@ -1,7 +1,7 @@
 # 사이트 전체 설정
-title: "[HNU] 머신러닝 프로젝트"
-description: "2026-2학기  머신러닝 기말 프로젝트"
-organizer: "한남대학교 AI데이터사이언스학과 심지섭 교수 - "
+title: "머신러닝 프로젝트(Machine Learning Project)"
+description: "2026-2학기 한남대학교 머신러닝 과목 기말 프로젝트"
+organizer: "한남대학교 AI데이터사이언스학과 심지섭 교수"
 # GitHub 저장소 (owner/repo). 비워 두면 Actions 실행 시 자동으로 채워집니다.
 repo: "gisup89/competition"
 # 학생에게 안내할 제출 방식: issue (이슈 첨부, 기본) | pr (Pull Request) | both
