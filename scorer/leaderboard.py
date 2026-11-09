@@ -13,6 +13,7 @@ from .common import (
     now_utc,
     parse_dt,
     team_members,
+    team_of,
     to_local,
 )
 from .metrics import get_metric
@@ -60,9 +61,9 @@ def save_leaderboard(cfg: dict, lb: dict) -> None:
 # ---------------------------------------------------------------------------
 def participant_info(login: str, roster_row: dict | None, roster: dict, cfg: dict) -> dict:
     """리더보드 집계 단위(팀 또는 개인)를 결정."""
-    if roster_row and cfg.get("teams", True) and roster_row.get("team"):
-        team = roster_row["team"]
-        members = team_members(roster, team)
+    team = team_of(roster_row, cfg)
+    if roster_row and cfg.get("teams", True) and team:
+        members = team_members(roster, team, cfg)
         return {
             "key": f"team:{team}",
             "type": "team",

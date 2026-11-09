@@ -15,7 +15,7 @@ import io
 import json
 import sys
 
-from .common import comp_dir, encrypt_bytes, load_config, load_roster, now_utc
+from .common import comp_dir, encrypt_bytes, load_config, load_roster, now_utc, team_of
 from .leaderboard import compute_private_board, load_leaderboard, save_leaderboard
 from .metrics import get_metric
 
@@ -91,7 +91,7 @@ def main(argv=None) -> int:
         logins = []
         if r["type"] == "team":
             team = r["key"].split(":", 1)[1]
-            logins = [v["github"] for v in roster.values() if v.get("team") == team]
+            logins = [v["github"] for v in roster.values() if team_of(v, cfg) == team]
         else:
             logins = [r["key"].split(":", 1)[1]]
         if not logins:
@@ -101,7 +101,7 @@ def main(argv=None) -> int:
             w.writerow(
                 [
                     r["rank"], r["display"], r["type"], login,
-                    row.get("student_id", ""), row.get("name", ""), row.get("team", ""),
+                    row.get("student_id", ""), row.get("name", ""), team_of(row, cfg),
                     f"{r['private_score']:.10g}", f"{r['public_score']:.10g}", r["public_rank"],
                     r["n_submissions"], r["submission_id"], r["submission_url"],
                 ]

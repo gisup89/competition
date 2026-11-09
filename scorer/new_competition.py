@@ -95,7 +95,7 @@ body:
       value: |
         **제출 방법**
         1. 아래에서 대회를 선택합니다.
-        2. '제출 파일' 칸에 CSV 파일을 **끌어다 놓습니다** (업로드가 끝나면 링크가 자동으로 들어갑니다).
+        2. '제출 파일' 칸에 **사이트의 '제출 파일 암호화' 페이지에서 만든 `.enc.txt` 파일**을 끌어다 놓습니다 (업로드가 끝나면 링크가 자동으로 들어갑니다). 암호화하지 않은 CSV 는 채점되지 않습니다.
         3. 'Create' 버튼을 누르면 자동 채점이 시작됩니다. 결과는 이 이슈의 댓글로 알려 드립니다.
   - type: dropdown
     id: competition
@@ -110,8 +110,8 @@ body:
     id: file
     attributes:
       label: 제출 파일
-      description: CSV 파일 하나를 이 칸에 끌어다 놓거나 클립보드에서 붙여넣으세요. 업로드가 완료되어 `[파일명](https://github.com/user-attachments/...)` 링크가 생길 때까지 기다린 뒤 제출하세요.
-      placeholder: 여기에 CSV 파일을 끌어다 놓으세요
+      description: 사이트 '제출 파일 암호화' 페이지에서 내려받은 `.enc.txt` 파일 하나를 이 칸에 끌어다 놓으세요. 업로드가 완료되어 `[파일명](https://github.com/user-attachments/...)` 링크가 생길 때까지 기다린 뒤 제출하세요.
+      placeholder: 여기에 암호화된 제출 파일(.enc.txt)을 끌어다 놓으세요
     validations:
       required: true
   - type: input

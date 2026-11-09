@@ -47,6 +47,11 @@ def build(out: Path) -> dict:
                     shutil.copy2(f, dst / "data" / f.name)
                     data_files.append({"name": f.name, "size": f.stat().st_size})
 
+        n_test = None
+        sample = src / "data" / "sample_submission.csv"
+        if sample.exists():
+            with open(sample, encoding="utf-8-sig") as fh:
+                n_test = max(0, sum(1 for _ in fh) - 1)
         lb = {}
         if (src / "leaderboard.json").exists():
             lb = json.loads((src / "leaderboard.json").read_text(encoding="utf-8"))
@@ -74,6 +79,7 @@ def build(out: Path) -> dict:
                 "n_submissions": len([s for s in lb.get("submissions", []) if s.get("status") == "scored"]),
                 "updated_at": lb.get("updated_at"),
                 "data_files": data_files,
+                "n_test": n_test,
             }
         )
 
@@ -86,6 +92,7 @@ def build(out: Path) -> dict:
         "organizer": site_cfg.get("organizer", ""),
         "repo": site_cfg.get("repo", ""),
         "submission_mode": site_cfg.get("submission_mode", "issue"),
+        "require_encrypted": bool(site_cfg.get("require_encrypted", False)),
     }
     (out / "site.json").write_text(json.dumps(public_site, ensure_ascii=False, indent=1), encoding="utf-8")
     return index

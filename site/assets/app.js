@@ -267,7 +267,15 @@ const App = (() => {
         <li>다른 참가자의 제출 파일과 내용이 동일한 파일은 자동으로 표시됩니다.</li>
       </ul>`;
 
-    const issueSteps = `
+    const enc = !!site?.require_encrypted;
+    const encUrl = `encrypt.html?c=${encodeURIComponent(c.slug)}`;
+    const issueSteps = enc ? `
+      <ol class="steps">
+        <li><a href="${encUrl}"><b>제출 파일 암호화</b></a> 페이지에서 CSV 를 선택해 <code>.enc.txt</code> 파일을 내려받습니다 (형식 검사도 함께 해 줍니다).</li>
+        <li>GitHub 에 로그인한 상태에서 아래 <b>제출하기</b> 버튼을 누릅니다 (제출 이슈 양식이 열립니다). <b>대회</b>에 <code>${esc(c.title)} (${esc(c.slug)})</code> 가 선택되어 있는지 확인합니다.</li>
+        <li><b>제출 파일</b> 칸에 1번에서 받은 <code>.enc.txt</code> 파일을 끌어다 놓고, 업로드 링크가 생길 때까지 기다립니다. (암호화하지 않은 CSV 는 채점되지 않습니다)</li>
+        <li>메모(선택)를 적고 <b>Create</b> 를 누릅니다. 1~3분 뒤 이슈에 점수 댓글이 달리고 리더보드가 갱신됩니다.</li>
+      </ol>` : `
       <ol class="steps">
         <li>GitHub 에 로그인한 상태에서 아래 <b>제출하기</b> 버튼을 누릅니다 (제출 이슈 양식이 열립니다).</li>
         <li><b>대회</b>에서 <code>${esc(c.title)} (${esc(c.slug)})</code> 가 선택되어 있는지 확인합니다.</li>
@@ -277,19 +285,105 @@ const App = (() => {
     const prSteps = `
       <ol class="steps">
         <li>저장소를 <b>Fork</b> 합니다 (처음 한 번).</li>
-        <li>내 Fork 의 <code>submissions/${esc(c.slug)}/</code> 폴더에서 <b>Add file → Upload files</b> 로 CSV 파일 하나를 올리고 커밋합니다.</li>
+        <li>내 Fork 의 <code>submissions/${esc(c.slug)}/</code> 폴더에서 <b>Add file → Upload files</b> 로 ${enc ? "암호화한 <code>.enc.txt</code>" : "CSV"} 파일 하나를 올리고 커밋합니다.</li>
         <li><b>Contribute → Open pull request</b> 로 PR 을 엽니다. 1~3분 뒤 PR 에 점수 댓글이 달리고 PR 은 자동으로 닫힙니다.</li>
       </ol>`;
     qs("#howto").innerHTML = `
       <h2>제출 방법</h2>
       <p class="hint">GitHub 계정이 필요하며, 교수자가 등록한 참가자 명단에 있는 계정만 채점됩니다.</p>
       ${mode !== "pr" ? `<h3>${mode === "both" ? "방법 1 · " : ""}이슈로 제출</h3>${issueSteps}
-        <p><a class="btn ${open && repo ? "" : "disabled"}" href="${issueUrl}" target="_blank" rel="noopener">📤 제출하기 (새 이슈 열기)</a></p>` : ""}
+        <p>${enc ? `<a class="btn secondary ${open ? "" : "disabled"}" href="${encUrl}">🔒 제출 파일 암호화</a> ` : ""}<a class="btn ${open && repo ? "" : "disabled"}" href="${issueUrl}" target="_blank" rel="noopener">📤 제출하기 (새 이슈 열기)</a></p>` : ""}
       ${mode !== "issue" ? `<h3>${mode === "both" ? "방법 2 · " : ""}Pull Request 로 제출</h3>${prSteps}
         <p><a class="btn secondary ${open && repo ? "" : "disabled"}" href="${prUrl}" target="_blank" rel="noopener">submissions/${esc(c.slug)}/ 폴더 열기</a></p>` : ""}
       ${open ? "" : `<div class="callout warn">현재 제출 기간이 아닙니다 (${st.label}).</div>`}
-      <div class="callout">제출 파일 형식: <code>${esc(c.id_column)},${esc(c.target_column)}</code> 두 열을 가진 CSV. 행 수와 <code>${esc(c.id_column)}</code> 값은 test.csv 와 정확히 일치해야 합니다.</div>`;
+      <div class="callout">제출 파일 형식: <code>${esc(c.id_column)},${esc(c.target_column)}</code> 두 열을 가진 CSV. 행 수(${c.n_test ?? "?"}행)와 <code>${esc(c.id_column)}</code> 값은 test.csv 와 정확히 일치해야 합니다.</div>`;
   }
 
-  return { renderIndex, renderCompetition };
+  // ---------- 제출 파일 암호화 페이지 ----------
+  function pemToDer(pem) {
+    const b64 = pem.replace(/-----[^-]+-----/g, "").replace(/\s+/g, "");
+    const bin = atob(b64); const out = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out.buffer;
+  }
+  function bytesToB64(bytes) {
+    const u8 = new Uint8Array(bytes); let s = "";
+    for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000));
+    return btoa(s);
+  }
+  async function encryptBytes(plain, pemText) {
+    const pub = await crypto.subtle.importKey("spki", pemToDer(pemText), { name: "RSA-OAEP", hash: "SHA-256" }, false, ["encrypt"]);
+    const aes = await crypto.subtle.generateKey({ name: "AES-GCM", length: 256 }, true, ["encrypt"]);
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv }, aes, plain);
+    const raw = await crypto.subtle.exportKey("raw", aes);
+    const wrapped = await crypto.subtle.encrypt({ name: "RSA-OAEP" }, pub, raw);
+    return `HNUENC1\n${bytesToB64(wrapped)}\n${bytesToB64(iv)}\n${bytesToB64(ct)}\n`;
+  }
+  function inspectCsv(text, c) {
+    const lines = text.replace(/^﻿/, "").split(/\r?\n/).filter((l) => l.trim().length);
+    const header = (lines[0] || "").split(",").map((h) => h.trim().replace(/^"|"$/g, ""));
+    const lower = header.map((h) => h.toLowerCase());
+    const hasId = lower.includes(c.id_column.toLowerCase());
+    const hasTarget = lower.includes(c.target_column.toLowerCase());
+    const nRows = Math.max(0, lines.length - 1);
+    const checks = [
+      { ok: hasId, text: hasId ? `\`${c.id_column}\` 열 있음` : `\`${c.id_column}\` 열이 없습니다 (현재 열: ${header.slice(0, 6).join(", ")})` },
+      { ok: hasTarget, text: hasTarget ? `\`${c.target_column}\` 열 있음` : `\`${c.target_column}\` 열이 없습니다` },
+      { ok: c.n_test == null || nRows === c.n_test, text: c.n_test == null ? `${nRows}행` : (nRows === c.n_test ? `${nRows}행 (test.csv 와 일치)` : `${nRows}행 — test.csv 는 ${c.n_test}행입니다`) },
+    ];
+    return { checks, pass: checks.every((k) => k.ok) };
+  }
+  async function renderEncrypt() {
+    const [site, index, pem] = await Promise.all([getJSON("site.json", true), getJSON("competitions.json"), getText("assets/submission_public.pem")]);
+    applySite(site);
+    const comps = (index.competitions || []);
+    const sel = qs("#comp-select");
+    sel.innerHTML = comps.map((c) => `<option value="${esc(c.slug)}">${esc(c.title)} (${esc(c.slug)})</option>`).join("");
+    const want = new URLSearchParams(location.search).get("c");
+    if (want && comps.some((c) => c.slug === want)) sel.value = want;
+    if (!pem) { qs("#comp-hint").textContent = "공개키(assets/submission_public.pem)를 찾을 수 없습니다. 교수자에게 문의하세요."; return; }
+    if (!window.isSecureContext || !crypto.subtle) { qs("#comp-hint").textContent = "이 브라우저에서는 암호화를 사용할 수 없습니다 (HTTPS 필요)."; return; }
+    let file = null, text = null;
+    const cur = () => comps.find((c) => c.slug === sel.value);
+    const updateHint = () => { const c = cur(); qs("#comp-hint").textContent = c ? `제출 형식: ${c.id_column}, ${c.target_column} 두 열 · ${c.n_test ?? "?"}행` : ""; };
+    const drop = qs("#drop"), input = qs("#file"), checks = qs("#checks"), btn = qs("#btn-encrypt"), result = qs("#result");
+    const review = () => {
+      checks.innerHTML = ""; btn.disabled = true; result.innerHTML = "";
+      const c = cur(); if (!c || !text) return;
+      const r = inspectCsv(text, c);
+      checks.innerHTML = [{ ok: true, text: `파일: ${esc(file.name)} (${fmtSize(file.size)})` }, ...r.checks]
+        .map((k) => `<li><span class="${k.ok ? "ok" : "bad"}">${k.ok ? "✓" : "✗"}</span><span>${k.text.replace(/`([^`]+)`/g, "<code>$1</code>")}</span></li>`).join("");
+      btn.disabled = !r.pass;
+    };
+    const load = (f) => { file = f; const rd = new FileReader(); rd.onload = () => { text = rd.result; review(); }; rd.readAsText(f); };
+    input.onchange = () => input.files[0] && load(input.files[0]);
+    ["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+    ["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+    drop.addEventListener("drop", (e) => { const f = e.dataTransfer.files[0]; if (f) load(f); });
+    sel.onchange = () => { updateHint(); review(); };
+    updateHint();
+    btn.onclick = async () => {
+      const c = cur(); if (!c || !text) return;
+      btn.disabled = true; btn.textContent = "암호화 중…";
+      try {
+        const plain = new TextEncoder().encode(text);
+        const out = await encryptBytes(plain, pem);
+        const stamp = new Date().toISOString().slice(0, 16).replace(/[-:T]/g, "").slice(0, 12);
+        const name = `submission_${c.slug}_${stamp}.enc.txt`;
+        const blob = new Blob([out], { type: "text/plain" });
+        const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove();
+        const repo = site?.repo || "";
+        const issueUrl = repo ? `https://github.com/${repo}/issues/new?template=submission.yml&competition=${encodeURIComponent(`${c.title} (${c.slug})`)}` : "#";
+        result.innerHTML = `<div class="callout">암호화된 파일 <b class="mono">${esc(name)}</b> 을(를) 내려받았습니다. 이제 아래 버튼으로 제출 이슈를 열고 이 파일을 '제출 파일' 칸에 첨부하세요.</div>
+          <p><a class="btn ${repo ? "" : "disabled"}" href="${issueUrl}" target="_blank" rel="noopener">📤 제출하기 (새 이슈 열기)</a></p>`;
+      } catch (e) {
+        result.innerHTML = `<div class="callout warn">암호화 중 오류가 발생했습니다: ${esc(e.message || e)}</div>`;
+      } finally {
+        btn.disabled = false; btn.textContent = "🔒 암호화해서 내려받기";
+      }
+    };
+  }
+
+  return { renderIndex, renderCompetition, renderEncrypt };
 })();

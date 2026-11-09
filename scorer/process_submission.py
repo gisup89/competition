@@ -23,7 +23,9 @@ from datetime import datetime
 from .common import (
     SubmissionError,
     comp_dir,
+    decrypt_submission,
     fmt_local,
+    is_encrypted_submission,
     fmt_score,
     find_competition,
     list_competitions,
@@ -326,9 +328,19 @@ def main(argv=None) -> int:
             )
         part = participant_info(ctx["login"], row, roster, cfg)
 
-        # 파일 획득
+        # 파일 획득 (+ 암호화 제출이면 복호화)
         lb = load_leaderboard(cfg)
         data, filename = obtain_file(gh, ctx, cfg, pr_files)
+        if is_encrypted_submission(data):
+            data = decrypt_submission(data)
+            filename = re.sub(r"(\.enc)?\.txt$", "", filename) + ".csv"
+        elif site_cfg.get("require_encrypted", False):
+            site = site_url(site_cfg)
+            raise SubmissionError(
+                "이 대회는 **암호화된 제출 파일**만 받습니다. 다른 참가자가 제출 내용을 볼 수 없게 하기 위한 조치입니다. "
+                f"사이트의 '제출 파일 암호화' 페이지({site}encrypt.html?c={slug})에서 CSV 를 변환해 내려받은 "
+                "`.enc.txt` 파일을 첨부해 주세요."
+            )
         digest = sha256_bytes(data)
 
         # 같은 이슈(또는 같은 PR 의 같은 파일)를 다시 채점하는 경우(워크플로 재실행) 기존 기록을 교체
@@ -416,7 +428,7 @@ def main(argv=None) -> int:
             gh.close_pr(number)
         else:
             gh.close(number, "completed")
-        print(f"[ok] #{number} {part['display']} public={result['public']:.6f} private={result['private']:.6f}")
+        print(f"[ok] #{number} {part['display']} public={result['public']:.6f}")  # Private 점수는 로그에 남기지 않음(공개 저장소의 Actions 로그는 누구나 볼 수 있음)
         return 0
 
     except SubmissionError as exc:

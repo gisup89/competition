@@ -1,5 +1,6 @@
 # 절대 커밋하면 안 되는 것들
 .competition.key
+.submission_private.pem
 participants.csv
 competitions/*/solution.csv
 competitions/*/final_results.csv

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제출 파일 암호화</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .drop { display: block; border: 2px dashed var(--border); border-radius: var(--radius); padding: 36px 20px; text-align: center; color: var(--muted); background: #fafbfc; cursor: pointer; transition: border-color .12s, background .12s; }
+    .drop.over { border-color: var(--accent); background: var(--accent-soft); }
+    .drop input { display: none; }
+    .drop b { color: var(--text); }
+    .check { list-style: none; padding: 0; margin: 14px 0 0; }
+    .check li { padding: 6px 0; display: flex; gap: 10px; align-items: flex-start; }
+    .check .ok { color: var(--green); font-weight: 700; }
+    .check .bad { color: var(--red); font-weight: 700; }
+    .result { margin-top: 18px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="./"><span class="logo">ML</span><span id="brand-title">머신러닝 경진대회</span></a>
+      <nav>
+        <a href="./">대회 목록</a>
+        <a id="nav-repo" href="#" target="_blank" rel="noopener">저장소</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="comp-header">
+      <div>
+        <h1>제출 파일 암호화</h1>
+        <p class="sub">CSV 파일을 이 페이지에서 암호화한 뒤, 만들어진 <code>.enc.txt</code> 파일을 제출 이슈에 첨부합니다. 다른 참가자는 내용을 볼 수 없고 채점 시스템만 풀 수 있습니다.</p>
+      </div>
+    </div>
+
+    <section class="panel">
+      <h2>1. 대회 선택</h2>
+      <select class="search" id="comp-select"></select>
+      <p class="hint" id="comp-hint"></p>
+    </section>
+
+    <section class="panel">
+      <h2>2. CSV 파일 선택</h2>
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept=".csv,text/csv">
+        <div><b>여기에 CSV 파일을 끌어다 놓거나 클릭해서 선택</b></div>
+        <div class="hint" style="margin-top:6px">파일은 브라우저 안에서만 처리되며 어디에도 전송되지 않습니다.</div>
+      </label>
+      <ul class="check" id="checks"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>3. 암호화 후 제출</h2>
+      <p><button class="btn" id="btn-encrypt" disabled>🔒 암호화해서 내려받기</button></p>
+      <div class="result" id="result"></div>
+    </section>
+
+    <p class="footer" id="footer"></p>
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script>App.renderEncrypt();</script>
+</body>
+</html>
