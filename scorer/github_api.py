@@ -18,6 +18,8 @@ class GitHub:
         self.repo = repo
         self.token = token or os.environ.get("GITHUB_TOKEN", "")
         self.dry_run = dry_run or not self.token
+        # SKIP_NOTIFY=1: 댓글·라벨·닫기를 생략 (리더보드 커밋 충돌 후 재채점할 때 — 알림은 이미 1차 채점에서 보냄)
+        self.notify = not os.environ.get("SKIP_NOTIFY")
         self.session = requests.Session()
         self.session.headers.update(
             {
@@ -44,15 +46,22 @@ class GitHub:
 
     # -- 이슈 / PR 공통 (PR 도 issue 번호를 공유) ----------------------------
     def comment(self, number: int, body: str) -> None:
+        if not self.notify:
+            print(f"[skip-notify] 댓글 생략 → #{number}")
+            return
         if self.dry_run:
             print(f"\n[dry-run] 댓글 → #{number}\n{body}\n")
             return
         self._call("POST", f"/repos/{self.repo}/issues/{number}/comments", json={"body": body})
 
     def add_labels(self, number: int, labels: list[str]) -> None:
+        if not self.notify:
+            return
         self._call("POST", f"/repos/{self.repo}/issues/{number}/labels", json={"labels": labels})
 
     def close(self, number: int, reason: str = "completed") -> None:
+        if not self.notify:
+            return
         self._call(
             "PATCH",
             f"/repos/{self.repo}/issues/{number}",
@@ -60,6 +69,8 @@ class GitHub:
         )
 
     def close_pr(self, number: int) -> None:
+        if not self.notify:
+            return
         self._call("PATCH", f"/repos/{self.repo}/pulls/{number}", json={"state": "closed"})
 
     # -- PR 파일 ---------------------------------------------------------------
