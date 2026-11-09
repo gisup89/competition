@@ -4,7 +4,7 @@ name: 제출 채점 (Score submission)
 # 채점 → 이슈/PR 댓글 → leaderboard.json 커밋 → 사이트 재배포
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]   # 닫힌 제출 이슈를 다시 열면 재채점됩니다 (일시 오류 복구용)
   pull_request_target:
     types: [opened, synchronize]
 
@@ -20,7 +20,12 @@ concurrency:
 
 jobs:
   score:
-    if: github.event_name == 'pull_request_target' || contains(github.event.issue.labels.*.name, 'submission')
+    # 제출 양식이 붙이는 'submission' 라벨 또는 '[제출]' 제목 접두어 중 하나만 있으면 실행합니다.
+    # (저장소에 'submission' 라벨이 없으면 양식이 라벨을 붙이지 못하므로 제목으로도 판별)
+    if: >-
+      github.event_name == 'pull_request_target'
+      || contains(github.event.issue.labels.*.name, 'submission')
+      || startsWith(github.event.issue.title, '[제출]')
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.score.outputs.changed }}
