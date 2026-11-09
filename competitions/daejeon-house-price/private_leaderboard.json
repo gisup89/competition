@@ -1,9 +1,0 @@
-{
- "competition": "daejeon-house-price",
- "metric": "rmse",
- "metric_name": "RMSE",
- "higher_is_better": false,
- "finalized_at": "2026-11-09T18:35:08+00:00",
- "max_final_submissions": 2,
- "leaderboard": []
-}
