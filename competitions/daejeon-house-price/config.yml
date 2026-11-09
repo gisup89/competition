@@ -5,8 +5,8 @@ id_column: id
 target_column: price
 pos_label: 1
 timezone: Asia/Seoul
-start: '2026-11-11T00:00:00+09:00'
-deadline: '2026-12-14T23:59:59+09:00'
+start: '2026-11-10T00:00:00+09:00'
+deadline: '2026-12-01T08:00:00+09:00'
 daily_limit: 5
 max_final_submissions: 2
 teams: true

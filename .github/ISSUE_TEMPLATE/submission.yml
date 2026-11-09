@@ -16,8 +16,8 @@ body:
       label: 대회
       description: 제출할 대회를 선택하세요.
       options:
-        - "통신사 고객 이탈 예측 (demo-churn)"
-        - "대전 아파트 매매가 예측 (demo-house-price)"
+        - "대전 아파트 매매가 예측 (daejeon-house-price)"
+        - "손글씨 숫자 인식 (HNU Digits) (hnu-digits)"
     validations:
       required: true
   - type: textarea
