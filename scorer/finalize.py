@@ -15,7 +15,7 @@ import io
 import json
 import sys
 
-from .common import comp_dir, encrypt_bytes, load_config, load_roster, now_utc, team_of
+from .common import comp_dir, encrypt_bytes, fmt_local, load_config, load_roster, now_utc, parse_dt, team_of
 from .leaderboard import compute_private_board, load_leaderboard, save_leaderboard
 from .metrics import get_metric
 
@@ -25,11 +25,22 @@ def main(argv=None) -> int:
     ap.add_argument("--competition", required=True)
     ap.add_argument("--unfinalize", action="store_true", help="최종 결과 공개를 취소")
     ap.add_argument("--plain-results", action="store_true", help="final_results.csv 를 평문으로도 저장(로컬 전용)")
+    ap.add_argument("--force", action="store_true", help="마감 전에도 최종 결과 파일을 생성 (로컬 미리 보기용; 사이트는 마감 전까지 표시하지 않음)")
     args = ap.parse_args(argv)
 
     cfg = load_config(args.competition)
     lb = load_leaderboard(cfg)
     d = comp_dir(cfg["slug"])
+
+    deadline = parse_dt(cfg.get("deadline"), cfg)
+    if not args.unfinalize and deadline and now_utc() < deadline and not args.force:
+        print(
+            f"아직 마감 전입니다 (마감: {fmt_local(deadline, cfg)}). 최종 결과는 마감 후에 생성하십시오.\n"
+            "마감 전 미리 보기는 `python -m scorer.admin private --competition <slug>` 를 쓰거나, "
+            "파일까지 만들려면 --force 를 붙이십시오 (커밋하면 안 됩니다).",
+            file=sys.stderr,
+        )
+        return 1
 
     if args.unfinalize:
         lb["finalized"] = False

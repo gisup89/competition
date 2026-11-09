@@ -236,6 +236,7 @@ python -m scorer.new_competition \
    ```
    이 평문 파일은 `.gitignore` 에 있어 커밋되지 않습니다.
 4. 공개를 취소하려면 같은 워크플로에서 `unfinalize` 를 체크하고 실행합니다.
+5. 안전장치: `finalize` 는 `config.yml` 의 마감 시각 전에는 실행을 거부합니다(로컬 미리 보기는 `python -m scorer.admin private --competition <대회>`, 파일까지 만들려면 `--force`). 또 사이트는 `finalized` 플래그가 켜져 있어도 **마감 시각이 지나기 전에는** "최종 결과 공개" 배지와 Private 탭을 보여 주지 않습니다. 따라서 실수로 마감 전에 확정 파일을 커밋해도 학생에게는 노출되지 않습니다.
 
 
 ### 6-1. 노트북 제출과 재현 검증

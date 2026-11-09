@@ -29,9 +29,14 @@ const App = (() => {
     if (withTime) Object.assign(opt, { hour: "2-digit", minute: "2-digit", hour12: false });
     return d.toLocaleString("ko-KR", opt).replace(/\. /g, "-").replace(/\.$/, "").replace(/-(\d{2}:\d{2})/, " $1").replace(/\s+/g, " ").trim();
   }
+  // 마감 시각이 지났는지 (마감이 없으면 지난 것으로 간주)
+  function deadlinePassed(c) {
+    return !c.deadline || new Date(c.deadline).getTime() < Date.now();
+  }
   function statusOf(c) {
     const now = Date.now();
-    if (c.finalized) return { key: "final", label: "최종 결과 공개" };
+    // finalized 플래그가 켜져 있어도 마감 전에는 최종 결과를 공개하지 않습니다 (실수로 미리 확정한 경우 보호)
+    if (c.finalized && deadlinePassed(c)) return { key: "final", label: "최종 결과 공개" };
     if (c.deadline && new Date(c.deadline).getTime() < now) return { key: "closed", label: "제출 마감" };
     if (c.start && new Date(c.start).getTime() > now) return { key: "soon", label: "시작 예정" };
     return { key: "live", label: "진행 중" };
@@ -175,7 +180,7 @@ const App = (() => {
     const hint = qs("#lb-hint");
     const search = qs("#lb-search");
     let mode = "public";
-    const canPrivate = !!(board.finalized && priv && priv.leaderboard);
+    const canPrivate = !!(board.finalized && priv && priv.leaderboard && deadlinePassed(c));
     btnPriv.disabled = !canPrivate;
     if (canPrivate) mode = "private";
     document.querySelectorAll("#lb-seg button").forEach((b) => {
