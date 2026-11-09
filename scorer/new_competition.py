@@ -118,7 +118,7 @@ body:
     id: note
     attributes:
       label: 메모 (선택)
-      description: 사용한 모델·특징 등 간단한 설명 (리더보드 제출 기록에 표시됩니다)
+      description: 사용한 모델·특징 등 간단한 설명 (본인 기록용. 이 이슈는 공개되므로 비밀로 할 내용은 적지 마세요)
       placeholder: 예) LightGBM, 로그 변환, 5-fold CV
 """
     ISSUE_TEMPLATE.parent.mkdir(parents=True, exist_ok=True)

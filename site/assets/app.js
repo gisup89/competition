@@ -154,11 +154,8 @@ const App = (() => {
       : '<li class="empty">데이터 파일이 없습니다.</li>';
     qs("#data-hint").textContent = `제출 파일은 sample_submission.csv 와 같은 형식이어야 합니다 (열: ${c.id_column}, ${c.target_column}).`;
 
-    // 리더보드
+    // 리더보드 (개별 제출 기록은 캐글처럼 공개하지 않고 참가자별 집계만 보여 줍니다)
     renderLeaderboard(c, board, priv);
-
-    // 제출 기록
-    renderSubmissions(c, board);
 
     // 규칙 / 제출 방법
     renderRules(c, board, site);
@@ -193,16 +190,27 @@ const App = (() => {
       const q = search.value.trim().toLowerCase();
       const updated = board.updated_at ? `갱신 ${fmtDate(board.updated_at, c.timezone)}` : "";
       if (mode === "public") {
-        hint.textContent = `테스트 데이터 일부로 계산한 점수 · 참가자별 최고 점수 · ${updated}`;
+        const limit = c.daily_limit || 0;
+        hint.textContent = `테스트 데이터 일부로 계산한 점수 · 참가자별 최고 점수${limit ? ` · 하루 ${limit}회 (${c.timezone || "Asia/Seoul"} 자정 초기화)` : ""} · ${updated}`;
+        // 참가자별 오늘(대회 시간대 기준) 채점된 제출 수 → 남은 횟수
+        const dayOf = (iso) => new Date(iso).toLocaleDateString("en-CA", { timeZone: c.timezone || "Asia/Seoul" });
+        const today = dayOf(new Date().toISOString());
+        const usedToday = {};
+        (board.submissions || []).forEach((s) => {
+          if (s.status === "scored" && dayOf(s.created_at) === today) usedToday[s.participant_key] = (usedToday[s.participant_key] || 0) + 1;
+        });
         const rows = board.public_leaderboard.filter((r) => !q || r.display.toLowerCase().includes(q) || (r.members || []).join(" ").toLowerCase().includes(q));
         qs("#lb-table").innerHTML = rows.length ? `<table class="lb"><thead><tr>
-            <th class="rank">#</th><th>참가자</th><th class="num">${esc(c.metric_name)}</th><th class="num">제출</th><th>최고 점수 시각</th></tr></thead><tbody>
-          ${rows.map((r) => `<tr>
+            <th class="rank">#</th><th>참가자</th><th class="num">${esc(c.metric_name)}</th><th class="num">제출</th>${limit ? '<th class="num">오늘 남은</th>' : ""}<th>마지막 제출</th></tr></thead><tbody>
+          ${rows.map((r) => {
+            const left = Math.max(0, limit - (usedToday[r.key] || 0));
+            return `<tr>
             <td class="rank r${r.rank}">${r.rank}</td>
             <td class="name">${nameCell(r)}</td>
             <td class="num score">${fmtScore(r.best_public, dec)}</td>
             <td class="num">${r.n_submissions}</td>
-            <td>${fmtDate(r.best_at, c.timezone)}</td></tr>`).join("")}
+            ${limit ? `<td class="num ${left === 0 ? "muted" : ""}">${left} / ${limit}</td>` : ""}
+            <td>${fmtDate(r.last_at || r.best_at, c.timezone)}</td></tr>`; }).join("")}
           </tbody></table>` : '<div class="empty">아직 제출이 없습니다.</div>';
       } else {
         hint.textContent = `마감 후 Private 데이터로 계산한 최종 순위 (Public 상위 ${priv.max_final_submissions}개 제출물 중 최고) · 확정 ${fmtDate(priv.finalized_at, c.timezone)}`;
@@ -226,30 +234,6 @@ const App = (() => {
     const team = r.type === "team";
     const members = team && r.members && r.members.length ? `<div class="members">${esc(r.members.join(", "))}</div>` : "";
     return `${team ? '<span class="badge team">팀</span> ' : ""}${esc(r.display)}${members}`;
-  }
-
-  function renderSubmissions(c, board) {
-    const dec = c.score_decimals ?? 5;
-    const subs = board.submissions.filter((s) => s.status === "scored").slice().reverse();
-    const sel = qs("#sub-filter");
-    const names = [...new Map(subs.map((s) => [s.participant_key, s.display])).entries()].sort((a, b) => a[1].localeCompare(b[1], "ko"));
-    sel.innerHTML = '<option value="">전체 참가자</option>' + names.map(([k, v]) => `<option value="${esc(k)}">${esc(v)}</option>`).join("");
-    qs("#sub-hint").textContent = `채점된 제출 ${subs.length}건 · 최신순`;
-    const draw = () => {
-      const rows = sel.value ? subs.filter((s) => s.participant_key === sel.value) : subs;
-      qs("#sub-table").innerHTML = rows.length ? `<table class="lb"><thead><tr>
-          <th class="num">#</th><th>제출 시각</th><th>참가자</th><th class="num">${esc(c.metric_name)} (Public)</th><th>메모</th><th>링크</th></tr></thead><tbody>
-        ${rows.map((s) => `<tr>
-          <td class="num">${s.id}</td>
-          <td>${fmtDate(s.created_at, c.timezone)}</td>
-          <td class="name">${s.participant_type === "team" ? '<span class="badge team">팀</span> ' : ""}${esc(s.display)}${s.participant_type === "team" && s.submitter ? `<div class="members">${esc(s.submitter)}</div>` : ""}</td>
-          <td class="num score">${fmtScore(s.public_score, dec)}</td>
-          <td class="note">${esc(s.note || "")}${s.duplicate_of ? ` <span class="badge dup">#${s.duplicate_of}과 동일 파일</span>` : ""}</td>
-          <td>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.source === "pr" ? "PR" : "이슈"} #${s.number}</a>` : ""}</td></tr>`).join("")}
-        </tbody></table>` : '<div class="empty">제출 기록이 없습니다.</div>';
-    };
-    sel.onchange = draw;
-    draw();
   }
 
   function renderRules(c, board, site) {
