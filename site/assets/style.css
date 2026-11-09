@@ -170,5 +170,5 @@ table.lb td.note { white-space: normal; max-width: 320px; color: var(--muted); }
   table.lb th, table.lb td { padding: 8px 8px; }
 }
 
-/* 리더보드: 오늘 남은 제출 횟수가 0인 칸 */
+/* 리더보드: 오늘 제출 횟수가 한도에 도달한 칸 */
 table.lb td.muted { color: var(--muted); }

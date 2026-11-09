@@ -201,22 +201,22 @@ const App = (() => {
         });
         const rows = board.public_leaderboard.filter((r) => !q || r.display.toLowerCase().includes(q) || (r.members || []).join(" ").toLowerCase().includes(q));
         qs("#lb-table").innerHTML = rows.length ? `<table class="lb"><thead><tr>
-            <th class="rank">#</th><th>참가자</th><th class="num">${esc(c.metric_name)}</th><th class="num">제출</th>${limit ? '<th class="num">오늘 남은</th>' : ""}<th>마지막 제출</th></tr></thead><tbody>
+            <th class="rank">#</th><th>팀명</th><th class="num">${esc(c.metric_name)}</th><th class="num">전체 제출</th>${limit ? '<th class="num">오늘 제출</th>' : ""}<th>최종 제출 시각</th></tr></thead><tbody>
           ${rows.map((r) => {
-            const left = Math.max(0, limit - (usedToday[r.key] || 0));
+            const used = Math.min(limit, usedToday[r.key] || 0);
             return `<tr>
             <td class="rank r${r.rank}">${r.rank}</td>
             <td class="name">${nameCell(r)}</td>
             <td class="num score">${fmtScore(r.best_public, dec)}</td>
             <td class="num">${r.n_submissions}</td>
-            ${limit ? `<td class="num ${left === 0 ? "muted" : ""}">${left} / ${limit}</td>` : ""}
+            ${limit ? `<td class="num ${used >= limit ? "muted" : ""}">${used} / ${limit}</td>` : ""}
             <td>${fmtDate(r.last_at || r.best_at, c.timezone)}</td></tr>`; }).join("")}
           </tbody></table>` : '<div class="empty">아직 제출이 없습니다.</div>';
       } else {
         hint.textContent = `마감 후 Private 데이터로 계산한 최종 순위 (Public 상위 ${priv.max_final_submissions}개 제출물 중 최고) · 확정 ${fmtDate(priv.finalized_at, c.timezone)}`;
         const rows = priv.leaderboard.filter((r) => !q || r.display.toLowerCase().includes(q) || (r.members || []).join(" ").toLowerCase().includes(q));
         qs("#lb-table").innerHTML = rows.length ? `<table class="lb"><thead><tr>
-            <th class="rank">#</th><th>변동</th><th>참가자</th><th class="num">Private</th><th class="num">Public</th><th class="num">제출</th></tr></thead><tbody>
+            <th class="rank">#</th><th>변동</th><th>팀명</th><th class="num">Private</th><th class="num">Public</th><th class="num">전체 제출</th></tr></thead><tbody>
           ${rows.map((r) => `<tr>
             <td class="rank r${r.rank}">${r.rank}</td>
             <td class="delta ${r.delta > 0 ? "up" : r.delta < 0 ? "down" : "same"}">${r.delta > 0 ? "▲" + r.delta : r.delta < 0 ? "▼" + (-r.delta) : "–"}</td>
