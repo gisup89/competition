@@ -252,7 +252,7 @@ const App = (() => {
         <li>최종 평가에는 참가자(팀)별 Public 점수 상위 <b>${c.max_final_submissions}</b>개 제출물 가운데 Private 점수가 가장 좋은 것을 사용합니다.</li>
         <li>하루 제출 한도: <b>${c.daily_limit > 0 ? c.daily_limit + "회" : "제한 없음"}</b> (${esc(c.timezone || "Asia/Seoul")} 기준 자정 초기화${c.teams ? ", 팀은 팀 전체가 공유" : ""}). 채점에 실패한 제출은 횟수에 포함되지 않습니다.</li>
         <li>제출 기간: ${fmtDate(c.start, c.timezone)} ~ <b>${fmtDate(c.deadline, c.timezone)}</b></li>
-        ${c.teams ? "<li>팀은 참가자 명단에 등록된 팀 기준으로 집계됩니다. 팀 변경은 교수자에게 요청하세요.</li>" : ""}
+        ${c.teams ? "<li>팀은 참가자 명단에 등록된 팀 기준으로 집계됩니다. 팀 변경은 이메일로 문의하세요.</li>" : ""}
         <li>다른 참가자의 제출 파일과 내용이 동일한 파일은 자동으로 표시됩니다.</li>
       </ul>`;
 
