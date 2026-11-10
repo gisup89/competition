@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T12:12:33+00:00",
+ "updated_at": "2026-11-10T12:13:24+00:00",
  "finalized": false,
- "next_id": 28,
+ "next_id": 29,
  "submissions": [
   {
    "id": 1,
@@ -602,6 +602,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 28,
+   "source": "issue",
+   "number": 51,
+   "url": "https://github.com/gisup89/competition/issues/51",
+   "github": "wldud0",
+   "submitter": "TEST_지영",
+   "participant_key": "team:TEST_지영",
+   "participant_type": "team",
+   "display": "TEST_지영",
+   "members": [
+    "TEST_지영"
+   ],
+   "created_at": "2026-11-10T12:13:03+00:00",
+   "filename": "submission_daejeon-house-price_202611101212.csv",
+   "sha256": "304dc43dff7b724c78ee57a8dfe1f68c6bbca1912f726ea2987721270260e00e",
+   "public_score": 2842.6811791716,
+   "private_enc": "gAAAAABq8wpklka3hOf77h3E_yufS_u_9f20NSRm5KaCka6bc9xmR7DIifpf6QhGeq7xctH3GY0wKxNWTzzJla1jt55xrpogJ7VJHQ2-_4al0gaB5_Ij5BO3TOKzxVd1Rca2rt2d_548",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -728,6 +750,21 @@
    "rank": 8
   },
   {
+   "key": "team:TEST_지영",
+   "display": "TEST_지영",
+   "type": "team",
+   "members": [
+    "TEST_지영"
+   ],
+   "best_public": 2842.6811791716,
+   "best_submission_id": 28,
+   "best_at": "2026-11-10T12:13:03+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/51",
+   "n_submissions": 1,
+   "last_at": "2026-11-10T12:13:03+00:00",
+   "rank": 9
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -740,7 +777,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/23",
    "n_submissions": 2,
    "last_at": "2026-11-10T05:29:18+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:TEST_JS",
@@ -755,7 +792,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 10
+   "rank": 11
   }
  ]
 }
