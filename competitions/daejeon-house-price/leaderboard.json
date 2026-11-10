@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T05:00:53+00:00",
+ "updated_at": "2026-11-10T05:15:54+00:00",
  "finalized": false,
- "next_id": 3,
+ "next_id": 4,
  "submissions": [
   {
    "id": 1,
@@ -50,6 +50,28 @@
    "note": "로그 가격 스플라인 3개 앙상블, 5-fold CV",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 3,
+   "source": "issue",
+   "number": 22,
+   "url": "https://github.com/gisup89/competition/issues/22",
+   "github": "ush030801-coder",
+   "submitter": "snowman",
+   "participant_key": "team:snowman",
+   "participant_type": "team",
+   "display": "snowman",
+   "members": [
+    "snowman"
+   ],
+   "created_at": "2026-11-10T05:15:33+00:00",
+   "filename": "submission_daejeon-house-price_202611100514.csv",
+   "sha256": "5d2d3a11c3442edafe1eddd71891ff75810b1d615d02b68ffedb1526437bf3da",
+   "public_score": 2951.4781139946,
+   "private_enc": "gAAAAABq8qiKw4QluJssVxv9cc5Kl0BSOo61-BT1aQI7fBnv3EZFR_wO5ZiIHmJzYWR1Xva8txz3r47gDxrtJgu5MQrFQ9xV79ZMW-ZJtM2YOuz8-ewjHryzw95O34xqzGS2oUMnG6ti",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -69,6 +91,21 @@
    "rank": 1
   },
   {
+   "key": "team:snowman",
+   "display": "snowman",
+   "type": "team",
+   "members": [
+    "snowman"
+   ],
+   "best_public": 2951.4781139946,
+   "best_submission_id": 3,
+   "best_at": "2026-11-10T05:15:33+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/22",
+   "n_submissions": 1,
+   "last_at": "2026-11-10T05:15:33+00:00",
+   "rank": 2
+  },
+  {
    "key": "team:TEST_JS",
    "display": "TEST_JS",
    "type": "team",
@@ -81,7 +118,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 2
+   "rank": 3
   }
  ]
 }
