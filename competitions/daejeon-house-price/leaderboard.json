@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T11:46:00+00:00",
+ "updated_at": "2026-11-10T11:47:53+00:00",
  "finalized": false,
- "next_id": 23,
+ "next_id": 24,
  "submissions": [
   {
    "id": 1,
@@ -492,6 +492,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 23,
+   "source": "issue",
+   "number": 46,
+   "url": "https://github.com/gisup89/competition/issues/46",
+   "github": "LSB-afk",
+   "submitter": "TEST_승보",
+   "participant_key": "team:TEST_승보",
+   "participant_type": "team",
+   "display": "TEST_승보",
+   "members": [
+    "TEST_승보"
+   ],
+   "created_at": "2026-11-10T11:47:31+00:00",
+   "filename": "submission_tuned_v2.csv",
+   "sha256": "81241adfb6d73637ff08253a8dc98cf59f9be8a5a9fe1796c003e1adbcbfecd4",
+   "public_score": 2822.7974642512,
+   "private_enc": "gAAAAABq8wRpVZgem5pX9IhvUbe-PVmayC7u_k26csPTfDJVmEb1P48vLtCpXWBZmZUaFHbl3SYaHpbCmsOWWGnpjcvjoUNcGzT8CuoniRzLX04pi9BNCpZ4mIMay2zHQjLPImeoIkv0",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -536,8 +558,8 @@
    "best_submission_id": 20,
    "best_at": "2026-11-10T11:40:14+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/43",
-   "n_submissions": 1,
-   "last_at": "2026-11-10T11:40:14+00:00",
+   "n_submissions": 2,
+   "last_at": "2026-11-10T11:47:31+00:00",
    "rank": 3
   },
   {
