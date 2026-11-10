@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T02:29:08+00:00",
+ "updated_at": "2026-11-10T02:32:24+00:00",
  "finalized": false,
- "next_id": 2,
+ "next_id": 3,
  "submissions": [
   {
    "id": 1,
@@ -28,6 +28,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 2,
+   "source": "issue",
+   "number": 18,
+   "url": "https://github.com/gisup89/competition/issues/18",
+   "github": "gisup89",
+   "submitter": "교수",
+   "participant_key": "team:교수팀",
+   "participant_type": "team",
+   "display": "교수팀",
+   "members": [
+    "교수"
+   ],
+   "created_at": "2026-11-10T02:31:57+00:00",
+   "filename": "_02_.csv",
+   "sha256": "b6995b0174f59dec0fd6aeb0523d5371ff015bbae3b6b642571a0d1bbd863698",
+   "public_score": 3275.9609285759,
+   "private_enc": "gAAAAABq8oI40L7sbRpVd4CYby-DgqSAEXMiOnJoRlWj6iEowJU48GDKKqJnBdSlfr-QNqBSgwl_rcwFwnNsO3DbhZZd1KQnLkGaG7fvbHWBZ0eTX6VWBqyO3P8ufGJtfYiWLWUr8nAe",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -38,12 +60,12 @@
    "members": [
     "교수"
    ],
-   "best_public": 8748.7709013736,
-   "best_submission_id": 1,
-   "best_at": "2026-11-10T02:28:48+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/17",
-   "n_submissions": 1,
-   "last_at": "2026-11-10T02:28:48+00:00",
+   "best_public": 3275.9609285759,
+   "best_submission_id": 2,
+   "best_at": "2026-11-10T02:31:57+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/18",
+   "n_submissions": 2,
+   "last_at": "2026-11-10T02:31:57+00:00",
    "rank": 1
   }
  ]
