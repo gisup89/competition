@@ -231,7 +231,7 @@ def success_comment(cfg, part, rec, board, remaining, site, duplicate_of, same_a
     if duplicate_of:
         lines.append(
             f"⚠️ **주의:** 이 파일은 다른 참가자의 이전 제출(#{duplicate_of})과 내용이 완전히 동일합니다. "
-            "리더보드에 중복 표시가 남으며, 교수자가 확인할 수 있습니다."
+            "중복 제출로 기록되며, 교수자가 확인할 수 있습니다."
         )
         lines.append("")
     elif same_as_own:
