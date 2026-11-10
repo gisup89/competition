@@ -1,5 +1,5 @@
 title: 손글씨 숫자 인식 (HNU Digits)
-subtitle: 우리 수업 중간고사 답안지에서 추출한 손글씨 숫자 이미지(28×28)를 0~9로 분류합니다
+subtitle: 우리 수업 사람들이 직접 쓴 손글씨 숫자 이미지(28×28)를 0~9로 분류합니다
 metric: accuracy
 id_column: id
 target_column: label
