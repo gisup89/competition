@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T14:00:20+00:00",
+ "updated_at": "2026-11-10T14:19:59+00:00",
  "finalized": false,
- "next_id": 51,
+ "next_id": 52,
  "submissions": [
   {
    "id": 1,
@@ -1119,6 +1119,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 51,
+   "source": "issue",
+   "number": 75,
+   "url": "https://github.com/gisup89/competition/issues/75",
+   "github": "hyunsuh20231376",
+   "submitter": "경마1",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-10T14:19:34+00:00",
+   "filename": "submission_daejeon-house-price_202611101418.csv",
+   "sha256": "319855427790257f2eb0b70d3119d53ee0006779743bd8c304b779bb5e42d6e6",
+   "public_score": 2784.7748938898,
+   "private_enc": "gAAAAABq8ygPPyGcIi3XjxmifvsSbdmKfjHgqvzz8DUFYFmXrdfdbRo3sKCbtrD3e83V9EXrmPMGMgMCsd5TZ0AwqfqzjpLDv70X2FpQoeMhm-d74-8CD5ZGyEzeon8Gh3t-lS8QFwCG",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -1138,6 +1163,24 @@
    "rank": 1
   },
   {
+   "key": "team:트로이경마",
+   "display": "트로이경마",
+   "type": "team",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "best_public": 2784.7748938898,
+   "best_submission_id": 51,
+   "best_at": "2026-11-10T14:19:34+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/75",
+   "n_submissions": 4,
+   "last_at": "2026-11-10T14:19:34+00:00",
+   "rank": 2
+  },
+  {
    "key": "team:TEST_동섭",
    "display": "TEST_동섭",
    "type": "team",
@@ -1150,7 +1193,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/69",
    "n_submissions": 5,
    "last_at": "2026-11-10T13:22:38+00:00",
-   "rank": 2
+   "rank": 3
   },
   {
    "key": "team:TEST_건민",
@@ -1165,7 +1208,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/52",
    "n_submissions": 5,
    "last_at": "2026-11-10T12:35:03+00:00",
-   "rank": 3
+   "rank": 4
   },
   {
    "key": "team:TEST_재홍",
@@ -1180,7 +1223,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/21",
    "n_submissions": 4,
    "last_at": "2026-11-10T12:38:43+00:00",
-   "rank": 4
+   "rank": 5
   },
   {
    "key": "team:TEST_승보",
@@ -1195,7 +1238,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/43",
    "n_submissions": 5,
    "last_at": "2026-11-10T12:45:33+00:00",
-   "rank": 5
+   "rank": 6
   },
   {
    "key": "team:TEST_승주",
@@ -1210,24 +1253,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/32",
    "n_submissions": 5,
    "last_at": "2026-11-10T09:18:18+00:00",
-   "rank": 6
-  },
-  {
-   "key": "team:트로이경마",
-   "display": "트로이경마",
-   "type": "team",
-   "members": [
-    "경마1",
-    "경마2",
-    "트로이경마4",
-    "트로이경마3"
-   ],
-   "best_public": 2817.8744955332,
-   "best_submission_id": 47,
-   "best_at": "2026-11-10T13:47:43+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/71",
-   "n_submissions": 3,
-   "last_at": "2026-11-10T13:59:59+00:00",
    "rank": 7
   },
   {
