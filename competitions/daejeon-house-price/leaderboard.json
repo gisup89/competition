@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T11:41:49+00:00",
+ "updated_at": "2026-11-10T11:46:00+00:00",
  "finalized": false,
- "next_id": 22,
+ "next_id": 23,
  "submissions": [
   {
    "id": 1,
@@ -468,6 +468,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 22,
+   "source": "issue",
+   "number": 45,
+   "url": "https://github.com/gisup89/competition/issues/45",
+   "github": "bubin-kim",
+   "submitter": "bubin",
+   "participant_key": "team:홍성민왕국",
+   "participant_type": "team",
+   "display": "홍성민왕국",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "created_at": "2026-11-10T11:45:39+00:00",
+   "filename": "submission_daejeon-house-price_202611101143.csv",
+   "sha256": "5ce5a980963545c36caf8c55921dab80f7ac6f703afc02d4c12d7e415056ddb5",
+   "public_score": 2836.504500173,
+   "private_enc": "gAAAAABq8wP4VX6UJScx0B52d2cGiIg0Pg2zUhdMy2AP_-kXwSxgzKPZD74SFYdBqrniYwJC5DWpMArReI6_CVfj3FjlLQNxcXITREo-vV4Uvwwt03Jq3QCUCtfYClHLS2o45P2qNNAv",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -562,6 +586,23 @@
    "rank": 6
   },
   {
+   "key": "team:홍성민왕국",
+   "display": "홍성민왕국",
+   "type": "team",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "best_public": 2836.504500173,
+   "best_submission_id": 22,
+   "best_at": "2026-11-10T11:45:39+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/45",
+   "n_submissions": 1,
+   "last_at": "2026-11-10T11:45:39+00:00",
+   "rank": 7
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -574,7 +615,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/23",
    "n_submissions": 2,
    "last_at": "2026-11-10T05:29:18+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:TEST_JS",
@@ -589,7 +630,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 8
+   "rank": 9
   }
  ]
 }
