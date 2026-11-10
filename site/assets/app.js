@@ -124,7 +124,7 @@ const App = (() => {
       getText(base + "README.md"),
       getJSON(base + "private_leaderboard.json", true),
     ]);
-    const board = lb || { submissions: [], public_leaderboard: [], finalized: false };
+    let board = lb || { submissions: [], public_leaderboard: [], finalized: false };
     const st = statusOf({ ...c, finalized: board.finalized || c.finalized });
 
     // 헤더
@@ -157,6 +157,23 @@ const App = (() => {
     // 리더보드 (개별 제출 기록은 캐글처럼 공개하지 않고 참가자별 집계만 보여 줍니다)
     renderLeaderboard(c, board, priv);
 
+    // 자동 갱신: 1분마다 leaderboard.json 을 다시 받아, 새 채점이 있거나 날짜가 바뀌었으면 다시 그립니다
+    const dayKey = () => new Date().toLocaleDateString("en-CA", { timeZone: c.timezone || "Asia/Seoul" });
+    let shownKey = `${board.updated_at || ""}|${dayKey()}`;
+    setInterval(async () => {
+      if (document.hidden) return;
+      try {
+        const fresh = await getJSON(base + "leaderboard.json", true);
+        if (!fresh) return;
+        const key = `${fresh.updated_at || ""}|${dayKey()}`;
+        if (key === shownKey) return;
+        shownKey = key;
+        board = fresh;
+        renderKV();
+        renderLeaderboard(c, board, priv);
+      } catch (e) { /* 일시적인 네트워크 오류는 무시하고 다음 주기에 다시 시도 */ }
+    }, 60000);
+
     // 규칙 / 제출 방법
     renderRules(c, board, site);
 
@@ -188,10 +205,10 @@ const App = (() => {
 
     function draw() {
       const q = search.value.trim().toLowerCase();
-      const updated = board.updated_at ? `갱신 ${fmtDate(board.updated_at, c.timezone)}` : "";
+      const updated = board.updated_at ? `최근 채점 ${fmtDate(board.updated_at, c.timezone)} · ` : "";
       if (mode === "public") {
         const limit = c.daily_limit || 0;
-        hint.textContent = `테스트 데이터 일부로 계산한 점수 · 참가자별 최고 점수${limit ? ` · 하루 ${limit}회 (${c.timezone || "Asia/Seoul"} 자정 초기화)` : ""} · ${updated}`;
+        hint.textContent = `Public 점수: test.csv 일부로 계산한 팀별 최고 점수 (최종 순위는 마감 후 나머지 데이터로 결정) · ${updated}1분마다 자동 갱신`;
         // 참가자별 오늘(대회 시간대 기준) 채점된 제출 수 → 남은 횟수
         const dayOf = (iso) => new Date(iso).toLocaleDateString("en-CA", { timeZone: c.timezone || "Asia/Seoul" });
         const today = dayOf(new Date().toISOString());
