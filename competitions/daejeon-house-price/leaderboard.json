@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T06:12:03+00:00",
+ "updated_at": "2026-11-10T08:17:17+00:00",
  "finalized": false,
- "next_id": 8,
+ "next_id": 9,
  "submissions": [
   {
    "id": 1,
@@ -160,6 +160,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 8,
+   "source": "issue",
+   "number": 29,
+   "url": "https://github.com/gisup89/competition/issues/29",
+   "github": "Jindongjun-do",
+   "submitter": "TEST_동준",
+   "participant_key": "team:TEST_동준",
+   "participant_type": "team",
+   "display": "TEST_동준",
+   "members": [
+    "TEST_동준"
+   ],
+   "created_at": "2026-11-10T08:16:59+00:00",
+   "filename": "submission_daejeon-house-price_202611100816.csv",
+   "sha256": "9cca17a3700cc88cd19675d576bc1459b62d16149b82c879a2863769deea0bf0",
+   "public_score": 2850.9050932173,
+   "private_enc": "gAAAAABq8tMNwj5_xWqVjqe2IgKTmxmUiHor3MMrl4LHtqPGZdG_GiR0v3u36RtqT5iM-VX4Jho_4BWDHe_P8Xk5R5riBZlXwPwuV2dPNNAnSOGIGlP0rU1twpZ-z-BGLlqp3HkBiNRN",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -194,6 +216,21 @@
    "rank": 2
   },
   {
+   "key": "team:TEST_동준",
+   "display": "TEST_동준",
+   "type": "team",
+   "members": [
+    "TEST_동준"
+   ],
+   "best_public": 2850.9050932173,
+   "best_submission_id": 8,
+   "best_at": "2026-11-10T08:16:59+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/29",
+   "n_submissions": 1,
+   "last_at": "2026-11-10T08:16:59+00:00",
+   "rank": 3
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -206,7 +243,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/23",
    "n_submissions": 2,
    "last_at": "2026-11-10T05:29:18+00:00",
-   "rank": 3
+   "rank": 4
   },
   {
    "key": "team:TEST_JS",
@@ -221,7 +258,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 4
+   "rank": 5
   }
  ]
 }
