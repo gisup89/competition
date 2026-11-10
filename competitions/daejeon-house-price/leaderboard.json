@@ -3,9 +3,48 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-10T03:24:34+00:00",
+ "updated_at": "2026-11-10T04:00:09+00:00",
  "finalized": false,
- "next_id": 1,
- "submissions": [],
- "public_leaderboard": []
+ "next_id": 2,
+ "submissions": [
+  {
+   "id": 1,
+   "source": "issue",
+   "number": 20,
+   "url": "https://github.com/gisup89/competition/issues/20",
+   "github": "gisup89",
+   "submitter": "TEST_JS",
+   "participant_key": "team:TEST_JS",
+   "participant_type": "team",
+   "display": "TEST_JS",
+   "members": [
+    "TEST_JS"
+   ],
+   "created_at": "2026-11-10T03:59:45+00:00",
+   "filename": "_01_.csv",
+   "sha256": "0fa5f6b6314a498a43d4a2745b41299c1ce740fa7e8bc1fee0e2e1aee6bc3670",
+   "public_score": 8748.7709013736,
+   "private_enc": "gAAAAABq8pbJ-hmdyIOn9stwehGcpcSkVr-5VIQlvbT-yB33k3TnNefsxFx0kW2W2-JYM1Ri0dZSlbxUsT6tZzM8XmvhxbokiRV8mZJXYD5HYwZJDEEIB22WU0JSNRU7LhEklEm8DVBX",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
+  }
+ ],
+ "public_leaderboard": [
+  {
+   "key": "team:TEST_JS",
+   "display": "TEST_JS",
+   "type": "team",
+   "members": [
+    "TEST_JS"
+   ],
+   "best_public": 8748.7709013736,
+   "best_submission_id": 1,
+   "best_at": "2026-11-10T03:59:45+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/20",
+   "n_submissions": 1,
+   "last_at": "2026-11-10T03:59:45+00:00",
+   "rank": 1
+  }
+ ]
 }
