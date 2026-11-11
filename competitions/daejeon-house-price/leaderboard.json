@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-11T03:00:40+00:00",
+ "updated_at": "2026-11-11T03:27:00+00:00",
  "finalized": false,
- "next_id": 85,
+ "next_id": 86,
  "submissions": [
   {
    "id": 1,
@@ -1888,6 +1888,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 85,
+   "source": "issue",
+   "number": 110,
+   "url": "https://github.com/gisup89/competition/issues/110",
+   "github": "HANJUNGWO",
+   "submitter": "TEST_정우",
+   "participant_key": "team:Han_mo",
+   "participant_type": "team",
+   "display": "Han_mo",
+   "members": [
+    "TEST_정우"
+   ],
+   "created_at": "2026-11-11T03:26:42+00:00",
+   "filename": "submission_daejeon-house-price_202611110326.csv",
+   "sha256": "a4666c238e4d6e3ed1ed2c053a2ddb651780a6979f06937ff5775af7262d0ed4",
+   "public_score": 2848.1152130254,
+   "private_enc": "gAAAAABq8-CEu2rhf6uZyF2wmiu5B89pUD2vwVQlazoUtipNfbXaXId7eAnG027YOp75QMkI9CknpP8JilOaXKJr66s0i8XvBBY8dIIarFwmNv_g46Jqdbm8m9eq1kLVWcXoW6tMw5nJ",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2127,6 +2149,21 @@
    "rank": 15
   },
   {
+   "key": "team:Han_mo",
+   "display": "Han_mo",
+   "type": "team",
+   "members": [
+    "TEST_정우"
+   ],
+   "best_public": 2848.1152130254,
+   "best_submission_id": 85,
+   "best_at": "2026-11-11T03:26:42+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/110",
+   "n_submissions": 1,
+   "last_at": "2026-11-11T03:26:42+00:00",
+   "rank": 16
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -2139,7 +2176,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/23",
    "n_submissions": 2,
    "last_at": "2026-11-10T05:29:18+00:00",
-   "rank": 16
+   "rank": 17
   },
   {
    "key": "team:TEST_JS",
@@ -2154,7 +2191,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 17
+   "rank": 18
   }
  ]
 }
