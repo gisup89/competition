@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-11T10:54:11+00:00",
+ "updated_at": "2026-11-11T13:21:40+00:00",
  "finalized": false,
- "next_id": 120,
+ "next_id": 121,
  "submissions": [
   {
    "id": 1,
@@ -2674,6 +2674,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 120,
+   "source": "issue",
+   "number": 148,
+   "url": "https://github.com/gisup89/competition/issues/148",
+   "github": "seonghyeon-ox",
+   "submitter": "캥거루근육단단",
+   "participant_key": "team:캥거루근육단단",
+   "participant_type": "team",
+   "display": "캥거루근육단단",
+   "members": [
+    "캥거루근육단단"
+   ],
+   "created_at": "2026-11-11T13:21:13+00:00",
+   "filename": "submission_daejeon-house-price_202611111318.csv",
+   "sha256": "2fd18e2a13f6f976f46600cf9ef3c402cec661736e6d42adaa980bd9146d9f00",
+   "public_score": 2830.68582809,
+   "private_enc": "gAAAAABq9GvkmmgODBgPdGy5CRx80f6CAcG9gui3gipeLfFE82LBnMYFkR2ENfqPAZL35KGshRItWwXpdUemXVG_Whpaxwnt88xlZ7NJ1gPnIFt0peM5kVIjG7Tr6EM4Cph7f1zqaprH",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2928,6 +2950,21 @@
    "rank": 16
   },
   {
+   "key": "team:캥거루근육단단",
+   "display": "캥거루근육단단",
+   "type": "team",
+   "members": [
+    "캥거루근육단단"
+   ],
+   "best_public": 2830.68582809,
+   "best_submission_id": 120,
+   "best_at": "2026-11-11T13:21:13+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/148",
+   "n_submissions": 1,
+   "last_at": "2026-11-11T13:21:13+00:00",
+   "rank": 17
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -2940,7 +2977,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/143",
    "n_submissions": 6,
    "last_at": "2026-11-11T08:51:56+00:00",
-   "rank": 17
+   "rank": 18
   },
   {
    "key": "team:TEST_JS",
@@ -2955,7 +2992,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 18
+   "rank": 19
   }
  ]
 }
