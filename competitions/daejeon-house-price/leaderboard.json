@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-11T05:45:54+00:00",
+ "updated_at": "2026-11-11T05:50:55+00:00",
  "finalized": false,
- "next_id": 106,
+ "next_id": 107,
  "submissions": [
   {
    "id": 1,
@@ -2363,9 +2363,46 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 106,
+   "source": "issue",
+   "number": 134,
+   "url": "https://github.com/gisup89/competition/issues/134",
+   "github": "Jindongjun-do",
+   "submitter": "TEST_동준",
+   "participant_key": "team:TEST_동준",
+   "participant_type": "team",
+   "display": "TEST_동준",
+   "members": [
+    "TEST_동준"
+   ],
+   "created_at": "2026-11-11T05:50:33+00:00",
+   "filename": "submission_daejeon-house-price_202611110548.csv",
+   "sha256": "2d5e8083210fcaaf17825ee39568b0e1f7da5d612c7df280421baefa871f5082",
+   "public_score": 2769.328032806,
+   "private_enc": "gAAAAABq9AI_JIdstdk3cr4qU3Vs9EqygJQv5811IOouLsjkE0k_ooGDNiqr-JIRdwrQC_XZdXl0V1fCSWKYvm-NUQ1WjZB7JG2vQxNSP84vlHZDAP_N1QLlGoh56x9XuKrML-A6OjIa",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
+  {
+   "key": "team:TEST_동준",
+   "display": "TEST_동준",
+   "type": "team",
+   "members": [
+    "TEST_동준"
+   ],
+   "best_public": 2769.328032806,
+   "best_submission_id": 106,
+   "best_at": "2026-11-11T05:50:33+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/134",
+   "n_submissions": 6,
+   "last_at": "2026-11-11T05:50:33+00:00",
+   "rank": 1
+  },
   {
    "key": "team:TEST_하윤",
    "display": "TEST_하윤",
@@ -2379,7 +2416,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/59",
    "n_submissions": 10,
    "last_at": "2026-11-11T05:41:02+00:00",
-   "rank": 1
+   "rank": 2
   },
   {
    "key": "team:트로이경마",
@@ -2397,7 +2434,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/77",
    "n_submissions": 8,
    "last_at": "2026-11-11T05:45:29+00:00",
-   "rank": 2
+   "rank": 3
   },
   {
    "key": "team:TEST_동섭",
@@ -2412,7 +2449,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/69",
    "n_submissions": 8,
    "last_at": "2026-11-11T04:11:11+00:00",
-   "rank": 3
+   "rank": 4
   },
   {
    "key": "team:Han_mo",
@@ -2427,7 +2464,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/124",
    "n_submissions": 5,
    "last_at": "2026-11-11T05:18:50+00:00",
-   "rank": 4
+   "rank": 5
   },
   {
    "key": "team:TEST_건민",
@@ -2442,7 +2479,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/52",
    "n_submissions": 10,
    "last_at": "2026-11-11T05:44:46+00:00",
-   "rank": 5
+   "rank": 6
   },
   {
    "key": "team:TEST_재홍",
@@ -2457,7 +2494,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/21",
    "n_submissions": 10,
    "last_at": "2026-11-10T18:17:58+00:00",
-   "rank": 6
+   "rank": 7
   },
   {
    "key": "team:TEST_승보",
@@ -2472,7 +2509,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/43",
    "n_submissions": 5,
    "last_at": "2026-11-10T12:45:33+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:TEST_승주",
@@ -2487,7 +2524,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/32",
    "n_submissions": 10,
    "last_at": "2026-11-10T18:47:14+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:홍성민왕국",
@@ -2504,7 +2541,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/114",
    "n_submissions": 6,
    "last_at": "2026-11-11T04:24:12+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:정 확 한",
@@ -2521,21 +2558,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/73",
    "n_submissions": 4,
    "last_at": "2026-11-11T01:47:11+00:00",
-   "rank": 10
-  },
-  {
-   "key": "team:TEST_동준",
-   "display": "TEST_동준",
-   "type": "team",
-   "members": [
-    "TEST_동준"
-   ],
-   "best_public": 2819.8626619102,
-   "best_submission_id": 17,
-   "best_at": "2026-11-10T09:28:58+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/38",
-   "n_submissions": 5,
-   "last_at": "2026-11-10T13:42:04+00:00",
    "rank": 11
   },
   {
