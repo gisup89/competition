@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-11T08:52:14+00:00",
+ "updated_at": "2026-11-11T08:56:29+00:00",
  "finalized": false,
- "next_id": 116,
+ "next_id": 117,
  "submissions": [
   {
    "id": 1,
@@ -2583,6 +2583,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 116,
+   "source": "issue",
+   "number": 144,
+   "url": "https://github.com/gisup89/competition/issues/144",
+   "github": "jsudjdbsu-ship-it",
+   "submitter": "앤드뮐미스터",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-11T08:56:05+00:00",
+   "filename": "submission_daejeon-house-price_202611110854.csv",
+   "sha256": "627aaca7b0de1095fa2fc4f849b12ec0210f9c6b9a68c313ef491a288e546fa3",
+   "public_score": 2809.4096244167,
+   "private_enc": "gAAAAABq9C29eZgLpevNVEuODIh1Oziu9JjjsuOusE-OytwTTMaKzxQjOPp5Zb32osC2SSGzLjVumAKLLBEaTYP3uEdjM42JwB6CqgocpFZGZC0mr1dUTGtutx9IelWlh9NP7gvfRsy3",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2665,6 +2690,24 @@
    "rank": 5
   },
   {
+   "key": "team:노라조",
+   "display": "노라조",
+   "type": "team",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "best_public": 2809.4096244167,
+   "best_submission_id": 116,
+   "best_at": "2026-11-11T08:56:05+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/144",
+   "n_submissions": 2,
+   "last_at": "2026-11-11T08:56:05+00:00",
+   "rank": 6
+  },
+  {
    "key": "team:TEST_건민",
    "display": "TEST_건민",
    "type": "team",
@@ -2677,7 +2720,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/52",
    "n_submissions": 10,
    "last_at": "2026-11-11T05:44:46+00:00",
-   "rank": 6
+   "rank": 7
   },
   {
    "key": "team:TEST_재홍",
@@ -2692,7 +2735,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/21",
    "n_submissions": 10,
    "last_at": "2026-11-10T18:17:58+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:TEST_승보",
@@ -2707,7 +2750,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/43",
    "n_submissions": 5,
    "last_at": "2026-11-10T12:45:33+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:TEST_승주",
@@ -2722,7 +2765,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/32",
    "n_submissions": 10,
    "last_at": "2026-11-10T18:47:14+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:홍성민왕국",
@@ -2739,7 +2782,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/114",
    "n_submissions": 6,
    "last_at": "2026-11-11T04:24:12+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:정 확 한",
@@ -2756,7 +2799,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/73",
    "n_submissions": 4,
    "last_at": "2026-11-11T01:47:11+00:00",
-   "rank": 11
+   "rank": 12
   },
   {
    "key": "team:TEST_재형",
@@ -2771,7 +2814,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/85",
    "n_submissions": 1,
    "last_at": "2026-11-10T15:57:53+00:00",
-   "rank": 12
+   "rank": 13
   },
   {
    "key": "team:TEST_성재",
@@ -2786,7 +2829,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/135",
    "n_submissions": 9,
    "last_at": "2026-11-11T06:14:12+00:00",
-   "rank": 13
+   "rank": 14
   },
   {
    "key": "team:TEST_지영",
@@ -2801,24 +2844,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/98",
    "n_submissions": 10,
    "last_at": "2026-11-10T18:37:43+00:00",
-   "rank": 14
-  },
-  {
-   "key": "team:노라조",
-   "display": "노라조",
-   "type": "team",
-   "members": [
-    "KT",
-    "숱많은 스님",
-    "배태인",
-    "앤드뮐미스터"
-   ],
-   "best_public": 2827.8105302674,
-   "best_submission_id": 58,
-   "best_at": "2026-11-10T15:14:27+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/82",
-   "n_submissions": 1,
-   "last_at": "2026-11-10T15:14:27+00:00",
    "rank": 15
   },
   {
