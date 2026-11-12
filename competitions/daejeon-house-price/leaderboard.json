@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-12T01:32:44+00:00",
+ "updated_at": "2026-11-12T02:13:35+00:00",
  "finalized": false,
- "next_id": 149,
+ "next_id": 150,
  "submissions": [
   {
    "id": 1,
@@ -3341,6 +3341,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 149,
+   "source": "issue",
+   "number": 177,
+   "url": "https://github.com/gisup89/competition/issues/177",
+   "github": "bubin-kim",
+   "submitter": "bubin",
+   "participant_key": "team:홍성민왕국",
+   "participant_type": "team",
+   "display": "홍성민왕국",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "created_at": "2026-11-12T02:13:14+00:00",
+   "filename": "submission_daejeon-house-price_202611120212.csv",
+   "sha256": "5969be674e86defc00c5cf022b90c75af6b0180c2b3a8bae7e101a0190f1f0ae",
+   "public_score": 2794.9570869373,
+   "private_enc": "gAAAAABq9SDPNJipbK3krpSJkdcWzhmJyXiwja0b4eaFNnoGibD-0lUPz_rQwEZzwI80O9pknmCengX1rr5HOSjcHzt-wNWsT9iKtZyKzb_0ymniWPHVa671dc9pUM8lGCGoEOk7jlF_",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -3408,6 +3432,23 @@
    "rank": 4
   },
   {
+   "key": "team:홍성민왕국",
+   "display": "홍성민왕국",
+   "type": "team",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "best_public": 2794.9570869373,
+   "best_submission_id": 149,
+   "best_at": "2026-11-12T02:13:14+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/177",
+   "n_submissions": 10,
+   "last_at": "2026-11-12T02:13:14+00:00",
+   "rank": 5
+  },
+  {
    "key": "team:노라조",
    "display": "노라조",
    "type": "team",
@@ -3423,7 +3464,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/160",
    "n_submissions": 3,
    "last_at": "2026-11-11T14:58:18+00:00",
-   "rank": 5
+   "rank": 6
   },
   {
    "key": "team:TEST_동섭",
@@ -3438,7 +3479,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/69",
    "n_submissions": 10,
    "last_at": "2026-11-11T10:53:44+00:00",
-   "rank": 6
+   "rank": 7
   },
   {
    "key": "team:71M",
@@ -3453,7 +3494,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/146",
    "n_submissions": 2,
    "last_at": "2026-11-11T10:07:04+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:Han_mo",
@@ -3468,23 +3509,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/124",
    "n_submissions": 5,
    "last_at": "2026-11-11T05:18:50+00:00",
-   "rank": 8
-  },
-  {
-   "key": "team:홍성민왕국",
-   "display": "홍성민왕국",
-   "type": "team",
-   "members": [
-    "bubin",
-    "김태연",
-    "홍성민"
-   ],
-   "best_public": 2808.6262539944,
-   "best_submission_id": 148,
-   "best_at": "2026-11-12T01:32:20+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/176",
-   "n_submissions": 9,
-   "last_at": "2026-11-12T01:32:20+00:00",
    "rank": 9
   },
   {
