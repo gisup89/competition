@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-12T14:36:26+00:00",
+ "updated_at": "2026-11-12T14:44:02+00:00",
  "finalized": false,
- "next_id": 189,
+ "next_id": 190,
  "submissions": [
   {
    "id": 1,
@@ -4247,6 +4247,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 189,
+   "source": "issue",
+   "number": 217,
+   "url": "https://github.com/gisup89/competition/issues/217",
+   "github": "jsudjdbsu-ship-it",
+   "submitter": "앤드뮐미스터",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-12T14:43:38+00:00",
+   "filename": "submission_daejeon-house-price_202611121443.csv",
+   "sha256": "e73257753887a38be96be34409ac1c7f1ac0a362c6e4d238f3d18492cf45875b",
+   "public_score": 2786.9757778316,
+   "private_enc": "gAAAAABq9dCycuMDexYOWoCccZ6AptPy-B4TC_YlPfpNjlQ9XPztab_jldt0qxzU2-j1FFTEm64RmxN_nPVOcb49g0OHGQCRnRxaleWAsu9-WsSiOWPlHVQdWrLUw3OQUUezVHgkpf5q",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4359,6 +4384,24 @@
    "rank": 7
   },
   {
+   "key": "team:노라조",
+   "display": "노라조",
+   "type": "team",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "best_public": 2786.9757778316,
+   "best_submission_id": 189,
+   "best_at": "2026-11-12T14:43:38+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/217",
+   "n_submissions": 5,
+   "last_at": "2026-11-12T14:43:38+00:00",
+   "rank": 8
+  },
+  {
    "key": "team:홍성민왕국",
    "display": "홍성민왕국",
    "type": "team",
@@ -4373,24 +4416,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/177",
    "n_submissions": 11,
    "last_at": "2026-11-12T08:51:20+00:00",
-   "rank": 8
-  },
-  {
-   "key": "team:노라조",
-   "display": "노라조",
-   "type": "team",
-   "members": [
-    "KT",
-    "숱많은 스님",
-    "배태인",
-    "앤드뮐미스터"
-   ],
-   "best_public": 2797.186179724,
-   "best_submission_id": 132,
-   "best_at": "2026-11-11T14:58:18+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/160",
-   "n_submissions": 4,
-   "last_at": "2026-11-12T12:09:26+00:00",
    "rank": 9
   },
   {
