@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-12T16:57:25+00:00",
+ "updated_at": "2026-11-12T17:06:21+00:00",
  "finalized": false,
- "next_id": 203,
+ "next_id": 204,
  "submissions": [
   {
    "id": 1,
@@ -4569,6 +4569,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 203,
+   "source": "issue",
+   "number": 231,
+   "url": "https://github.com/gisup89/competition/issues/231",
+   "github": "hayun-0",
+   "submitter": "TEST_하윤",
+   "participant_key": "team:TEST_하윤",
+   "participant_type": "team",
+   "display": "TEST_하윤",
+   "members": [
+    "TEST_하윤"
+   ],
+   "created_at": "2026-11-12T17:06:01+00:00",
+   "filename": "submission_v17.csv",
+   "sha256": "ac79d23a1c9745108c7419e9aa913ac72b72d036d4e5e58f5233cf1d24a2a4eb",
+   "public_score": 2809.4125302915,
+   "private_enc": "gAAAAABq9fINn8w1O6BB48VqjZ3tYWunDiaA6n6Ulf7tT-5ravXBTryYDA9IUs_1AzeAVcoddKAW2yhpplvPtOQ72wGuIeIdPAMERZcsPtaDk2JVrvKSDJWpiPEdbHkfWIJi7fwb35-0",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4613,8 +4635,8 @@
    "best_submission_id": 36,
    "best_at": "2026-11-10T12:34:14+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/59",
-   "n_submissions": 15,
-   "last_at": "2026-11-12T02:21:00+00:00",
+   "n_submissions": 16,
+   "last_at": "2026-11-12T17:06:01+00:00",
    "rank": 3
   },
   {
