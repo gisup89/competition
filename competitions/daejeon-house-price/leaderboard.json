@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-12T06:21:12+00:00",
+ "updated_at": "2026-11-12T06:24:49+00:00",
  "finalized": false,
- "next_id": 175,
+ "next_id": 176,
  "submissions": [
   {
    "id": 1,
@@ -3915,6 +3915,28 @@
    "note": "HGB 테스트",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 175,
+   "source": "issue",
+   "number": 203,
+   "url": "https://github.com/gisup89/competition/issues/203",
+   "github": "seoygmn",
+   "submitter": "symoon",
+   "participant_key": "team:symoon",
+   "participant_type": "team",
+   "display": "symoon",
+   "members": [
+    "symoon"
+   ],
+   "created_at": "2026-11-12T06:24:28+00:00",
+   "filename": "submission_daejeon-house-price_202611120624.csv",
+   "sha256": "ffc049677ec40fe1b49373bdbc10f47900dd6d63e7e431b944018814faa9a267",
+   "public_score": 2823.5543533766,
+   "private_enc": "gAAAAABq9Vux4u21uF0PbMZrpWV-5YhkSphX6ZixdM9ihX1MGF-B2n8WPaukNY0sSkbIp2as97tAdYZNpjmIVsxnIFETBh9QSUOfoPStw2pbn6ty0jcumFXHZbMUjYaF7yEfbSLxEtQJ",
+   "note": "이번에는 진짜 HGB 테스트",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4169,6 +4191,21 @@
    "rank": 16
   },
   {
+   "key": "team:symoon",
+   "display": "symoon",
+   "type": "team",
+   "members": [
+    "symoon"
+   ],
+   "best_public": 2823.5543533766,
+   "best_submission_id": 175,
+   "best_at": "2026-11-12T06:24:28+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/203",
+   "n_submissions": 3,
+   "last_at": "2026-11-12T06:24:28+00:00",
+   "rank": 17
+  },
+  {
    "key": "team:마루킁킁",
    "display": "마루킁킁",
    "type": "team",
@@ -4183,7 +4220,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/173",
    "n_submissions": 5,
    "last_at": "2026-11-12T00:44:32+00:00",
-   "rank": 17
+   "rank": 18
   },
   {
    "key": "team:TEST_지영",
@@ -4198,7 +4235,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/98",
    "n_submissions": 15,
    "last_at": "2026-11-12T03:51:17+00:00",
-   "rank": 18
+   "rank": 19
   },
   {
    "key": "team:snowman",
@@ -4213,21 +4250,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/143",
    "n_submissions": 8,
    "last_at": "2026-11-12T06:18:47+00:00",
-   "rank": 19
-  },
-  {
-   "key": "team:symoon",
-   "display": "symoon",
-   "type": "team",
-   "members": [
-    "symoon"
-   ],
-   "best_public": 2980.2815339809,
-   "best_submission_id": 172,
-   "best_at": "2026-11-12T06:03:48+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/200",
-   "n_submissions": 2,
-   "last_at": "2026-11-12T06:20:54+00:00",
    "rank": 20
   },
   {
