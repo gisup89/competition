@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T04:56:58+00:00",
+ "updated_at": "2026-11-13T05:20:37+00:00",
  "finalized": false,
- "next_id": 218,
+ "next_id": 219,
  "submissions": [
   {
    "id": 1,
@@ -4914,6 +4914,28 @@
    "note": "2차 다항 특성 및 비선형 파생변수(연식·면적·역세권 변환 및 상호작용)를 적용하고, Poly-Ridge·SVR·MLP 3대 모델을 5-Fold OOF 가중 평균으로 앙상블한 회귀 모델입니다.",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 218,
+   "source": "issue",
+   "number": 248,
+   "url": "https://github.com/gisup89/competition/issues/248",
+   "github": "ush030801-coder",
+   "submitter": "snowman",
+   "participant_key": "team:snowman",
+   "participant_type": "team",
+   "display": "snowman",
+   "members": [
+    "snowman"
+   ],
+   "created_at": "2026-11-13T05:20:18+00:00",
+   "filename": "submission_daejeon-house-price_202611130520.csv",
+   "sha256": "0f9548a98ba43e5cf2499b534c1f04c89b5a3a1e5c4a0d1920039ed58040f6db",
+   "public_score": 2823.2700491245,
+   "private_enc": "gAAAAABq9p4luQMc9ooh4ez2gv3netAuMmDOsiN0ET-UoEDkflxzyD1h0YYhbk-OnZa8wBZ_MLkn1yuCEft6hI8hEIRMKCWR-T_qBhBFrQ25Z40tiMLQ4sOxUl7ZJvwXNnefNMPiZCu2",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5198,6 +5220,21 @@
    "rank": 18
   },
   {
+   "key": "team:snowman",
+   "display": "snowman",
+   "type": "team",
+   "members": [
+    "snowman"
+   ],
+   "best_public": 2823.2700491245,
+   "best_submission_id": 218,
+   "best_at": "2026-11-13T05:20:18+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/248",
+   "n_submissions": 10,
+   "last_at": "2026-11-13T05:20:18+00:00",
+   "rank": 19
+  },
+  {
    "key": "team:symoon",
    "display": "symoon",
    "type": "team",
@@ -5210,7 +5247,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/203",
    "n_submissions": 5,
    "last_at": "2026-11-12T06:47:02+00:00",
-   "rank": 19
+   "rank": 20
   },
   {
    "key": "team:마루킁킁",
@@ -5227,21 +5264,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/173",
    "n_submissions": 7,
    "last_at": "2026-11-12T14:26:21+00:00",
-   "rank": 20
-  },
-  {
-   "key": "team:snowman",
-   "display": "snowman",
-   "type": "team",
-   "members": [
-    "snowman"
-   ],
-   "best_public": 2829.7633658181,
-   "best_submission_id": 215,
-   "best_at": "2026-11-13T04:44:55+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/245",
-   "n_submissions": 9,
-   "last_at": "2026-11-13T04:44:55+00:00",
    "rank": 21
   },
   {
