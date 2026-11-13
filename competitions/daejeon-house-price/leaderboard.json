@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T03:16:11+00:00",
+ "updated_at": "2026-11-13T04:38:21+00:00",
  "finalized": false,
- "next_id": 214,
+ "next_id": 215,
  "submissions": [
   {
    "id": 1,
@@ -4826,6 +4826,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 214,
+   "source": "issue",
+   "number": 244,
+   "url": "https://github.com/gisup89/competition/issues/244",
+   "github": "dhflxjf12-maker",
+   "submitter": "Yulia",
+   "participant_key": "team:Yulia",
+   "participant_type": "team",
+   "display": "Yulia",
+   "members": [
+    "Yulia"
+   ],
+   "created_at": "2026-11-13T04:38:02+00:00",
+   "filename": "submission_daejeon-house-price_202611130436.csv",
+   "sha256": "ed9eeedcfdf0b35da767a941ab4ecf24fd82d8f4db83ddaeb8bb29174ad75a4f",
+   "public_score": 2941.9915972671,
+   "private_enc": "gAAAAABq9pQ9JETj24Ziq8AFdcKB6H4SxbBD3DRkmW5GACW_X2I2-jRaIUfmq7sP-ORdTHOy5Tc6gR2Whq_ItPmWr4eIm1uL1oQ9t-5xbHsaQsKJ4MaxKNBdHIW1Bqn3QLHiYi-MlRbW",
+   "note": "사용 모델: Ridge Regression (릿지 회귀) + TransformedTargetRegressor  주요 특징 및 전처리:  타깃 로그 변환: price 컬럼에 np.log1p 적용 후 예측 시 역변환  파생 변수 생성:  building_age: 2026년 기준 건물 연식 (2026 - built_year)  area_per_room: 방당 면",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5142,6 +5164,21 @@
    "rank": 20
   },
   {
+   "key": "team:Yulia",
+   "display": "Yulia",
+   "type": "team",
+   "members": [
+    "Yulia"
+   ],
+   "best_public": 2941.9915972671,
+   "best_submission_id": 214,
+   "best_at": "2026-11-13T04:38:02+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/244",
+   "n_submissions": 1,
+   "last_at": "2026-11-13T04:38:02+00:00",
+   "rank": 21
+  },
+  {
    "key": "team:TEST_JS",
    "display": "TEST_JS",
    "type": "team",
@@ -5154,7 +5191,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 21
+   "rank": 22
   }
  ]
 }
