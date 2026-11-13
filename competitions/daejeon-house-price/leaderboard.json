@@ -3,7 +3,7 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T14:41:39+00:00",
+ "updated_at": "2026-11-13T14:41:57+00:00",
  "finalized": false,
  "next_id": 249,
  "submissions": [
@@ -5616,7 +5616,7 @@
    "filename": "submission_daejeon-house-price_202611131440.csv",
    "sha256": "75f696923d128631b0899831853e43009014d053379e2440e388b671783e2491",
    "public_score": 2784.6624806401,
-   "private_enc": "gAAAAABq9yGjeSOsC9GLQk2LgCYufrfQgQce4hcHwg1EICfzq3d09kC4EHStbwWcwm8HZIUEQkd9TG5zCCqfwUX99sD8gAiYaBKmDXdeu6l5Wdhz6wKoxYOwewrYISiZO4LzLMDneJpn",
+   "private_enc": "gAAAAABq9yG1D-KrSBh7k1sh2TK7wN7Wol5tw6ZtYBHwkiMGDz06kI3NiycLqdUZ8Pd-U6s0bBxkCmp5MbGbtUteXer2MkYMuqxz0wa8thU6PWg2KEFWiYaW6Yp7P8XZ9UrnTUDGxor3",
    "note": "값 종류가 적은 숫자형을 범주로 보고 타깃 인코딩",
    "status": "scored",
    "duplicate_of": null
