@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T05:47:32+00:00",
+ "updated_at": "2026-11-13T05:54:09+00:00",
  "finalized": false,
- "next_id": 232,
+ "next_id": 233,
  "submissions": [
   {
    "id": 1,
@@ -5222,6 +5222,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 232,
+   "source": "issue",
+   "number": 263,
+   "url": "https://github.com/gisup89/competition/issues/263",
+   "github": "dhflxjf12-maker",
+   "submitter": "Yulia",
+   "participant_key": "team:Yulia",
+   "participant_type": "team",
+   "display": "Yulia",
+   "members": [
+    "Yulia"
+   ],
+   "created_at": "2026-11-13T05:53:43+00:00",
+   "filename": "submission_daejeon-house-price_202611130553.csv",
+   "sha256": "9b6558d23ba3acedce0183c002d4be97b627c9284ebd70800aa2ff083f4aa4c3",
+   "public_score": 2815.9667249816,
+   "private_enc": "gAAAAABq9qYBgmGUgP3JgdWn7kxo8q63FQfhvcotAynM-CgP3RqYbFiYPtV1Hiv_BEghO1TivzV5I8H5Zdm9hRkIHqUXYAhOFboukPSdUU8UCKKoVqn3okhuDL3W7qeaJdlIC5xGVarg",
+   "note": "로그 가격 BIC 전진선택 OLS(연식²·층³·층⁴·역거리·브랜드 등)와 스플라인 포아송 로그링크 모델을 50:50 블렌딩하고, 로그정규 평균 보정(exp(μ+σ²/2))을 적용",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5409,8 +5431,8 @@
    "best_submission_id": 226,
    "best_at": "2026-11-13T05:29:16+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/256",
-   "n_submissions": 4,
-   "last_at": "2026-11-13T05:43:15+00:00",
+   "n_submissions": 5,
+   "last_at": "2026-11-13T05:53:43+00:00",
    "rank": 12
   },
   {
