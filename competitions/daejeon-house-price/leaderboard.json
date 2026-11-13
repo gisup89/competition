@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T13:17:00+00:00",
+ "updated_at": "2026-11-13T13:29:33+00:00",
  "finalized": false,
- "next_id": 245,
+ "next_id": 246,
  "submissions": [
   {
    "id": 1,
@@ -5521,6 +5521,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 245,
+   "source": "issue",
+   "number": 276,
+   "url": "https://github.com/gisup89/competition/issues/276",
+   "github": "Xterbase",
+   "submitter": "숱많은 스님",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-13T13:29:00+00:00",
+   "filename": "submission_daejeon-house-price_202611131328.csv",
+   "sha256": "1910f85aaa59304b9ebdf939ac06238a5952e940612da86e667d228eeced2ac2",
+   "public_score": 2782.6413108677,
+   "private_enc": "gAAAAABq9xC9MWQJ0Ew761RTJnwfCUGUuNEqi_bAD5a5nx4M6uszzIIdFdlHZVMCe3VbTBU0tYi-eLKC-P60omiDzTuP-yUt5to_gSK2mgi7eWkjaLrlYjKMV0QLPEX3lt9sh8GlCtlk",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5570,6 +5595,24 @@
    "rank": 3
   },
   {
+   "key": "team:노라조",
+   "display": "노라조",
+   "type": "team",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "best_public": 2782.6413108677,
+   "best_submission_id": 245,
+   "best_at": "2026-11-13T13:29:00+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/276",
+   "n_submissions": 12,
+   "last_at": "2026-11-13T13:29:00+00:00",
+   "rank": 4
+  },
+  {
    "key": "team:트로이경마",
    "display": "트로이경마",
    "type": "team",
@@ -5585,7 +5628,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/77",
    "n_submissions": 16,
    "last_at": "2026-11-13T13:16:38+00:00",
-   "rank": 4
+   "rank": 5
   },
   {
    "key": "team:TEST_재형",
@@ -5600,24 +5643,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/153",
    "n_submissions": 4,
    "last_at": "2026-11-11T14:09:41+00:00",
-   "rank": 5
-  },
-  {
-   "key": "team:노라조",
-   "display": "노라조",
-   "type": "team",
-   "members": [
-    "KT",
-    "숱많은 스님",
-    "배태인",
-    "앤드뮐미스터"
-   ],
-   "best_public": 2784.5125554385,
-   "best_submission_id": 191,
-   "best_at": "2026-11-12T14:48:36+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/219",
-   "n_submissions": 11,
-   "last_at": "2026-11-13T03:15:49+00:00",
    "rank": 6
   },
   {
