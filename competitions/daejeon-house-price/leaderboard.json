@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T05:54:09+00:00",
+ "updated_at": "2026-11-13T06:02:07+00:00",
  "finalized": false,
- "next_id": 233,
+ "next_id": 234,
  "submissions": [
   {
    "id": 1,
@@ -5244,6 +5244,28 @@
    "note": "로그 가격 BIC 전진선택 OLS(연식²·층³·층⁴·역거리·브랜드 등)와 스플라인 포아송 로그링크 모델을 50:50 블렌딩하고, 로그정규 평균 보정(exp(μ+σ²/2))을 적용",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 233,
+   "source": "issue",
+   "number": 264,
+   "url": "https://github.com/gisup89/competition/issues/264",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-13T06:01:36+00:00",
+   "filename": "r20_r12half_r19half_CV2750_1113.csv",
+   "sha256": "8b446eb045956858c3cce96e0912556715f0ba58385fa1e0d5f9f9753fbe2a05",
+   "public_score": 2799.1135916859,
+   "private_enc": "gAAAAABq9qff61kQczboaXJWkHvJg9EZ2atj0T-B8uZU1vdhKhMQlaClqs-TQSpiwq_7ndNZUtLIDgEAvH7RcW1uxQIn50tNXbN5X4vYp95gq1TJn0NtNIF56YMyfVkjdxc54FDTRV10",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5369,8 +5391,8 @@
    "best_submission_id": 168,
    "best_at": "2026-11-12T05:54:13+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/196",
-   "n_submissions": 19,
-   "last_at": "2026-11-13T05:44:31+00:00",
+   "n_submissions": 20,
+   "last_at": "2026-11-13T06:01:36+00:00",
    "rank": 8
   },
   {
