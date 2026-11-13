@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T01:52:25+00:00",
+ "updated_at": "2026-11-13T01:52:55+00:00",
  "finalized": false,
- "next_id": 211,
+ "next_id": 212,
  "submissions": [
   {
    "id": 1,
@@ -4754,6 +4754,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 211,
+   "source": "issue",
+   "number": 239,
+   "url": "https://github.com/gisup89/competition/issues/239",
+   "github": "seonghyeon-ox",
+   "submitter": "캥거루근육단단",
+   "participant_key": "team:캥거루근육단단",
+   "participant_type": "team",
+   "display": "캥거루근육단단",
+   "members": [
+    "캥거루근육단단"
+   ],
+   "created_at": "2026-11-13T01:52:32+00:00",
+   "filename": "submission_daejeon-house-price_202611130152.csv",
+   "sha256": "32ebaf6c279d161cdc80e3ce3e281bc7a2c458e6e38e63227fbc8f38c95cfa54",
+   "public_score": 2809.9073088596,
+   "private_enc": "gAAAAABq9m13SaafkvRtn1Bt2vFx4OhqnNUyITXkJdXsYHT6VAHnKAZ21DoJuwync9PvyKd3o9Df-A3GJIVbGebrlAmGmGQ1fSJv0xUVCBGOTVb-AUVzjqevIm2x5-DBgh_26EqknkqV",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4937,12 +4959,12 @@
    "members": [
     "캥거루근육단단"
    ],
-   "best_public": 2810.2725617038,
-   "best_submission_id": 131,
-   "best_at": "2026-11-11T14:45:37+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/159",
-   "n_submissions": 7,
-   "last_at": "2026-11-13T01:15:36+00:00",
+   "best_public": 2809.9073088596,
+   "best_submission_id": 211,
+   "best_at": "2026-11-13T01:52:32+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/239",
+   "n_submissions": 8,
+   "last_at": "2026-11-13T01:52:32+00:00",
    "rank": 12
   },
   {
