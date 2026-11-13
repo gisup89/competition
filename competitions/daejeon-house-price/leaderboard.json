@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-13T04:38:21+00:00",
+ "updated_at": "2026-11-13T04:45:15+00:00",
  "finalized": false,
- "next_id": 215,
+ "next_id": 216,
  "submissions": [
   {
    "id": 1,
@@ -4848,6 +4848,28 @@
    "note": "사용 모델: Ridge Regression (릿지 회귀) + TransformedTargetRegressor  주요 특징 및 전처리:  타깃 로그 변환: price 컬럼에 np.log1p 적용 후 예측 시 역변환  파생 변수 생성:  building_age: 2026년 기준 건물 연식 (2026 - built_year)  area_per_room: 방당 면",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 215,
+   "source": "issue",
+   "number": 245,
+   "url": "https://github.com/gisup89/competition/issues/245",
+   "github": "ush030801-coder",
+   "submitter": "snowman",
+   "participant_key": "team:snowman",
+   "participant_type": "team",
+   "display": "snowman",
+   "members": [
+    "snowman"
+   ],
+   "created_at": "2026-11-13T04:44:55+00:00",
+   "filename": "submission_daejeon-house-price_202611130444.csv",
+   "sha256": "49ed31c155ab0587811e0d6f779c0f04647a236b0f08ad628e77f35f9d8fa5c7",
+   "public_score": 2829.7633658181,
+   "private_enc": "gAAAAABq9pXbqMrx7d5sG4I1Soy155VGS0NX_vXwwZ2xAuu0rW8KYHvVRENPXI61AC1HO-ndtxQloAYYNw2rKkjgGgv0fsaGHror-iDv_NW9KkZ0RdUbYYGj6EdAJL-PlxVKUmCqBwQ_",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5155,12 +5177,12 @@
    "members": [
     "snowman"
    ],
-   "best_public": 2832.65737495,
-   "best_submission_id": 115,
-   "best_at": "2026-11-11T08:51:56+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/143",
-   "n_submissions": 8,
-   "last_at": "2026-11-12T06:18:47+00:00",
+   "best_public": 2829.7633658181,
+   "best_submission_id": 215,
+   "best_at": "2026-11-13T04:44:55+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/245",
+   "n_submissions": 9,
+   "last_at": "2026-11-13T04:44:55+00:00",
    "rank": 20
   },
   {
