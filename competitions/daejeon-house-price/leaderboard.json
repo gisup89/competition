@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-14T11:30:22+00:00",
+ "updated_at": "2026-11-14T11:45:26+00:00",
  "finalized": false,
- "next_id": 285,
+ "next_id": 286,
  "submissions": [
   {
    "id": 1,
@@ -6440,6 +6440,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 285,
+   "source": "issue",
+   "number": 316,
+   "url": "https://github.com/gisup89/competition/issues/316",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-14T11:45:09+00:00",
+   "filename": "r23_r12half_Fnoraw_half_CV2750_1114_2021.csv",
+   "sha256": "97444977f76b656985321345e769e39b9a28b3a755d0973973f69ebb8e649bd2",
+   "public_score": 2802.748696169,
+   "private_enc": "gAAAAABq-EnWPjBMzVa7PpL6UcjVx0HIhLU7ufpyU77vptj59J9MWjP0yU6Ge8m1oevcpyP2sw1AgGbIQ45ynsoNwsUFcvqLBiPHyJ3xtfbrId-Nmxy59l0d8yIH7k7R21d2eRssaakt",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6565,8 +6587,8 @@
    "best_submission_id": 168,
    "best_at": "2026-11-12T05:54:13+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/196",
-   "n_submissions": 23,
-   "last_at": "2026-11-14T11:17:42+00:00",
+   "n_submissions": 24,
+   "last_at": "2026-11-14T11:45:09+00:00",
    "rank": 8
   },
   {
