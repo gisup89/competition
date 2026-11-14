@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-14T08:08:34+00:00",
+ "updated_at": "2026-11-14T08:15:14+00:00",
  "finalized": false,
- "next_id": 273,
+ "next_id": 274,
  "submissions": [
   {
    "id": 1,
@@ -6171,9 +6171,46 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 273,
+   "source": "issue",
+   "number": 304,
+   "url": "https://github.com/gisup89/competition/issues/304",
+   "github": "seungjoo-03",
+   "submitter": "TEST_승주",
+   "participant_key": "team:TEST_승주",
+   "participant_type": "team",
+   "display": "TEST_승주",
+   "members": [
+    "TEST_승주"
+   ],
+   "created_at": "2026-11-14T08:14:54+00:00",
+   "filename": "submission_daejeon-house-price_202611140814.csv",
+   "sha256": "b3dccf028e80c7fa31c50154e51fa8f6f046cf2d2aade50a6cc942a7df115ee2",
+   "public_score": 2759.0576635722,
+   "private_enc": "gAAAAABq-BiSFVXQd4J02dZblK5NRH46MQXlDrd54GBsGCruCQTyM4T1jLUKUmf_iBOMBsRjuE9Slp4sGm3f6aDIAA1CrysY6tYuAw5jYHtzXxCCduPKi1TDu9oPzroZu-h-MtIxm5WC",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
+  {
+   "key": "team:TEST_승주",
+   "display": "TEST_승주",
+   "type": "team",
+   "members": [
+    "TEST_승주"
+   ],
+   "best_public": 2759.0576635722,
+   "best_submission_id": 273,
+   "best_at": "2026-11-14T08:14:54+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/304",
+   "n_submissions": 25,
+   "last_at": "2026-11-14T08:14:54+00:00",
+   "rank": 1
+  },
   {
    "key": "team:TEST_동준",
    "display": "TEST_동준",
@@ -6187,21 +6224,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/139",
    "n_submissions": 20,
    "last_at": "2026-11-14T05:03:47+00:00",
-   "rank": 1
-  },
-  {
-   "key": "team:TEST_승주",
-   "display": "TEST_승주",
-   "type": "team",
-   "members": [
-    "TEST_승주"
-   ],
-   "best_public": 2760.4576695621,
-   "best_submission_id": 270,
-   "best_at": "2026-11-14T07:14:21+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/301",
-   "n_submissions": 24,
-   "last_at": "2026-11-14T07:14:21+00:00",
    "rank": 2
   },
   {
