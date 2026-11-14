@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-14T12:59:51+00:00",
+ "updated_at": "2026-11-14T13:32:50+00:00",
  "finalized": false,
- "next_id": 297,
+ "next_id": 298,
  "submissions": [
   {
    "id": 1,
@@ -6708,6 +6708,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 297,
+   "source": "issue",
+   "number": 329,
+   "url": "https://github.com/gisup89/competition/issues/329",
+   "github": "JaeHong-Jang",
+   "submitter": "TEST_재홍",
+   "participant_key": "team:TEST_재홍",
+   "participant_type": "team",
+   "display": "TEST_재홍",
+   "members": [
+    "TEST_재홍"
+   ],
+   "created_at": "2026-11-14T13:32:24+00:00",
+   "filename": "submission_v45_n1200_no_rooms.csv",
+   "sha256": "a77eebb3734a5672ba8e24dd00447de37138ff22f967784f535c753476580bbf",
+   "public_score": 2781.2890536689,
+   "private_enc": "gAAAAABq-GMCG7LbG1XOBek8lHBfewom445npcb511vKJmNJQrprT8-VPPgAcnc0m0ROmUwnciECqxVSB2oklcLbmtKxSgIUBLRLhzenYN_13cNt5yK66d-FypZRkS7Wq5lrimoahJlX",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6767,8 +6789,8 @@
    "best_submission_id": 219,
    "best_at": "2026-11-13T05:24:48+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/249",
-   "n_submissions": 23,
-   "last_at": "2026-11-14T09:06:26+00:00",
+   "n_submissions": 24,
+   "last_at": "2026-11-14T13:32:24+00:00",
    "rank": 4
   },
   {
