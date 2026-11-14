@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-14T13:46:09+00:00",
+ "updated_at": "2026-11-14T14:09:25+00:00",
  "finalized": false,
- "next_id": 302,
+ "next_id": 303,
  "submissions": [
   {
    "id": 1,
@@ -6825,6 +6825,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 302,
+   "source": "issue",
+   "number": 334,
+   "url": "https://github.com/gisup89/competition/issues/334",
+   "github": "seo-yoon2",
+   "submitter": "루나",
+   "participant_key": "team:마루킁킁",
+   "participant_type": "team",
+   "display": "마루킁킁",
+   "members": [
+    "치치",
+    "마루",
+    "루나"
+   ],
+   "created_at": "2026-11-14T14:09:04+00:00",
+   "filename": "submission_daejeon-house-price_202611141408.csv",
+   "sha256": "46cb732359372e88df8859899edb849c4412704930770b51483834d63e523487",
+   "public_score": 2755.8965045422,
+   "private_enc": "gAAAAABq-GuV_Rls-vHYCfOtyu6womxD3di_dUnWIKiI_huKLJdjxWRqPiaIVGaF51cnnPnP0lTRA0d2L4MGvYq1oqLKtYKUezjcxqNQJR9mvTZFuUPhLPp5UaDLfcE59PuiLX1MDK2U",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6859,6 +6883,23 @@
    "rank": 2
   },
   {
+   "key": "team:마루킁킁",
+   "display": "마루킁킁",
+   "type": "team",
+   "members": [
+    "치치",
+    "마루",
+    "루나"
+   ],
+   "best_public": 2755.8965045422,
+   "best_submission_id": 302,
+   "best_at": "2026-11-14T14:09:04+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/334",
+   "n_submissions": 17,
+   "last_at": "2026-11-14T14:09:04+00:00",
+   "rank": 3
+  },
+  {
    "key": "team:TEST_승주",
    "display": "TEST_승주",
    "type": "team",
@@ -6871,7 +6912,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/304",
    "n_submissions": 25,
    "last_at": "2026-11-14T08:14:54+00:00",
-   "rank": 3
+   "rank": 4
   },
   {
    "key": "team:TEST_동준",
@@ -6886,7 +6927,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/139",
    "n_submissions": 20,
    "last_at": "2026-11-14T05:03:47+00:00",
-   "rank": 4
+   "rank": 5
   },
   {
    "key": "team:노라조",
@@ -6904,7 +6945,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/276",
    "n_submissions": 16,
    "last_at": "2026-11-14T08:08:12+00:00",
-   "rank": 5
+   "rank": 6
   },
   {
    "key": "team:트로이경마",
@@ -6922,7 +6963,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/77",
    "n_submissions": 21,
    "last_at": "2026-11-14T13:45:49+00:00",
-   "rank": 6
+   "rank": 7
   },
   {
    "key": "team:TEST_재형",
@@ -6937,7 +6978,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/153",
    "n_submissions": 4,
    "last_at": "2026-11-11T14:09:41+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:TEST_동섭",
@@ -6952,7 +6993,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/196",
    "n_submissions": 25,
    "last_at": "2026-11-14T11:46:43+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:홍성민왕국",
@@ -6969,7 +7010,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/288",
    "n_submissions": 21,
    "last_at": "2026-11-14T13:37:05+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:TEST_지영",
@@ -6984,23 +7025,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/326",
    "n_submissions": 25,
    "last_at": "2026-11-14T12:59:32+00:00",
-   "rank": 10
-  },
-  {
-   "key": "team:마루킁킁",
-   "display": "마루킁킁",
-   "type": "team",
-   "members": [
-    "치치",
-    "마루",
-    "루나"
-   ],
-   "best_public": 2791.7519000747,
-   "best_submission_id": 252,
-   "best_at": "2026-11-13T16:02:34+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/283",
-   "n_submissions": 16,
-   "last_at": "2026-11-14T13:38:22+00:00",
    "rank": 11
   },
   {
