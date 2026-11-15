@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-15T07:36:27+00:00",
+ "updated_at": "2026-11-15T07:37:09+00:00",
  "finalized": false,
- "next_id": 336,
+ "next_id": 337,
  "submissions": [
   {
    "id": 1,
@@ -7603,6 +7603,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 336,
+   "source": "issue",
+   "number": 368,
+   "url": "https://github.com/gisup89/competition/issues/368",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-15T07:36:53+00:00",
+   "filename": "r29_r14r26r27_plane_1115_0056.csv",
+   "sha256": "25d6f5667c32eff9815ab4199102e087607ce1d489ef4f3c7f849b6d25df78e6",
+   "public_score": 2743.4348296888,
+   "private_enc": "gAAAAABq-WElUCIjyGlYj8Sm_H6_5I4e9qXSmKVnZKGy9NvFojtXTNbp7g_eY0d5W6zQ1n05eD4UZZz2ReBzZHy8q0O60r4uafpaCPL4JN9QuhV-4RAwEmmS_k1YGiPijsNfTuKQGfwf",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7643,12 +7665,12 @@
    "members": [
     "TEST_동섭"
    ],
-   "best_public": 2744.3061639109,
-   "best_submission_id": 335,
-   "best_at": "2026-11-15T07:36:02+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/367",
-   "n_submissions": 28,
-   "last_at": "2026-11-15T07:36:02+00:00",
+   "best_public": 2743.4348296888,
+   "best_submission_id": 336,
+   "best_at": "2026-11-15T07:36:53+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/368",
+   "n_submissions": 29,
+   "last_at": "2026-11-15T07:36:53+00:00",
    "rank": 3
   },
   {
