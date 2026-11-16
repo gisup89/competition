@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-16T18:17:02+00:00",
+ "updated_at": "2026-11-16T19:20:01+00:00",
  "finalized": false,
- "next_id": 12,
+ "next_id": 13,
  "submissions": [
   {
    "id": 1,
@@ -248,6 +248,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 12,
+   "source": "issue",
+   "number": 504,
+   "url": "https://github.com/gisup89/competition/issues/504",
+   "github": "wldud0",
+   "submitter": "TEST_지영",
+   "participant_key": "team:TEST_지영",
+   "participant_type": "team",
+   "display": "TEST_지영",
+   "members": [
+    "TEST_지영"
+   ],
+   "created_at": "2026-11-16T19:19:38+00:00",
+   "filename": "submission_hnu-digits_202611161919.csv",
+   "sha256": "4d8d5aa031f979e60fc2d36bc31ec7f247ccc549481ef846a53fe7689d6015d3",
+   "public_score": 0.9922547332,
+   "private_enc": "gAAAAABq-1dhJIegBcir-OVz4LzQZQ8zvNK_0nlo-2mIkVyXhfUTM9N0B9rXyRFYTUy78a3011d-2Ko7hxTtwJIlM3Hod3GvjfXU7RxD22__zPolaefoXPHN7pu3bxZgGY_tOPsuZwIr",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -267,6 +289,21 @@
    "rank": 1
   },
   {
+   "key": "team:TEST_지영",
+   "display": "TEST_지영",
+   "type": "team",
+   "members": [
+    "TEST_지영"
+   ],
+   "best_public": 0.9922547332,
+   "best_submission_id": 12,
+   "best_at": "2026-11-16T19:19:38+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/504",
+   "n_submissions": 1,
+   "last_at": "2026-11-16T19:19:38+00:00",
+   "rank": 2
+  },
+  {
    "key": "team:TEST_동섭",
    "display": "TEST_동섭",
    "type": "team",
@@ -279,7 +316,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/495",
    "n_submissions": 4,
    "last_at": "2026-11-16T17:55:52+00:00",
-   "rank": 2
+   "rank": 3
   },
   {
    "key": "team:TEST_하윤",
@@ -294,7 +331,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/497",
    "n_submissions": 3,
    "last_at": "2026-11-16T17:58:14+00:00",
-   "rank": 3
+   "rank": 4
   }
  ]
 }
