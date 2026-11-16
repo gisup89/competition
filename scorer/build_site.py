@@ -80,6 +80,8 @@ def build(out: Path) -> dict:
                 "updated_at": lb.get("updated_at"),
                 "data_files": data_files,
                 "n_test": n_test,
+                "final_note": str(cfg.get("final_note") or ""),
+                "final_short": str(cfg.get("final_short") or ""),
             }
         )
 

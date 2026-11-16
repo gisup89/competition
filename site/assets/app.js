@@ -208,7 +208,7 @@ const App = (() => {
       const updated = board.updated_at ? `최근 채점 ${fmtDate(board.updated_at, c.timezone)} · ` : "";
       if (mode === "public") {
         const limit = c.daily_limit || 0;
-        hint.textContent = `Public 점수: test.csv 일부로 계산한 팀별 최고 점수 (최종 순위는 마감 후 나머지 데이터로 결정) · ${updated}1분마다 자동 갱신`;
+        hint.textContent = `Public 점수: test.csv 일부로 계산한 팀별 최고 점수 (${c.final_short || "최종 순위는 마감 후 나머지 데이터로 결정"}) · ${updated}1분마다 자동 갱신`;
         // 참가자별 오늘(대회 시간대 기준) 채점된 제출 수 → 남은 횟수
         const dayOf = (iso) => new Date(iso).toLocaleDateString("en-CA", { timeZone: c.timezone || "Asia/Seoul" });
         const today = dayOf(new Date().toISOString());
@@ -230,7 +230,9 @@ const App = (() => {
             <td>${fmtDate(r.last_at || r.best_at, c.timezone)}</td></tr>`; }).join("")}
           </tbody></table>` : '<div class="empty">아직 제출이 없습니다.</div>';
       } else {
-        hint.textContent = `마감 후 Private 데이터로 계산한 최종 순위 (Public 상위 ${priv.max_final_submissions}개 제출물 중 최고) · 확정 ${fmtDate(priv.finalized_at, c.timezone)}`;
+        hint.textContent = c.final_short
+          ? `${c.final_short} · 확정 ${fmtDate(priv.finalized_at, c.timezone)}`
+          : `마감 후 Private 데이터로 계산한 최종 순위 (Public 상위 ${priv.max_final_submissions}개 제출물 중 최고) · 확정 ${fmtDate(priv.finalized_at, c.timezone)}`;
         const rows = priv.leaderboard.filter((r) => !q || r.display.toLowerCase().includes(q) || (r.members || []).join(" ").toLowerCase().includes(q));
         qs("#lb-table").innerHTML = rows.length ? `<table class="lb"><thead><tr>
             <th class="rank">#</th><th>변동</th><th>팀명</th><th class="num">Private</th><th class="num">Public</th><th class="num">전체 제출</th></tr></thead><tbody>
@@ -265,8 +267,11 @@ const App = (() => {
       <h2>규칙</h2>
       <ul>
         <li>평가지표: <b>${esc(c.metric_name)}</b> — ${esc(c.metric_description || "")} (${c.higher_is_better ? "높을수록" : "낮을수록"} 좋음)</li>
-        <li>Public 리더보드는 테스트 데이터의 일부로, 최종(Private) 순위는 마감 후 나머지 데이터로 계산합니다.</li>
-        <li>최종 평가에는 참가자(팀)별 Public 점수 상위 <b>${c.max_final_submissions}</b>개 제출물 가운데 Private 점수가 가장 좋은 것을 사용합니다.</li>
+        ${c.final_note
+          ? `<li>Public 리더보드는 테스트 데이터의 일부로 계산한 점수입니다.</li>
+        <li><b>최종 순위</b>는 ${esc(c.final_note)}</li>`
+          : `<li>Public 리더보드는 테스트 데이터의 일부로, 최종(Private) 순위는 마감 후 나머지 데이터로 계산합니다.</li>
+        <li>최종 평가에는 참가자(팀)별 Public 점수 상위 <b>${c.max_final_submissions}</b>개 제출물 가운데 Private 점수가 가장 좋은 것을 사용합니다.</li>`}
         <li>하루 제출 한도: <b>${c.daily_limit > 0 ? c.daily_limit + "회" : "제한 없음"}</b> (${esc(c.timezone || "Asia/Seoul")} 기준 자정 초기화${c.teams ? ", 팀은 팀 전체가 공유" : ""}). 채점에 실패한 제출은 횟수에 포함되지 않습니다.</li>
         <li>제출 기간: ${fmtDate(c.start, c.timezone)} ~ <b>${fmtDate(c.deadline, c.timezone)}</b></li>
         ${c.teams ? "<li>팀은 참가자 명단에 등록된 팀 기준으로 집계됩니다. 팀 변경은 이메일로 문의하세요.</li>" : ""}

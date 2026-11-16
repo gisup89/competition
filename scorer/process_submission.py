@@ -237,10 +237,14 @@ def success_comment(cfg, part, rec, board, remaining, site, duplicate_of, same_a
     elif same_as_own:
         lines.append(f"ℹ️ 본인의 이전 제출(#{same_as_own})과 동일한 파일입니다.")
         lines.append("")
-    lines.append(
-        "최종 순위는 마감 후 Private 데이터로 다시 계산됩니다 "
-        f"(Public 점수 상위 {cfg['max_final_submissions']}개 제출물 가운데 Private 최고 점수)."
-    )
+    if cfg.get("final_note"):
+        # 대회 설정에 최종 평가 안내(final_note)가 있으면 그 문구를 씁니다 (예: 노트북 재실행으로 최종 순위를 정하는 대회)
+        lines.append(f"최종 순위는 {cfg['final_note']}")
+    else:
+        lines.append(
+            "최종 순위는 마감 후 Private 데이터로 다시 계산됩니다 "
+            f"(Public 점수 상위 {cfg['max_final_submissions']}개 제출물 가운데 Private 최고 점수)."
+        )
     if site:
         lines.append("")
         lines.append(f"📊 리더보드: {site}competition.html?c={cfg['slug']}#leaderboard")
