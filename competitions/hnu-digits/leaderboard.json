@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-16T15:10:04+00:00",
+ "updated_at": "2026-11-16T17:13:32+00:00",
  "finalized": false,
- "next_id": 3,
+ "next_id": 4,
  "submissions": [
   {
    "id": 1,
@@ -50,9 +50,46 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 3,
+   "source": "issue",
+   "number": 489,
+   "url": "https://github.com/gisup89/competition/issues/489",
+   "github": "hayun-0",
+   "submitter": "TEST_하윤",
+   "participant_key": "team:TEST_하윤",
+   "participant_type": "team",
+   "display": "TEST_하윤",
+   "members": [
+    "TEST_하윤"
+   ],
+   "created_at": "2026-11-16T17:13:07+00:00",
+   "filename": "submission_hnu-digits_v2.csv",
+   "sha256": "146aa38681e454f389224a28935eda9ee11ec0c61e4a380bf932512ae0858330",
+   "public_score": 0.9655765921,
+   "private_enc": "gAAAAABq-zm8Je-zTxGDkCyDpkhasT-OFs4qsoPiqqKUpbo3g_I_nLNS5aAlWnIAZl6xKQSuNSywRtZHzwMxBZBb1LFD6Fyff-EyQIZYprIVi_iG-sSopYRNHUE12zIJf1RIJWmM21HP",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
+  {
+   "key": "team:TEST_하윤",
+   "display": "TEST_하윤",
+   "type": "team",
+   "members": [
+    "TEST_하윤"
+   ],
+   "best_public": 0.9655765921,
+   "best_submission_id": 3,
+   "best_at": "2026-11-16T17:13:07+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/489",
+   "n_submissions": 2,
+   "last_at": "2026-11-16T17:13:07+00:00",
+   "rank": 1
+  },
   {
    "key": "team:TEST_재홍",
    "display": "TEST_재홍",
@@ -66,21 +103,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/475",
    "n_submissions": 1,
    "last_at": "2026-11-16T15:08:49+00:00",
-   "rank": 1
-  },
-  {
-   "key": "team:TEST_하윤",
-   "display": "TEST_하윤",
-   "type": "team",
-   "members": [
-    "TEST_하윤"
-   ],
-   "best_public": 0.9552495697,
-   "best_submission_id": 2,
-   "best_at": "2026-11-16T15:09:38+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/476",
-   "n_submissions": 1,
-   "last_at": "2026-11-16T15:09:38+00:00",
    "rank": 2
   }
  ]
