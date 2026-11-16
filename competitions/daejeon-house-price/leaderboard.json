@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-16T14:23:34+00:00",
+ "updated_at": "2026-11-16T14:24:03+00:00",
  "finalized": false,
- "next_id": 426,
+ "next_id": 427,
  "submissions": [
   {
    "id": 1,
@@ -9654,6 +9654,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 426,
+   "source": "issue",
+   "number": 458,
+   "url": "https://github.com/gisup89/competition/issues/458",
+   "github": "JaeHong-Jang",
+   "submitter": "TEST_재홍",
+   "participant_key": "team:TEST_재홍",
+   "participant_type": "team",
+   "display": "TEST_재홍",
+   "members": [
+    "TEST_재홍"
+   ],
+   "created_at": "2026-11-16T14:23:39+00:00",
+   "filename": "submission_v53_mono_n2400.csv",
+   "sha256": "458946cc24b5f6b8cf4c29dc643adeb2928639ca11a7f05452b116b9d62ef5e5",
+   "public_score": 2781.1282662806,
+   "private_enc": "gAAAAABq-xID6uO8kMAP1X1JvSkVkDKV4oIdDw1P-HtxinvIEZYVEiNDEBRMvBaCBR5UTpvqJfC4DRFW6g_eymXxoWxSuJdBj7S8E7IY0VGhuZzDQ71vZ3nfYsxAEMD_2PSV8r7T_dNN",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -9683,8 +9705,8 @@
    "best_submission_id": 360,
    "best_at": "2026-11-15T13:29:39+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/392",
-   "n_submissions": 32,
-   "last_at": "2026-11-16T14:23:07+00:00",
+   "n_submissions": 33,
+   "last_at": "2026-11-16T14:23:39+00:00",
    "rank": 2
   },
   {
