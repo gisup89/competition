@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-16T17:19:02+00:00",
+ "updated_at": "2026-11-16T17:41:56+00:00",
  "finalized": false,
- "next_id": 5,
+ "next_id": 6,
  "submissions": [
   {
    "id": 1,
@@ -94,6 +94,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 5,
+   "source": "issue",
+   "number": 491,
+   "url": "https://github.com/gisup89/competition/issues/491",
+   "github": "JaeHong-Jang",
+   "submitter": "TEST_재홍",
+   "participant_key": "team:TEST_재홍",
+   "participant_type": "team",
+   "display": "TEST_재홍",
+   "members": [
+    "TEST_재홍"
+   ],
+   "created_at": "2026-11-16T17:41:22+00:00",
+   "filename": "submission_hnu-digits_202611161740.csv",
+   "sha256": "eea60f571c1820903f9ee72c6fb67b993ed7b7d7b3899167452583cf109a4cff",
+   "public_score": 0.9879518072,
+   "private_enc": "gAAAAABq-0BkBuA0lBttUnVjoausrTuhqUXuuwPtJAfs7VEk7pzrzL9ZzGS0WvvEqvcINfzK-ZHaT0Q0zhkhNRuXzKJ5ese9TpnU-Ai7JQ3dnWq5EpM51VeFeOvOH7hgLZmUhGHxarhj",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -108,8 +130,8 @@
    "best_submission_id": 4,
    "best_at": "2026-11-16T17:18:44+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/490",
-   "n_submissions": 2,
-   "last_at": "2026-11-16T17:18:44+00:00",
+   "n_submissions": 3,
+   "last_at": "2026-11-16T17:41:22+00:00",
    "rank": 1
   },
   {
