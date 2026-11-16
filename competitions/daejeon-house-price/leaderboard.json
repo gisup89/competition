@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-16T03:12:01+00:00",
+ "updated_at": "2026-11-16T04:13:13+00:00",
  "finalized": false,
- "next_id": 381,
+ "next_id": 382,
  "submissions": [
   {
    "id": 1,
@@ -8637,6 +8637,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 381,
+   "source": "issue",
+   "number": 413,
+   "url": "https://github.com/gisup89/competition/issues/413",
+   "github": "HANJUNGWO",
+   "submitter": "TEST_정우",
+   "participant_key": "team:Han_mo",
+   "participant_type": "team",
+   "display": "Han_mo",
+   "members": [
+    "TEST_정우"
+   ],
+   "created_at": "2026-11-16T04:12:46+00:00",
+   "filename": "submission_daejeon-house-price_202611160412.csv",
+   "sha256": "56f9456f4a306748823e6ef5deabe57b0ef54ed6cd216f72d6e5f936c59255fb",
+   "public_score": 2779.196125486,
+   "private_enc": "gAAAAABq-oLZoTsK1JVMV7RwlQaUKWhJAeeXBgvpTJKLsui8ZjddcXtpjYLYDhwtzy-WS79ZrhUwICKetb6AHwvWTnKTD-iux1qHZ02b3ugq36e7PE7gTao53w7kZez96tBm7tfncD3A",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -8751,6 +8773,21 @@
    "rank": 7
   },
   {
+   "key": "team:Han_mo",
+   "display": "Han_mo",
+   "type": "team",
+   "members": [
+    "TEST_정우"
+   ],
+   "best_public": 2779.196125486,
+   "best_submission_id": 381,
+   "best_at": "2026-11-16T04:12:46+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/413",
+   "n_submissions": 16,
+   "last_at": "2026-11-16T04:12:46+00:00",
+   "rank": 8
+  },
+  {
    "key": "team:트로이경마",
    "display": "트로이경마",
    "type": "team",
@@ -8766,7 +8803,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/336",
    "n_submissions": 29,
    "last_at": "2026-11-15T09:40:05+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:홍성민왕국",
@@ -8783,7 +8820,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/407",
    "n_submissions": 27,
    "last_at": "2026-11-16T00:59:34+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:TEST_재형",
@@ -8798,7 +8835,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/153",
    "n_submissions": 8,
    "last_at": "2026-11-15T09:32:16+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:TEST_지영",
@@ -8813,7 +8850,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/326",
    "n_submissions": 30,
    "last_at": "2026-11-15T11:49:09+00:00",
-   "rank": 11
+   "rank": 12
   },
   {
    "key": "team:캥거루근육단단",
@@ -8828,21 +8865,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/373",
    "n_submissions": 15,
    "last_at": "2026-11-15T09:56:03+00:00",
-   "rank": 12
-  },
-  {
-   "key": "team:Han_mo",
-   "display": "Han_mo",
-   "type": "team",
-   "members": [
-    "TEST_정우"
-   ],
-   "best_public": 2790.2309494765,
-   "best_submission_id": 319,
-   "best_at": "2026-11-14T18:12:45+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/351",
-   "n_submissions": 15,
-   "last_at": "2026-11-14T18:14:51+00:00",
    "rank": 13
   },
   {
