@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-16T17:13:32+00:00",
+ "updated_at": "2026-11-16T17:19:02+00:00",
  "finalized": false,
- "next_id": 4,
+ "next_id": 5,
  "submissions": [
   {
    "id": 1,
@@ -72,9 +72,46 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 4,
+   "source": "issue",
+   "number": 490,
+   "url": "https://github.com/gisup89/competition/issues/490",
+   "github": "JaeHong-Jang",
+   "submitter": "TEST_재홍",
+   "participant_key": "team:TEST_재홍",
+   "participant_type": "team",
+   "display": "TEST_재홍",
+   "members": [
+    "TEST_재홍"
+   ],
+   "created_at": "2026-11-16T17:18:44+00:00",
+   "filename": "submission_hnu-digits_202611161717.csv",
+   "sha256": "b5c3f0ee9f88a80a1895d0665815c73ead7cb9a2f6e5ddf8374e75fd3c034211",
+   "public_score": 0.9888123924,
+   "private_enc": "gAAAAABq-zsGiGmgIVfFw3CXw8acOIq_8Mv-ODgygDljz2G0JZLA9dRWQd3X7ddFrCIBi06miPTL-JFBbVyUrvgF2Nwbe9oTNBwZLUNQQP_0pIvOHD6iw3Rz8Eai85Nk_tHX_PQ-u32D",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
+  {
+   "key": "team:TEST_재홍",
+   "display": "TEST_재홍",
+   "type": "team",
+   "members": [
+    "TEST_재홍"
+   ],
+   "best_public": 0.9888123924,
+   "best_submission_id": 4,
+   "best_at": "2026-11-16T17:18:44+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/490",
+   "n_submissions": 2,
+   "last_at": "2026-11-16T17:18:44+00:00",
+   "rank": 1
+  },
   {
    "key": "team:TEST_하윤",
    "display": "TEST_하윤",
@@ -88,21 +125,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/489",
    "n_submissions": 2,
    "last_at": "2026-11-16T17:13:07+00:00",
-   "rank": 1
-  },
-  {
-   "key": "team:TEST_재홍",
-   "display": "TEST_재홍",
-   "type": "team",
-   "members": [
-    "TEST_재홍"
-   ],
-   "best_public": 0.9638554217,
-   "best_submission_id": 1,
-   "best_at": "2026-11-16T15:08:49+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/475",
-   "n_submissions": 1,
-   "last_at": "2026-11-16T15:08:49+00:00",
    "rank": 2
   }
  ]
