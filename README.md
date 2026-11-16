@@ -43,7 +43,7 @@ pip install -r scorer/requirements.txt
 
 ---
 
-## 3. 빠른 시작 (처음 한 번, 약 30분)
+## 3. 빠른 시작
 
 ### 3-1. 저장소 만들기
 
