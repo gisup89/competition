@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T10:08:50+00:00",
+ "updated_at": "2026-11-17T10:42:42+00:00",
  "finalized": false,
- "next_id": 29,
+ "next_id": 30,
  "submissions": [
   {
    "id": 1,
@@ -634,6 +634,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 29,
+   "source": "issue",
+   "number": 580,
+   "url": "https://github.com/gisup89/competition/issues/580",
+   "github": "71mhae",
+   "submitter": "71M",
+   "participant_key": "team:71M",
+   "participant_type": "team",
+   "display": "71M",
+   "members": [
+    "71M"
+   ],
+   "created_at": "2026-11-17T10:42:14+00:00",
+   "filename": "submission_hnu-digits_202611171041.csv",
+   "sha256": "33045b93ecd418fc751a113b69df7818e1858e54a1861195aa1bcb5240128c3a",
+   "public_score": 0.9672977625,
+   "private_enc": "gAAAAABq_C-i6JQ3sxXrjOngEASk_h62BWrrtDk_8wnGD4c_Yj0HoYWd8YIz-IMrB-23XAaGZKwZoDF8HRmMd0q-PQkG9TiH9D8FT9KwCssRywrT9FCPsHD-mk0yPWrrNlG1jN5_8AYa",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -730,6 +752,21 @@
    "rank": 6
   },
   {
+   "key": "team:71M",
+   "display": "71M",
+   "type": "team",
+   "members": [
+    "71M"
+   ],
+   "best_public": 0.9672977625,
+   "best_submission_id": 29,
+   "best_at": "2026-11-17T10:42:14+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/580",
+   "n_submissions": 1,
+   "last_at": "2026-11-17T10:42:14+00:00",
+   "rank": 7
+  },
+  {
    "key": "team:노라조",
    "display": "노라조",
    "type": "team",
@@ -745,7 +782,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/569",
    "n_submissions": 2,
    "last_at": "2026-11-17T08:09:21+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:중앙값",
@@ -760,7 +797,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/536",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:35:32+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:정 확 한",
@@ -778,7 +815,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/558",
    "n_submissions": 1,
    "last_at": "2026-11-17T04:56:02+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:symoon",
@@ -793,7 +830,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/563",
    "n_submissions": 1,
    "last_at": "2026-11-17T05:35:11+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
@@ -809,7 +846,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/546",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:55:19+00:00",
-   "rank": 11
+   "rank": 12
   }
  ]
 }
