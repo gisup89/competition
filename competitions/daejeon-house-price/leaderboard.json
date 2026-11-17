@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T09:54:50+00:00",
+ "updated_at": "2026-11-17T09:56:00+00:00",
  "finalized": false,
- "next_id": 510,
+ "next_id": 511,
  "submissions": [
   {
    "id": 1,
@@ -11578,6 +11578,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 510,
+   "source": "issue",
+   "number": 577,
+   "url": "https://github.com/gisup89/competition/issues/577",
+   "github": "20264106-dev",
+   "submitter": "TEST_건민",
+   "participant_key": "team:TEST_건민",
+   "participant_type": "team",
+   "display": "TEST_건민",
+   "members": [
+    "TEST_건민"
+   ],
+   "created_at": "2026-11-17T09:55:32+00:00",
+   "filename": "submission_daejeon-house-price_202611170955.csv",
+   "sha256": "04b451673877dda5a23afd74820fa8bdf7794bdfcbc0f2c096ec0d9decc73105",
+   "public_score": 2777.2170707983,
+   "private_enc": "gAAAAABq_CSwQGJQdlkxyHIZFHrJhMly01hksSAQNRt9us1-KNexVvhbCoOaoLmVGGIolKaaJPKrdxiF9OzAK6D5yMcmQsTZZYesnSzQ1Qiz5f_nfBsNMqJrxrbq6pSnHoRN-L2xkZej",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11692,6 +11714,21 @@
    "rank": 7
   },
   {
+   "key": "team:TEST_건민",
+   "display": "TEST_건민",
+   "type": "team",
+   "members": [
+    "TEST_건민"
+   ],
+   "best_public": 2777.2170707983,
+   "best_submission_id": 510,
+   "best_at": "2026-11-17T09:55:32+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/577",
+   "n_submissions": 19,
+   "last_at": "2026-11-17T09:55:32+00:00",
+   "rank": 8
+  },
+  {
    "key": "team:Han_mo",
    "display": "Han_mo",
    "type": "team",
@@ -11704,7 +11741,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/413",
    "n_submissions": 20,
    "last_at": "2026-11-16T04:33:41+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:트로이경마",
@@ -11722,7 +11759,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/336",
    "n_submissions": 36,
    "last_at": "2026-11-17T04:28:19+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:홍성민왕국",
@@ -11739,7 +11776,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/407",
    "n_submissions": 30,
    "last_at": "2026-11-17T02:07:06+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:TEST_재형",
@@ -11754,7 +11791,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/153",
    "n_submissions": 12,
    "last_at": "2026-11-16T14:40:55+00:00",
-   "rank": 11
+   "rank": 12
   },
   {
    "key": "team:TEST_지영",
@@ -11769,7 +11806,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/485",
    "n_submissions": 40,
    "last_at": "2026-11-16T15:26:19+00:00",
-   "rank": 12
+   "rank": 13
   },
   {
    "key": "team:fjfjdidi4",
@@ -11784,7 +11821,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/568",
    "n_submissions": 4,
    "last_at": "2026-11-17T06:50:56+00:00",
-   "rank": 13
+   "rank": 14
   },
   {
    "key": "team:71M",
@@ -11799,7 +11836,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/518",
    "n_submissions": 11,
    "last_at": "2026-11-17T09:12:59+00:00",
-   "rank": 14
+   "rank": 15
   },
   {
    "key": "team:캥거루근육단단",
@@ -11814,7 +11851,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/373",
    "n_submissions": 16,
    "last_at": "2026-11-16T15:31:14+00:00",
-   "rank": 15
+   "rank": 16
   },
   {
    "key": "team:정 확 한",
@@ -11832,21 +11869,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/512",
    "n_submissions": 11,
    "last_at": "2026-11-17T03:58:55+00:00",
-   "rank": 16
-  },
-  {
-   "key": "team:TEST_건민",
-   "display": "TEST_건민",
-   "type": "team",
-   "members": [
-    "TEST_건민"
-   ],
-   "best_public": 2800.1325772184,
-   "best_submission_id": 509,
-   "best_at": "2026-11-17T09:54:27+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/576",
-   "n_submissions": 18,
-   "last_at": "2026-11-17T09:54:27+00:00",
    "rank": 17
   },
   {
