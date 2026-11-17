@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T02:07:29+00:00",
+ "updated_at": "2026-11-17T02:09:57+00:00",
  "finalized": false,
- "next_id": 473,
+ "next_id": 474,
  "submissions": [
   {
    "id": 1,
@@ -10725,6 +10725,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 473,
+   "source": "issue",
+   "number": 522,
+   "url": "https://github.com/gisup89/competition/issues/522",
+   "github": "parksungchan0628-gif",
+   "submitter": "중앙값",
+   "participant_key": "team:중앙값",
+   "participant_type": "team",
+   "display": "중앙값",
+   "members": [
+    "중앙값"
+   ],
+   "created_at": "2026-11-17T02:09:38+00:00",
+   "filename": "submission_daejeon-house-price_202611170208.csv",
+   "sha256": "81430d2d8181662b7eec495a2aaef00e5098b6f8dd1b0c0c64b5391183c72162",
+   "public_score": 2819.7671830663,
+   "private_enc": "gAAAAABq-7d1d0Q2BE6gn-Bd5hKRZt93rQ50MRj3bJowIdWhYYbGUu8wZgNy_rXZLav8DrviU-a-bh1XLlQ77EDxmFKE17PPB3Y6Am_EVU_SRik2cPUK1S4DjFNwDtfEboL2Hy8jUyaF",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11057,6 +11079,21 @@
    "rank": 21
   },
   {
+   "key": "team:중앙값",
+   "display": "중앙값",
+   "type": "team",
+   "members": [
+    "중앙값"
+   ],
+   "best_public": 2819.7671830663,
+   "best_submission_id": 473,
+   "best_at": "2026-11-17T02:09:38+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/522",
+   "n_submissions": 2,
+   "last_at": "2026-11-17T02:09:38+00:00",
+   "rank": 22
+  },
+  {
    "key": "team:TEST_성재",
    "display": "TEST_성재",
    "type": "team",
@@ -11069,7 +11106,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/135",
    "n_submissions": 9,
    "last_at": "2026-11-11T06:14:12+00:00",
-   "rank": 22
+   "rank": 23
   },
   {
    "key": "team:snowman",
@@ -11084,21 +11121,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/248",
    "n_submissions": 10,
    "last_at": "2026-11-13T05:20:18+00:00",
-   "rank": 23
-  },
-  {
-   "key": "team:중앙값",
-   "display": "중앙값",
-   "type": "team",
-   "members": [
-    "중앙값"
-   ],
-   "best_public": 2845.8246573478,
-   "best_submission_id": 467,
-   "best_at": "2026-11-17T02:01:40+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/515",
-   "n_submissions": 1,
-   "last_at": "2026-11-17T02:01:40+00:00",
    "rank": 24
   },
   {
