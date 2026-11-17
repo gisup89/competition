@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T03:21:24+00:00",
+ "updated_at": "2026-11-17T04:56:21+00:00",
  "finalized": false,
- "next_id": 19,
+ "next_id": 20,
  "submissions": [
   {
    "id": 1,
@@ -403,6 +403,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 19,
+   "source": "issue",
+   "number": 558,
+   "url": "https://github.com/gisup89/competition/issues/558",
+   "github": "jyun04721",
+   "submitter": "cho",
+   "participant_key": "team:정 확 한",
+   "participant_type": "team",
+   "display": "정 확 한",
+   "members": [
+    "min",
+    "cho",
+    "인용이",
+    "ungtaekang1"
+   ],
+   "created_at": "2026-11-17T04:56:02+00:00",
+   "filename": "submission_hnu-digits_202611170455.csv",
+   "sha256": "9c40295d04aefb2f81d03b9bec687daeac347b815e89ede73c9b7e4d533b7c02",
+   "public_score": 0.9466437177,
+   "private_enc": "gAAAAABq-951yg1gGFkceDuRrtKG1CwI5dKkUwgNnQgkAzpnzyd5-22sLdwG_V15FfrQV2-XyIMpVSIfZjfVxlEUshwau3LNt6E10K_rrDCqHr0yYQC0T8iWLmpt8KlLN7p3tnN-2wzG",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -497,6 +522,24 @@
    "rank": 6
   },
   {
+   "key": "team:정 확 한",
+   "display": "정 확 한",
+   "type": "team",
+   "members": [
+    "min",
+    "cho",
+    "인용이",
+    "ungtaekang1"
+   ],
+   "best_public": 0.9466437177,
+   "best_submission_id": 19,
+   "best_at": "2026-11-17T04:56:02+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/558",
+   "n_submissions": 1,
+   "last_at": "2026-11-17T04:56:02+00:00",
+   "rank": 7
+  },
+  {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
    "display": "안녕하세요다전공입니다잘부탁드립니다",
    "type": "team",
@@ -510,7 +553,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/546",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:55:19+00:00",
-   "rank": 7
+   "rank": 8
   }
  ]
 }
