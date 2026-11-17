@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T11:38:59+00:00",
+ "updated_at": "2026-11-17T13:11:30+00:00",
  "finalized": false,
- "next_id": 515,
+ "next_id": 516,
  "submissions": [
   {
    "id": 1,
@@ -11689,6 +11689,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 515,
+   "source": "issue",
+   "number": 587,
+   "url": "https://github.com/gisup89/competition/issues/587",
+   "github": "kanghm5141-tech",
+   "submitter": "Hyeonmuk Kang",
+   "participant_key": "team:Hyeonmuk Kang",
+   "participant_type": "team",
+   "display": "Hyeonmuk Kang",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "created_at": "2026-11-17T13:10:54+00:00",
+   "filename": "submission_daejeon-house-price_202611171304.csv",
+   "sha256": "3f4675d0fbaa0aa50ef132a60a3aad78811331966f7cc949b1227315ed16d4a8",
+   "public_score": 2822.8843346337,
+   "private_enc": "gAAAAABq_FKCiYn-GSc9Uy2RxkG6yT0-XSMgYS8jNsO9paa75pN4mjnZRazOMkneQEP-2VKoggfiTL9HKYMsS4l5v6-vV9o6wg4F6EGTQcJIT3vYhWwnVnKStX3iFTDe8JCRi08H6ofb",
+   "note": "로그 가격+스플라인 ridge+smearing와 CV 2772",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -12149,6 +12171,21 @@
    "rank": 29
   },
   {
+   "key": "team:Hyeonmuk Kang",
+   "display": "Hyeonmuk Kang",
+   "type": "team",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "best_public": 2822.8843346337,
+   "best_submission_id": 515,
+   "best_at": "2026-11-17T13:10:54+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/587",
+   "n_submissions": 1,
+   "last_at": "2026-11-17T13:10:54+00:00",
+   "rank": 30
+  },
+  {
    "key": "team:snowman",
    "display": "snowman",
    "type": "team",
@@ -12161,7 +12198,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/248",
    "n_submissions": 10,
    "last_at": "2026-11-13T05:20:18+00:00",
-   "rank": 30
+   "rank": 31
   },
   {
    "key": "team:hk00",
@@ -12176,7 +12213,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/530",
    "n_submissions": 3,
    "last_at": "2026-11-17T02:30:37+00:00",
-   "rank": 31
+   "rank": 32
   },
   {
    "key": "team:TEST_JS",
@@ -12191,7 +12228,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 32
+   "rank": 33
   }
  ]
 }
