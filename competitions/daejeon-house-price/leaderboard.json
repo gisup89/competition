@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T01:58:35+00:00",
+ "updated_at": "2026-11-17T01:59:24+00:00",
  "finalized": false,
- "next_id": 466,
+ "next_id": 467,
  "submissions": [
   {
    "id": 1,
@@ -10565,6 +10565,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 466,
+   "source": "issue",
+   "number": 514,
+   "url": "https://github.com/gisup89/competition/issues/514",
+   "github": "dhflxjf12-maker",
+   "submitter": "Yulia",
+   "participant_key": "team:Yulia",
+   "participant_type": "team",
+   "display": "Yulia",
+   "members": [
+    "Yulia"
+   ],
+   "created_at": "2026-11-17T01:58:55+00:00",
+   "filename": "submission_daejeon-house-price_202611170158.csv",
+   "sha256": "63a7f4808281a234f2e1f14c5af57c48c296f5d5f8663d511a1b8fe54ea3c317",
+   "public_score": 2831.27851878,
+   "private_enc": "gAAAAABq-7T8I-6tiadHq9mqRjGD8s8IkglXZYg0fe8VjOl-GXqcAuz67tIPrNK6gRup7jjmxRMbueBUg6Esa3FMgAyoslZwUTtM_g-ZZLmVHud8K_63ayQxwH02hPg4zdRFu0n6JsDS",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -10846,8 +10868,8 @@
    "best_submission_id": 226,
    "best_at": "2026-11-13T05:29:16+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/256",
-   "n_submissions": 6,
-   "last_at": "2026-11-16T00:35:27+00:00",
+   "n_submissions": 7,
+   "last_at": "2026-11-17T01:58:55+00:00",
    "rank": 18
   },
   {
