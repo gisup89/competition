@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T02:48:17+00:00",
+ "updated_at": "2026-11-17T02:54:15+00:00",
  "finalized": false,
- "next_id": 488,
+ "next_id": 489,
  "submissions": [
   {
    "id": 1,
@@ -11069,6 +11069,31 @@
    "note": "linear",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 488,
+   "source": "issue",
+   "number": 544,
+   "url": "https://github.com/gisup89/competition/issues/544",
+   "github": "sonyerin12341231-cloud",
+   "submitter": "예예",
+   "participant_key": "team:도스마스",
+   "participant_type": "team",
+   "display": "도스마스",
+   "members": [
+    "minkyu park",
+    "채채",
+    "예예",
+    "Minjun Lee"
+   ],
+   "created_at": "2026-11-17T02:53:51+00:00",
+   "filename": "submission_daejeon-house-price_202611170252.csv",
+   "sha256": "4228d14a121201ef524484340985e1a1ac1af4cb1665550f4561de6acd6f443b",
+   "public_score": 2816.1898018511,
+   "private_enc": "gAAAAABq-8HXryuCixRVjrfgbO0PXXH6gPBcYauCgsM5IdPWNayWjS0xmPoIpM1u-4Zt_-eOOYaHaGIl9W0k-0D58xD5NHXptMJYwZmhzTVkjxZGmTgzC1R_T0hmL4Cx3KTCS7QfXGpg",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11401,6 +11426,24 @@
    "rank": 21
   },
   {
+   "key": "team:도스마스",
+   "display": "도스마스",
+   "type": "team",
+   "members": [
+    "minkyu park",
+    "채채",
+    "예예",
+    "Minjun Lee"
+   ],
+   "best_public": 2816.1898018511,
+   "best_submission_id": 488,
+   "best_at": "2026-11-17T02:53:51+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/544",
+   "n_submissions": 2,
+   "last_at": "2026-11-17T02:53:51+00:00",
+   "rank": 22
+  },
+  {
    "key": "team:중앙값",
    "display": "중앙값",
    "type": "team",
@@ -11413,7 +11456,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/522",
    "n_submissions": 2,
    "last_at": "2026-11-17T02:09:38+00:00",
-   "rank": 22
+   "rank": 23
   },
   {
    "key": "team:대방어",
@@ -11431,7 +11474,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/540",
    "n_submissions": 3,
    "last_at": "2026-11-17T02:47:44+00:00",
-   "rank": 23
+   "rank": 24
   },
   {
    "key": "team:TEST_성재",
@@ -11446,7 +11489,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/135",
    "n_submissions": 9,
    "last_at": "2026-11-11T06:14:12+00:00",
-   "rank": 24
+   "rank": 25
   },
   {
    "key": "team:snowman",
@@ -11461,7 +11504,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/248",
    "n_submissions": 10,
    "last_at": "2026-11-13T05:20:18+00:00",
-   "rank": 25
+   "rank": 26
   },
   {
    "key": "team:fjfjdidi4",
@@ -11476,7 +11519,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/542",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:46:09+00:00",
-   "rank": 26
+   "rank": 27
   },
   {
    "key": "team:Tutle",
@@ -11492,24 +11535,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/539",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:39:11+00:00",
-   "rank": 27
-  },
-  {
-   "key": "team:도스마스",
-   "display": "도스마스",
-   "type": "team",
-   "members": [
-    "minkyu park",
-    "채채",
-    "예예",
-    "Minjun Lee"
-   ],
-   "best_public": 2848.0473547034,
-   "best_submission_id": 468,
-   "best_at": "2026-11-17T02:02:57+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/516",
-   "n_submissions": 1,
-   "last_at": "2026-11-17T02:02:57+00:00",
    "rank": 28
   },
   {
