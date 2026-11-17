@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T15:38:56+00:00",
+ "updated_at": "2026-11-17T15:40:27+00:00",
  "finalized": false,
- "next_id": 47,
+ "next_id": 48,
  "submissions": [
   {
    "id": 1,
@@ -1064,6 +1064,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 47,
+   "source": "issue",
+   "number": 621,
+   "url": "https://github.com/gisup89/competition/issues/621",
+   "github": "ungtaekang1",
+   "submitter": "ungtaekang1",
+   "participant_key": "team:정 확 한",
+   "participant_type": "team",
+   "display": "정 확 한",
+   "members": [
+    "min",
+    "cho",
+    "인용이",
+    "ungtaekang1"
+   ],
+   "created_at": "2026-11-17T15:40:05+00:00",
+   "filename": "submission_hnu-digits_202611171536.enc.2.csv",
+   "sha256": "5e5efbc744089af9d2183ebec6d659d53e522d5c0b083e1f24276b7c21b73821",
+   "public_score": 0.9836488812,
+   "private_enc": "gAAAAABq_HVrg9ery8k-Fce-QZsZop2FFP26ElFZ0A1JuKJjZ52BjL9cKMRHNKUci7RJWhuItHSjq-XI9ylXSXmol-kV22BuPBhxYExPmOA_WCgdiRgRJhUGPEv1Hg3Ogzy91KkpEAFc",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -1141,8 +1166,8 @@
    "best_submission_id": 46,
    "best_at": "2026-11-17T15:38:27+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/620",
-   "n_submissions": 3,
-   "last_at": "2026-11-17T15:38:27+00:00",
+   "n_submissions": 4,
+   "last_at": "2026-11-17T15:40:05+00:00",
    "rank": 5
   },
   {
