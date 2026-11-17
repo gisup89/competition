@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T13:51:49+00:00",
+ "updated_at": "2026-11-17T14:08:36+00:00",
  "finalized": false,
- "next_id": 37,
+ "next_id": 38,
  "submissions": [
   {
    "id": 1,
@@ -816,6 +816,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 37,
+   "source": "issue",
+   "number": 601,
+   "url": "https://github.com/gisup89/competition/issues/601",
+   "github": "leesooin1438-dev",
+   "submitter": "트로이경마4",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-17T14:08:17+00:00",
+   "filename": "submission_hnu-digits_202611171407.csv",
+   "sha256": "8c169b13c089494fdaa79e123aaa6f5dd32f0bb22d7ce427ce7d680ed2bbbdc5",
+   "public_score": 0.9750430293,
+   "private_enc": "gAAAAABq_F_kHFFRhdsnRqijoUVfCLlWvRbfUBqFT1OicWh-y9Um9xzyZvjJJjnSdolAgznw4OaX2Xk98cLaVpjOa6GBHIcP35XqBzjy97zaXYWXaCQZtmtyWqdNv3v8-8vCUr8MdB6C",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -895,6 +920,24 @@
    "rank": 5
   },
   {
+   "key": "team:트로이경마",
+   "display": "트로이경마",
+   "type": "team",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "best_public": 0.9750430293,
+   "best_submission_id": 37,
+   "best_at": "2026-11-17T14:08:17+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/601",
+   "n_submissions": 2,
+   "last_at": "2026-11-17T14:08:17+00:00",
+   "rank": 6
+  },
+  {
    "key": "team:홍성민왕국",
    "display": "홍성민왕국",
    "type": "team",
@@ -909,7 +952,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/560",
    "n_submissions": 1,
    "last_at": "2026-11-17T05:26:48+00:00",
-   "rank": 6
+   "rank": 7
   },
   {
    "key": "team:71M",
@@ -924,7 +967,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/580",
    "n_submissions": 2,
    "last_at": "2026-11-17T11:52:13+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:노라조",
@@ -942,7 +985,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/569",
    "n_submissions": 3,
    "last_at": "2026-11-17T12:25:31+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:중앙값",
@@ -957,24 +1000,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/536",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:35:32+00:00",
-   "rank": 9
-  },
-  {
-   "key": "team:트로이경마",
-   "display": "트로이경마",
-   "type": "team",
-   "members": [
-    "경마1",
-    "경마2",
-    "트로이경마4",
-    "트로이경마3"
-   ],
-   "best_public": 0.9509466437,
-   "best_submission_id": 32,
-   "best_at": "2026-11-17T13:03:15+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/586",
-   "n_submissions": 1,
-   "last_at": "2026-11-17T13:03:15+00:00",
    "rank": 10
   },
   {
