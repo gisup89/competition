@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T13:03:40+00:00",
+ "updated_at": "2026-11-17T13:40:06+00:00",
  "finalized": false,
- "next_id": 33,
+ "next_id": 34,
  "submissions": [
   {
    "id": 1,
@@ -728,6 +728,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 33,
+   "source": "issue",
+   "number": 596,
+   "url": "https://github.com/gisup89/competition/issues/596",
+   "github": "seungjoo-03",
+   "submitter": "TEST_승주",
+   "participant_key": "team:TEST_승주",
+   "participant_type": "team",
+   "display": "TEST_승주",
+   "members": [
+    "TEST_승주"
+   ],
+   "created_at": "2026-11-17T13:39:45+00:00",
+   "filename": "submission_hnu-digits_202611171339.csv",
+   "sha256": "4f355b93b6b020364683045bc5740ad3a24001278367b919fec413fa04173fea",
+   "public_score": 0.991394148,
+   "private_enc": "gAAAAABq_Fk2otFaDctcuugXw94idzBUYA5OzWIoO1BscNJF7uQUuaMjg6DjZvvCvY4SqaeMaJ3KuwfurqyU8-ut785psTdin5_K3VOX3gWmgV3BYVnU0ZHTcceYKm8CnZF0mu8YBgyE",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -768,12 +790,12 @@
    "members": [
     "TEST_승주"
    ],
-   "best_public": 0.9905335628,
-   "best_submission_id": 25,
-   "best_at": "2026-11-17T07:18:23+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/570",
-   "n_submissions": 2,
-   "last_at": "2026-11-17T07:18:23+00:00",
+   "best_public": 0.991394148,
+   "best_submission_id": 33,
+   "best_at": "2026-11-17T13:39:45+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/596",
+   "n_submissions": 3,
+   "last_at": "2026-11-17T13:39:45+00:00",
    "rank": 3
   },
   {
