@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T06:01:08+00:00",
+ "updated_at": "2026-11-17T06:16:14+00:00",
  "finalized": false,
- "next_id": 502,
+ "next_id": 503,
  "submissions": [
   {
    "id": 1,
@@ -11394,6 +11394,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 502,
+   "source": "issue",
+   "number": 565,
+   "url": "https://github.com/gisup89/competition/issues/565",
+   "github": "fjfjdidi4-lgtm",
+   "submitter": "fjfjdidi4",
+   "participant_key": "team:fjfjdidi4",
+   "participant_type": "team",
+   "display": "fjfjdidi4",
+   "members": [
+    "fjfjdidi4"
+   ],
+   "created_at": "2026-11-17T06:15:48+00:00",
+   "filename": "submission_daejeon-house-price_202611170614.csv",
+   "sha256": "876a3a91bae74bdaac21aab810149bf5b8847d00f23ece00c541144a34dede3c",
+   "public_score": 2816.2562779324,
+   "private_enc": "gAAAAABq-_EuIOqWO16Ehu4CWvhFV8edFIhoiHo1yzoKhUj8Z99yCZzbB7UdH2xy3vHhoQxXagXT34Arkk9-LQqEXCeSUjbot2Fv2ZQmtlEIZEfKYLyRz1b2ACp3m9Ot5hjmtrX4SfAu",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11761,6 +11783,21 @@
    "rank": 23
   },
   {
+   "key": "team:fjfjdidi4",
+   "display": "fjfjdidi4",
+   "type": "team",
+   "members": [
+    "fjfjdidi4"
+   ],
+   "best_public": 2816.2562779324,
+   "best_submission_id": 502,
+   "best_at": "2026-11-17T06:15:48+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/565",
+   "n_submissions": 2,
+   "last_at": "2026-11-17T06:15:48+00:00",
+   "rank": 24
+  },
+  {
    "key": "team:유지운",
    "display": "유지운",
    "type": "team",
@@ -11773,7 +11810,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/545",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:54:14+00:00",
-   "rank": 24
+   "rank": 25
   },
   {
    "key": "team:중앙값",
@@ -11788,7 +11825,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/522",
    "n_submissions": 2,
    "last_at": "2026-11-17T02:09:38+00:00",
-   "rank": 25
+   "rank": 26
   },
   {
    "key": "team:대방어",
@@ -11806,7 +11843,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/540",
    "n_submissions": 4,
    "last_at": "2026-11-17T03:19:13+00:00",
-   "rank": 26
+   "rank": 27
   },
   {
    "key": "team:TEST_성재",
@@ -11821,7 +11858,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/135",
    "n_submissions": 9,
    "last_at": "2026-11-11T06:14:12+00:00",
-   "rank": 27
+   "rank": 28
   },
   {
    "key": "team:snowman",
@@ -11836,21 +11873,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/248",
    "n_submissions": 10,
    "last_at": "2026-11-13T05:20:18+00:00",
-   "rank": 28
-  },
-  {
-   "key": "team:fjfjdidi4",
-   "display": "fjfjdidi4",
-   "type": "team",
-   "members": [
-    "fjfjdidi4"
-   ],
-   "best_public": 2824.4509055254,
-   "best_submission_id": 486,
-   "best_at": "2026-11-17T02:46:09+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/542",
-   "n_submissions": 1,
-   "last_at": "2026-11-17T02:46:09+00:00",
    "rank": 29
   },
   {
