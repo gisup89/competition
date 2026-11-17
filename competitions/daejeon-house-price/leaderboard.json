@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T02:54:36+00:00",
+ "updated_at": "2026-11-17T03:08:16+00:00",
  "finalized": false,
- "next_id": 490,
+ "next_id": 491,
  "submissions": [
   {
    "id": 1,
@@ -11116,6 +11116,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 490,
+   "source": "issue",
+   "number": 547,
+   "url": "https://github.com/gisup89/competition/issues/547",
+   "github": "Ts-ux17",
+   "submitter": "1s17",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-17T03:07:48+00:00",
+   "filename": "submission_daejeon-house-price_202611170307.csv",
+   "sha256": "50db40d9aece8dc3c98af640cb5afef715b417c5d26b3e39a24e7bc9fc9c0b35",
+   "public_score": 2825.2111037152,
+   "private_enc": "gAAAAABq-8UgfEKmVo9t2myysSr2k-d7wry4N0g0SjBeQOHOC5Bu7IxpwVhV70hAO5QOAdCI5Vn55O853akgRa0YN8ketUOt7ssrHbCBXV6cAH-P3L-YZNLBkm7mOCsSIUxsgDsbO4qF",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11570,8 +11593,8 @@
    "best_submission_id": 483,
    "best_at": "2026-11-17T02:39:11+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/539",
-   "n_submissions": 1,
-   "last_at": "2026-11-17T02:39:11+00:00",
+   "n_submissions": 2,
+   "last_at": "2026-11-17T03:07:48+00:00",
    "rank": 29
   },
   {
