@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T14:53:35+00:00",
+ "updated_at": "2026-11-17T14:58:30+00:00",
  "finalized": false,
- "next_id": 530,
+ "next_id": 531,
  "submissions": [
   {
    "id": 1,
@@ -12038,6 +12038,30 @@
    "note": "(방수 제거, 브랜드x면적) 95% + HGB 5% 블렌딩, 반복CV 2771",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 530,
+   "source": "issue",
+   "number": 612,
+   "url": "https://github.com/gisup89/competition/issues/612",
+   "github": "bubin-kim",
+   "submitter": "bubin",
+   "participant_key": "team:홍성민왕국",
+   "participant_type": "team",
+   "display": "홍성민왕국",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "created_at": "2026-11-17T14:58:02+00:00",
+   "filename": "submission_daejeon-house-price_202611171457.csv",
+   "sha256": "fcc7eea3cf5efb5a93c8c387aa7903ddba7eef5fcc19560c2b9ff9e03ea8df73",
+   "public_score": 2806.7680659343,
+   "private_enc": "gAAAAABq_GuWr4fpqq1_ek5LGc1TTSlNBCv3WR1i72F3UqTDBqHeiCgP_1buo6Ugyz4nMhbaXtRbGOp78oekqwynzQ30b0baoQVUK-4DYqbHbpQ9EHETcxVMjCOMOOyDPXqnxkSpMGKb",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -12212,8 +12236,8 @@
    "best_submission_id": 375,
    "best_at": "2026-11-16T00:59:34+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/407",
-   "n_submissions": 30,
-   "last_at": "2026-11-17T02:07:06+00:00",
+   "n_submissions": 31,
+   "last_at": "2026-11-17T14:58:02+00:00",
    "rank": 11
   },
   {
