@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T05:35:37+00:00",
+ "updated_at": "2026-11-17T07:06:57+00:00",
  "finalized": false,
- "next_id": 24,
+ "next_id": 25,
  "submissions": [
   {
    "id": 1,
@@ -518,6 +518,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 24,
+   "source": "issue",
+   "number": 569,
+   "url": "https://github.com/gisup89/competition/issues/569",
+   "github": "cmj126819-ship-it",
+   "submitter": "배태인",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-17T07:06:22+00:00",
+   "filename": "submission_hnu-digits_202611170705.csv",
+   "sha256": "f75cda33ae8ee927e144190c712eeec9f5eec4c51c8b9a5449aba0426118afdd",
+   "public_score": 0.9604130809,
+   "private_enc": "gAAAAABq-_0RsEjDIeuleQRxI7q-B1Ra97_-3_jjUEbdifeU0QwUbgQ-LzI1mJnNRuaAinVF3Xta4x7b_EahzaDl7Aju6t4MgoNSjOLBOYVpBoATtTAgL74UN_SiZzyGY9INZjCQFrgd",
+   "note": "1회차_제출",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -614,6 +639,24 @@
    "rank": 6
   },
   {
+   "key": "team:노라조",
+   "display": "노라조",
+   "type": "team",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "best_public": 0.9604130809,
+   "best_submission_id": 24,
+   "best_at": "2026-11-17T07:06:22+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/569",
+   "n_submissions": 1,
+   "last_at": "2026-11-17T07:06:22+00:00",
+   "rank": 7
+  },
+  {
    "key": "team:중앙값",
    "display": "중앙값",
    "type": "team",
@@ -626,7 +669,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/536",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:35:32+00:00",
-   "rank": 7
+   "rank": 8
   },
   {
    "key": "team:정 확 한",
@@ -644,7 +687,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/558",
    "n_submissions": 1,
    "last_at": "2026-11-17T04:56:02+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:symoon",
@@ -659,7 +702,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/563",
    "n_submissions": 1,
    "last_at": "2026-11-17T05:35:11+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
@@ -675,7 +718,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/546",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:55:19+00:00",
-   "rank": 10
+   "rank": 11
   }
  ]
 }
