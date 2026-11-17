@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T13:11:30+00:00",
+ "updated_at": "2026-11-17T13:13:28+00:00",
  "finalized": false,
- "next_id": 516,
+ "next_id": 517,
  "submissions": [
   {
    "id": 1,
@@ -11711,6 +11711,31 @@
    "note": "로그 가격+스플라인 ridge+smearing와 CV 2772",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 516,
+   "source": "issue",
+   "number": 588,
+   "url": "https://github.com/gisup89/competition/issues/588",
+   "github": "nenongkim",
+   "submitter": "경마2",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-17T13:13:06+00:00",
+   "filename": "submission_daejeon-house-price_202611171312.csv",
+   "sha256": "5c03d330bcddb088e65c029ce45f6c06478a1fadc497e9dae4780dfd7a038d6d",
+   "public_score": 2835.9222669924,
+   "private_enc": "gAAAAABq_FL4ANEVlxYB5liNH_er856I1My4wTzpO47daTtz04zj6pSqugwGJtgkizMeAPBUo-eztVVjPDbaMrfSctuN3BoVG68J7Qw6hCcnWJNknSnf4fFJWO76YU69GLHq-HoQcfgB",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11868,8 +11893,8 @@
    "best_submission_id": 304,
    "best_at": "2026-11-14T14:38:39+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/336",
-   "n_submissions": 36,
-   "last_at": "2026-11-17T04:28:19+00:00",
+   "n_submissions": 37,
+   "last_at": "2026-11-17T13:13:06+00:00",
    "rank": 10
   },
   {
