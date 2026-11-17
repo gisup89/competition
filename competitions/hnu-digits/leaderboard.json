@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-17T14:54:52+00:00",
+ "updated_at": "2026-11-17T14:58:21+00:00",
  "finalized": false,
- "next_id": 42,
+ "next_id": 43,
  "submissions": [
   {
    "id": 1,
@@ -941,6 +941,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 42,
+   "source": "issue",
+   "number": 611,
+   "url": "https://github.com/gisup89/competition/issues/611",
+   "github": "taeun1021-blip",
+   "submitter": "KT",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-17T14:57:47+00:00",
+   "filename": "submission_hnu-digits_202611171457.csv",
+   "sha256": "d3140375c5bfa1ab87b3349348f0aaf37c06e7ff1b38f03569f0d8240086e46f",
+   "public_score": 0.9776247849,
+   "private_enc": "gAAAAABq_GuNulekzsUPbpcoPHHhKtDnuGmAdQ8SmbruVlkm8hZFRGFGN1IGVQyXELwJZ182HniG8fYpH-ciAR2sD2TKWIR5sJs7nRtakE8pBQ4tD3x3AFG_fEEErcDnxevSHrpyBcfp",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -1047,12 +1072,12 @@
     "배태인",
     "앤드뮐미스터"
    ],
-   "best_public": 0.9767641997,
-   "best_submission_id": 38,
-   "best_at": "2026-11-17T14:29:12+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/604",
-   "n_submissions": 4,
-   "last_at": "2026-11-17T14:29:12+00:00",
+   "best_public": 0.9776247849,
+   "best_submission_id": 42,
+   "best_at": "2026-11-17T14:57:47+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/611",
+   "n_submissions": 5,
+   "last_at": "2026-11-17T14:57:47+00:00",
    "rank": 7
   },
   {
