@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-17T03:19:36+00:00",
+ "updated_at": "2026-11-17T03:51:20+00:00",
  "finalized": false,
- "next_id": 492,
+ "next_id": 493,
  "submissions": [
   {
    "id": 1,
@@ -11164,6 +11164,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 492,
+   "source": "issue",
+   "number": 550,
+   "url": "https://github.com/gisup89/competition/issues/550",
+   "github": "Ts-ux17",
+   "submitter": "1s17",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-17T03:50:58+00:00",
+   "filename": "submission_daejeon-house-price_202611170350.csv",
+   "sha256": "4ac054e75a4576496aa72443292f58b76f0e57c4a127a036be575bbf3da98936",
+   "public_score": 2813.4141724168,
+   "private_enc": "gAAAAABq-884EvLlaspuMyKVuvunQykN3rSwejHpOR78vzQnYgvKGj5eyHb3tFN6tPvPcADetvdog0OB79VX__95TYMfYSZ1PhLLMDeSrQ2zEhklxH1Wxqabz_PDE7s3BdZEkGB46_R-",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -11466,6 +11489,22 @@
    "rank": 19
   },
   {
+   "key": "team:Tutle",
+   "display": "Tutle",
+   "type": "team",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "best_public": 2813.4141724168,
+   "best_submission_id": 492,
+   "best_at": "2026-11-17T03:50:58+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/550",
+   "n_submissions": 3,
+   "last_at": "2026-11-17T03:50:58+00:00",
+   "rank": 20
+  },
+  {
    "key": "team:TEST_승보",
    "display": "TEST_승보",
    "type": "team",
@@ -11478,7 +11517,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/43",
    "n_submissions": 7,
    "last_at": "2026-11-16T11:30:30+00:00",
-   "rank": 20
+   "rank": 21
   },
   {
    "key": "team:symoon",
@@ -11493,7 +11532,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/366",
    "n_submissions": 16,
    "last_at": "2026-11-17T02:39:08+00:00",
-   "rank": 21
+   "rank": 22
   },
   {
    "key": "team:도스마스",
@@ -11511,7 +11550,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/544",
    "n_submissions": 2,
    "last_at": "2026-11-17T02:53:51+00:00",
-   "rank": 22
+   "rank": 23
   },
   {
    "key": "team:유지운",
@@ -11526,7 +11565,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/545",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:54:14+00:00",
-   "rank": 23
+   "rank": 24
   },
   {
    "key": "team:중앙값",
@@ -11541,7 +11580,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/522",
    "n_submissions": 2,
    "last_at": "2026-11-17T02:09:38+00:00",
-   "rank": 24
+   "rank": 25
   },
   {
    "key": "team:대방어",
@@ -11559,7 +11598,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/540",
    "n_submissions": 4,
    "last_at": "2026-11-17T03:19:13+00:00",
-   "rank": 25
+   "rank": 26
   },
   {
    "key": "team:TEST_성재",
@@ -11574,7 +11613,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/135",
    "n_submissions": 9,
    "last_at": "2026-11-11T06:14:12+00:00",
-   "rank": 26
+   "rank": 27
   },
   {
    "key": "team:snowman",
@@ -11589,7 +11628,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/248",
    "n_submissions": 10,
    "last_at": "2026-11-13T05:20:18+00:00",
-   "rank": 27
+   "rank": 28
   },
   {
    "key": "team:fjfjdidi4",
@@ -11604,22 +11643,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/542",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:46:09+00:00",
-   "rank": 28
-  },
-  {
-   "key": "team:Tutle",
-   "display": "Tutle",
-   "type": "team",
-   "members": [
-    "1s17",
-    "Cocomelon"
-   ],
-   "best_public": 2825.2111037152,
-   "best_submission_id": 483,
-   "best_at": "2026-11-17T02:39:11+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/539",
-   "n_submissions": 2,
-   "last_at": "2026-11-17T03:07:48+00:00",
    "rank": 29
   },
   {
