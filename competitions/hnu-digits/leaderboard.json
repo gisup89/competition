@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-18T06:53:07+00:00",
+ "updated_at": "2026-11-18T07:05:11+00:00",
  "finalized": false,
- "next_id": 55,
+ "next_id": 56,
  "submissions": [
   {
    "id": 1,
@@ -1254,6 +1254,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 55,
+   "source": "issue",
+   "number": 656,
+   "url": "https://github.com/gisup89/competition/issues/656",
+   "github": "taeun1021-blip",
+   "submitter": "KT",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-18T07:04:47+00:00",
+   "filename": "submission_hnu-digits_202611180701.csv",
+   "sha256": "c3b3f9eb2aed23ce3fc46204383d96ea5091eb31c7108a7916ce20fb59c9ade0",
+   "public_score": 0.991394148,
+   "private_enc": "gAAAAABq_U4nrkX-S6yNw3jYTQSDaJubPycNnLpIlJsayTvVmRg7qBi1YMhI1qk2pG2UoF18WONsxtVQn1_46fzBTn2wlQLpd3aogeawbLSChaBJSAntssOQCj9icGIMtIMIWmT6RC0L",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -1303,6 +1328,24 @@
    "rank": 3
   },
   {
+   "key": "team:노라조",
+   "display": "노라조",
+   "type": "team",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "best_public": 0.991394148,
+   "best_submission_id": 55,
+   "best_at": "2026-11-18T07:04:47+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/656",
+   "n_submissions": 7,
+   "last_at": "2026-11-18T07:04:47+00:00",
+   "rank": 4
+  },
+  {
    "key": "team:TEST_동섭",
    "display": "TEST_동섭",
    "type": "team",
@@ -1315,7 +1358,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/507",
    "n_submissions": 5,
    "last_at": "2026-11-17T00:54:11+00:00",
-   "rank": 4
+   "rank": 5
   },
   {
    "key": "team:정 확 한",
@@ -1333,24 +1376,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/620",
    "n_submissions": 5,
    "last_at": "2026-11-17T16:33:42+00:00",
-   "rank": 5
-  },
-  {
-   "key": "team:노라조",
-   "display": "노라조",
-   "type": "team",
-   "members": [
-    "KT",
-    "숱많은 스님",
-    "배태인",
-    "앤드뮐미스터"
-   ],
-   "best_public": 0.9836488812,
-   "best_submission_id": 54,
-   "best_at": "2026-11-18T06:52:43+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/655",
-   "n_submissions": 6,
-   "last_at": "2026-11-18T06:52:43+00:00",
    "rank": 6
   },
   {
