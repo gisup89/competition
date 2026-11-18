@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-18T14:53:45+00:00",
+ "updated_at": "2026-11-18T15:15:51+00:00",
  "finalized": false,
- "next_id": 85,
+ "next_id": 86,
  "submissions": [
   {
    "id": 1,
@@ -1939,6 +1939,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 85,
+   "source": "issue",
+   "number": 729,
+   "url": "https://github.com/gisup89/competition/issues/729",
+   "github": "hayun-0",
+   "submitter": "TEST_하윤",
+   "participant_key": "team:TEST_하윤",
+   "participant_type": "team",
+   "display": "TEST_하윤",
+   "members": [
+    "TEST_하윤"
+   ],
+   "created_at": "2026-11-18T15:15:13+00:00",
+   "filename": "submission_hnu-digits_v11.csv",
+   "sha256": "90e71b0c5a281a790dae807662583037ee64cfb57f1f49dd5dda01d7540a8470",
+   "public_score": 0.9862306368,
+   "private_enc": "gAAAAABq_cEnvawFJJsOPftzjrWlI2-tXWCRUAJatnWUEKr89bGSFz96slYHDK-BDh3JKdezOpJgZLJ-O3H2oBqLomxa7uJgZy2pEe564GqcDZE1X49MbBnqJdDuwo1K84_EyEVy0alx",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2021,6 +2043,21 @@
    "rank": 5
   },
   {
+   "key": "team:TEST_하윤",
+   "display": "TEST_하윤",
+   "type": "team",
+   "members": [
+    "TEST_하윤"
+   ],
+   "best_public": 0.9862306368,
+   "best_submission_id": 85,
+   "best_at": "2026-11-18T15:15:13+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/729",
+   "n_submissions": 6,
+   "last_at": "2026-11-18T15:15:13+00:00",
+   "rank": 6
+  },
+  {
    "key": "team:정 확 한",
    "display": "정 확 한",
    "type": "team",
@@ -2036,21 +2073,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/620",
    "n_submissions": 5,
    "last_at": "2026-11-17T16:33:42+00:00",
-   "rank": 6
-  },
-  {
-   "key": "team:TEST_하윤",
-   "display": "TEST_하윤",
-   "type": "team",
-   "members": [
-    "TEST_하윤"
-   ],
-   "best_public": 0.9819277108,
-   "best_submission_id": 10,
-   "best_at": "2026-11-16T17:58:14+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/497",
-   "n_submissions": 5,
-   "last_at": "2026-11-17T05:29:13+00:00",
    "rank": 7
   },
   {
