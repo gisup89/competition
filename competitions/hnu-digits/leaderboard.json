@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-18T14:21:01+00:00",
+ "updated_at": "2026-11-18T14:24:02+00:00",
  "finalized": false,
- "next_id": 74,
+ "next_id": 75,
  "submissions": [
   {
    "id": 1,
@@ -1686,6 +1686,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 74,
+   "source": "issue",
+   "number": 705,
+   "url": "https://github.com/gisup89/competition/issues/705",
+   "github": "hyunwoo8268",
+   "submitter": "Cocomelon",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-18T14:23:40+00:00",
+   "filename": "submission_hnu-digits_202611181423.csv",
+   "sha256": "7ea698d42b9f1e399f2a14f2b78b30e284016f4a4e4f678015fc2534f7787ae0",
+   "public_score": 0.9432013769,
+   "private_enc": "gAAAAABq_bUCSf4ELPzrBInhXnPnGE1lKnS-pzQQjkuHjuL8eSDZ_ZFeuqhMmm2qkM0kbfYu3Ng0Es38Ef7tpzP-QaIHq8NBvkdabDXBtelhkNG5sMtdeC2S9tphmkYjabzo6vP-VeL5",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": 45
   }
  ],
  "public_leaderboard": [
@@ -1898,6 +1921,22 @@
    "rank": 13
   },
   {
+   "key": "team:Tutle",
+   "display": "Tutle",
+   "type": "team",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "best_public": 0.9432013769,
+   "best_submission_id": 74,
+   "best_at": "2026-11-18T14:23:40+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/705",
+   "n_submissions": 1,
+   "last_at": "2026-11-18T14:23:40+00:00",
+   "rank": 14
+  },
+  {
    "key": "team:symoon",
    "display": "symoon",
    "type": "team",
@@ -1910,7 +1949,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/563",
    "n_submissions": 1,
    "last_at": "2026-11-17T05:35:11+00:00",
-   "rank": 14
+   "rank": 15
   },
   {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
@@ -1926,7 +1965,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/546",
    "n_submissions": 1,
    "last_at": "2026-11-17T02:55:19+00:00",
-   "rank": 15
+   "rank": 16
   }
  ]
 }
