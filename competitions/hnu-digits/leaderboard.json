@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-19T02:18:52+00:00",
+ "updated_at": "2026-11-19T04:12:20+00:00",
  "finalized": false,
- "next_id": 93,
+ "next_id": 94,
  "submissions": [
   {
    "id": 1,
@@ -2123,6 +2123,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 93,
+   "source": "issue",
+   "number": 754,
+   "url": "https://github.com/gisup89/competition/issues/754",
+   "github": "71mhae",
+   "submitter": "71M",
+   "participant_key": "team:71M",
+   "participant_type": "team",
+   "display": "71M",
+   "members": [
+    "71M"
+   ],
+   "created_at": "2026-11-19T04:12:00+00:00",
+   "filename": "submission_hnu-digits_202611190411.csv",
+   "sha256": "1f11f6b6973bf7f3b612168d3196f46a20a40bb2c683bc8d1dfa2b1015205cfe",
+   "public_score": 0.9819277108,
+   "private_enc": "gAAAAABq_nckX_nikIq8oQcnfD1RvFgBoTNyPYRiOBPe70OBJvnEukg2GQbngd8d6OKOymvcWyrevez6q2KvlVr0MqF0lrRGdvlnrn1EHahrfFc2O2YAsP5bgCO4WWVrA2vD2MR0S6BM",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2255,6 +2277,21 @@
    "rank": 8
   },
   {
+   "key": "team:71M",
+   "display": "71M",
+   "type": "team",
+   "members": [
+    "71M"
+   ],
+   "best_public": 0.9819277108,
+   "best_submission_id": 93,
+   "best_at": "2026-11-19T04:12:00+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/754",
+   "n_submissions": 9,
+   "last_at": "2026-11-19T04:12:00+00:00",
+   "rank": 9
+  },
+  {
    "key": "team:트로이경마",
    "display": "트로이경마",
    "type": "team",
@@ -2270,7 +2307,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/711",
    "n_submissions": 10,
    "last_at": "2026-11-18T14:40:27+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:홍성민왕국",
@@ -2287,21 +2324,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/751",
    "n_submissions": 7,
    "last_at": "2026-11-19T02:04:08+00:00",
-   "rank": 10
-  },
-  {
-   "key": "team:71M",
-   "display": "71M",
-   "type": "team",
-   "members": [
-    "71M"
-   ],
-   "best_public": 0.9776247849,
-   "best_submission_id": 57,
-   "best_at": "2026-11-18T09:55:59+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/662",
-   "n_submissions": 8,
-   "last_at": "2026-11-19T02:18:30+00:00",
    "rank": 11
   },
   {
