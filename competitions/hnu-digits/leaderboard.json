@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-18T17:42:33+00:00",
+ "updated_at": "2026-11-19T01:55:38+00:00",
  "finalized": false,
- "next_id": 90,
+ "next_id": 91,
  "submissions": [
   {
    "id": 1,
@@ -2055,6 +2055,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 90,
+   "source": "issue",
+   "number": 750,
+   "url": "https://github.com/gisup89/competition/issues/750",
+   "github": "71mhae",
+   "submitter": "71M",
+   "participant_key": "team:71M",
+   "participant_type": "team",
+   "display": "71M",
+   "members": [
+    "71M"
+   ],
+   "created_at": "2026-11-19T01:55:17+00:00",
+   "filename": "submission_hnu-digits_202611190152.csv",
+   "sha256": "1d12f80072f76da6dc33d684ac7cdbb8c190853a070cadb1f76fb61c1c718410",
+   "public_score": 0.9776247849,
+   "private_enc": "gAAAAABq_lcaLGUb9Zcq5QLifYQPpWZM1r3GCTKvurKCFRY5KFnUVs34lS-lcSPM1D50CArZw-XQJlytKf4GyQK-vBtS6ahDmskEH8OVhqbfkPQZBCqgzinuqwbsCRD0DvUEbqOIU9ur",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2215,8 +2237,8 @@
    "best_submission_id": 57,
    "best_at": "2026-11-18T09:55:59+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/662",
-   "n_submissions": 6,
-   "last_at": "2026-11-18T09:55:59+00:00",
+   "n_submissions": 7,
+   "last_at": "2026-11-19T01:55:17+00:00",
    "rank": 10
   },
   {
