@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-19T01:55:38+00:00",
+ "updated_at": "2026-11-19T02:04:35+00:00",
  "finalized": false,
- "next_id": 91,
+ "next_id": 92,
  "submissions": [
   {
    "id": 1,
@@ -2077,6 +2077,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 91,
+   "source": "issue",
+   "number": 751,
+   "url": "https://github.com/gisup89/competition/issues/751",
+   "github": "bubin-kim",
+   "submitter": "bubin",
+   "participant_key": "team:홍성민왕국",
+   "participant_type": "team",
+   "display": "홍성민왕국",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "created_at": "2026-11-19T02:04:08+00:00",
+   "filename": "submission_hnu-digits_202611190203.csv",
+   "sha256": "b5f864c3a36420f64429393a9090f355a603d1f90def6747b161d8b891653b66",
+   "public_score": 0.9802065404,
+   "private_enc": "gAAAAABq_lkzfeZmyC1549VOwGBYW25KLQAFb-6tqKTcWAxF3aQitv17lX3v72mH80X9e8ZM5ZH86u6AuUtbMI3ViMLVF_KWxdJWMunBrZ484pZzJPRLiqHQlrZyr3r_CJ-UqneLJ_u2",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2227,6 +2251,23 @@
    "rank": 9
   },
   {
+   "key": "team:홍성민왕국",
+   "display": "홍성민왕국",
+   "type": "team",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "best_public": 0.9802065404,
+   "best_submission_id": 91,
+   "best_at": "2026-11-19T02:04:08+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/751",
+   "n_submissions": 7,
+   "last_at": "2026-11-19T02:04:08+00:00",
+   "rank": 10
+  },
+  {
    "key": "team:71M",
    "display": "71M",
    "type": "team",
@@ -2239,23 +2280,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/662",
    "n_submissions": 7,
    "last_at": "2026-11-19T01:55:17+00:00",
-   "rank": 10
-  },
-  {
-   "key": "team:홍성민왕국",
-   "display": "홍성민왕국",
-   "type": "team",
-   "members": [
-    "bubin",
-    "김태연",
-    "홍성민"
-   ],
-   "best_public": 0.9776247849,
-   "best_submission_id": 89,
-   "best_at": "2026-11-18T17:42:14+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/736",
-   "n_submissions": 6,
-   "last_at": "2026-11-18T17:42:14+00:00",
    "rank": 11
   },
   {
