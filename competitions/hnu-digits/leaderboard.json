@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-19T13:02:04+00:00",
+ "updated_at": "2026-11-19T13:20:01+00:00",
  "finalized": false,
- "next_id": 100,
+ "next_id": 101,
  "submissions": [
   {
    "id": 1,
@@ -2286,6 +2286,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 100,
+   "source": "issue",
+   "number": 784,
+   "url": "https://github.com/gisup89/competition/issues/784",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-19T13:19:37+00:00",
+   "filename": "03_r4ens3_tta.csv",
+   "sha256": "df266fb5fabd09794df875f6c4aaf8fd3bffd8832e9f405d96e48cc4ac126e71",
+   "public_score": 0.9888123924,
+   "private_enc": "gAAAAABq_veBMln6McjRqaCmUYk45z6uJ-3jtG1BDE-AdzT7DWdsYyyVTAR_FgBe5bYvEzrj83mdPpCG5DDu9p7hxcaYFTZaWp4Si51qCN0bSmd26J0H-3F9E8DT2ThOf095SJffcO87",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -2363,8 +2385,8 @@
    "best_submission_id": 99,
    "best_at": "2026-11-19T13:01:40+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/777",
-   "n_submissions": 11,
-   "last_at": "2026-11-19T13:01:40+00:00",
+   "n_submissions": 12,
+   "last_at": "2026-11-19T13:19:37+00:00",
    "rank": 5
   },
   {
