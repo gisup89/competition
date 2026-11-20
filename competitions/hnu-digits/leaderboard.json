@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-20T14:40:32+00:00",
+ "updated_at": "2026-11-20T14:52:11+00:00",
  "finalized": false,
- "next_id": 131,
+ "next_id": 132,
  "submissions": [
   {
    "id": 1,
@@ -2992,6 +2992,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 131,
+   "source": "issue",
+   "number": 844,
+   "url": "https://github.com/gisup89/competition/issues/844",
+   "github": "leesooin1438-dev",
+   "submitter": "트로이경마4",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-20T14:51:48+00:00",
+   "filename": "submission_hnu-digits_202611201451.csv",
+   "sha256": "9adcbab03a7daf4f73ca7f83038ccc44c996a62ababe7abfeb6629a3e47f8f69",
+   "public_score": 0.9845094664,
+   "private_enc": "gAAAAABrAF6b0NC7aUp1toR0HEPLQqeS3zVKErImY9hJ_Exd9I1rrLlq2Y-j1e4Rq0FYERv9eY1B4B9on8jlJYZ5_dj8-myh_A69vgoGdbU9ZysEeiV-D_V55R6tlp8OTWXVLjKzWQ3X",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -3152,8 +3177,8 @@
    "best_submission_id": 113,
    "best_at": "2026-11-19T14:51:32+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/804",
-   "n_submissions": 16,
-   "last_at": "2026-11-20T14:40:10+00:00",
+   "n_submissions": 17,
+   "last_at": "2026-11-20T14:51:48+00:00",
    "rank": 10
   },
   {
