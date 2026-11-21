@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-20T18:47:46+00:00",
+ "updated_at": "2026-11-21T03:56:45+00:00",
  "finalized": false,
- "next_id": 674,
+ "next_id": 675,
  "submissions": [
   {
    "id": 1,
@@ -15328,6 +15328,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 674,
+   "source": "issue",
+   "number": 859,
+   "url": "https://github.com/gisup89/competition/issues/859",
+   "github": "20232628",
+   "submitter": "내닉네임뭐냐",
+   "participant_key": "team:내닉네임뭐냐",
+   "participant_type": "team",
+   "display": "내닉네임뭐냐",
+   "members": [
+    "내닉네임뭐냐"
+   ],
+   "created_at": "2026-11-21T03:56:17+00:00",
+   "filename": "submission_daejeon-house-price_202611210355.csv",
+   "sha256": "0ca49cf004a522ee12f12f599bba1e3e16ffc6ebbd4e15cf2d22a6e428163ea2",
+   "public_score": 2890.126833577,
+   "private_enc": "gAAAAABrARZ9duigItZ8VLn-OadeFDww54pCLr4zQz9ke5IsGl0IvJ--q_6OdqtsEgx3w8Ul8_YIOoAPfcsqxbX8_NPlc5SInhA0OHo9HNh9lC2TMsJRUZ4I3srab39WrpORAuOzhIPf",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -15610,8 +15632,8 @@
    "best_submission_id": 623,
    "best_at": "2026-11-19T08:26:05+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/764",
-   "n_submissions": 13,
-   "last_at": "2026-11-20T18:47:27+00:00",
+   "n_submissions": 14,
+   "last_at": "2026-11-21T03:56:17+00:00",
    "rank": 18
   },
   {
