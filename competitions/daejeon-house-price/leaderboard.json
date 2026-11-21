@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-21T03:56:45+00:00",
+ "updated_at": "2026-11-21T07:13:43+00:00",
  "finalized": false,
- "next_id": 675,
+ "next_id": 676,
  "submissions": [
   {
    "id": 1,
@@ -15350,6 +15350,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 675,
+   "source": "issue",
+   "number": 860,
+   "url": "https://github.com/gisup89/competition/issues/860",
+   "github": "mangyh060103-bit",
+   "submitter": "한빅",
+   "participant_key": "team:한빅",
+   "participant_type": "team",
+   "display": "한빅",
+   "members": [
+    "한빅"
+   ],
+   "created_at": "2026-11-21T07:13:17+00:00",
+   "filename": "submission_daejeon-house-price_202611210710.csv",
+   "sha256": "3b14ac045328aff872710dc306013ffc848f193d423caf83036019fdb05f7f1b",
+   "public_score": 2839.6918768019,
+   "private_enc": "gAAAAABrAUSnbMHKuEk33-nPunTLiU3hqxA7hcy0cZVM4UGTg7-z7tbGArabaeqJhc2myK3A3nms1A3RYYoJY9X5ckR9GyFB29E8kD1GIDGvF9VvypBRzoJmrXmqhXZ_GTNhhlcXOunx",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -15840,6 +15862,21 @@
    "rank": 31
   },
   {
+   "key": "team:한빅",
+   "display": "한빅",
+   "type": "team",
+   "members": [
+    "한빅"
+   ],
+   "best_public": 2839.6918768019,
+   "best_submission_id": 675,
+   "best_at": "2026-11-21T07:13:17+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/860",
+   "n_submissions": 1,
+   "last_at": "2026-11-21T07:13:17+00:00",
+   "rank": 32
+  },
+  {
    "key": "team:hk00",
    "display": "hk00",
    "type": "team",
@@ -15852,7 +15889,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/530",
    "n_submissions": 3,
    "last_at": "2026-11-17T02:30:37+00:00",
-   "rank": 32
+   "rank": 33
   },
   {
    "key": "team:TEST_JS",
@@ -15867,7 +15904,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/20",
    "n_submissions": 1,
    "last_at": "2026-11-10T03:59:45+00:00",
-   "rank": 33
+   "rank": 34
   }
  ]
 }
