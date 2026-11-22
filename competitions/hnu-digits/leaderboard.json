@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-22T04:21:38+00:00",
+ "updated_at": "2026-11-22T04:24:41+00:00",
  "finalized": false,
- "next_id": 151,
+ "next_id": 152,
  "submissions": [
   {
    "id": 1,
@@ -3466,6 +3466,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 151,
+   "source": "issue",
+   "number": 891,
+   "url": "https://github.com/gisup89/competition/issues/891",
+   "github": "Xterbase",
+   "submitter": "숱많은 스님",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-22T04:24:18+00:00",
+   "filename": "submission_hnu-digits_202611220423.csv",
+   "sha256": "a455ee9c31aa1864ca90d4e724163081b3d07bcfc10e9a64c70295cb4dc27f40",
+   "public_score": 0.9724612737,
+   "private_enc": "gAAAAABrAm6JQEabd7eW6Xtg2YAqtN6A7oTp7G8-j8QkI-_PO5Ba7aig740j6nqT-VVkdzf7mX0_RL9wupeb0rfg758WqiYE4M6x07maTPMc6S6WAyS32HFNNj6gM3mfeG10lJKZmO0q",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -3546,8 +3571,8 @@
    "best_submission_id": 55,
    "best_at": "2026-11-18T07:04:47+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/656",
-   "n_submissions": 10,
-   "last_at": "2026-11-22T04:21:13+00:00",
+   "n_submissions": 11,
+   "last_at": "2026-11-22T04:24:18+00:00",
    "rank": 5
   },
   {
