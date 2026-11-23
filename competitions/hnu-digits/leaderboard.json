@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-23T14:34:16+00:00",
+ "updated_at": "2026-11-23T15:36:32+00:00",
  "finalized": false,
- "next_id": 194,
+ "next_id": 195,
  "submissions": [
   {
    "id": 1,
@@ -4455,6 +4455,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 194,
+   "source": "issue",
+   "number": 1019,
+   "url": "https://github.com/gisup89/competition/issues/1019",
+   "github": "leeminjun7145-glitch",
+   "submitter": "Minjun Lee",
+   "participant_key": "team:도스마스",
+   "participant_type": "team",
+   "display": "도스마스",
+   "members": [
+    "minkyu park",
+    "채채",
+    "예예",
+    "Minjun Lee"
+   ],
+   "created_at": "2026-11-23T15:36:08+00:00",
+   "filename": "submission_hnu-digits_202611231534.csv",
+   "sha256": "d8a464cf93203ccf94ab49636052640db01d4ad96e4f9a714fffca9929c21f49",
+   "public_score": 0.9500860585,
+   "private_enc": "gAAAAABrBF2A15xwsIofadwdx2P61eSzIYIgnbk90cKRniZuUCrmk7NQAT2-P6ft6UBRAQB9Ja-7_GrHhrt6eslT9hAMO0NUxrw4Jr7xCoQWEun1r3vtB4ssM4vUgGzXlXJcs3a7kkts",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4729,6 +4754,24 @@
    "rank": 17
   },
   {
+   "key": "team:도스마스",
+   "display": "도스마스",
+   "type": "team",
+   "members": [
+    "minkyu park",
+    "채채",
+    "예예",
+    "Minjun Lee"
+   ],
+   "best_public": 0.9500860585,
+   "best_submission_id": 194,
+   "best_at": "2026-11-23T15:36:08+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1019",
+   "n_submissions": 1,
+   "last_at": "2026-11-23T15:36:08+00:00",
+   "rank": 18
+  },
+  {
    "key": "team:내닉네임뭐냐",
    "display": "내닉네임뭐냐",
    "type": "team",
@@ -4741,7 +4784,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/833",
    "n_submissions": 1,
    "last_at": "2026-11-20T13:10:49+00:00",
-   "rank": 18
+   "rank": 19
   },
   {
    "key": "team:symoon",
@@ -4756,7 +4799,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/563",
    "n_submissions": 1,
    "last_at": "2026-11-17T05:35:11+00:00",
-   "rank": 19
+   "rank": 20
   }
  ]
 }
