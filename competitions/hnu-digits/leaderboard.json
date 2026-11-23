@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-23T12:52:34+00:00",
+ "updated_at": "2026-11-23T13:42:04+00:00",
  "finalized": false,
- "next_id": 186,
+ "next_id": 187,
  "submissions": [
   {
    "id": 1,
@@ -4268,6 +4268,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 186,
+   "source": "issue",
+   "number": 995,
+   "url": "https://github.com/gisup89/competition/issues/995",
+   "github": "hyunwoo8268",
+   "submitter": "Cocomelon",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-23T13:41:41+00:00",
+   "filename": "submission_hnu-digits_202611231341.csv",
+   "sha256": "de6a2696c896f8a63a9b54005595bb7c5fb91274a663652d5ce0adc0c2a03c0d",
+   "public_score": 0.9569707401,
+   "private_enc": "gAAAAABrBEKsPvyo26KlVKkQbXoJ5T-GwAcscbsk-o2nOMDPUq5WoiYk1R25ZSfh3n0N3le85Qd267QtIys4iu9y_ZKuwdCifHZ3MHPAPbOcZNH7vhFao8kAUN1qOc-Jp3Ippm4hjoRY",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4518,12 +4541,12 @@
     "1s17",
     "Cocomelon"
    ],
-   "best_public": 0.9561101549,
-   "best_submission_id": 111,
-   "best_at": "2026-11-19T14:19:12+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/800",
-   "n_submissions": 5,
-   "last_at": "2026-11-19T14:19:12+00:00",
+   "best_public": 0.9569707401,
+   "best_submission_id": 186,
+   "best_at": "2026-11-23T13:41:41+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/995",
+   "n_submissions": 6,
+   "last_at": "2026-11-23T13:41:41+00:00",
    "rank": 16
   },
   {
