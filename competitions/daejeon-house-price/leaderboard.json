@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T02:05:33+00:00",
+ "updated_at": "2026-11-23T02:08:32+00:00",
  "finalized": false,
- "next_id": 729,
+ "next_id": 730,
  "submissions": [
   {
    "id": 1,
@@ -16607,6 +16607,28 @@
    "note": "층 처리 개선 + 방수 제거, 반복CV 2763",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 729,
+   "source": "issue",
+   "number": 938,
+   "url": "https://github.com/gisup89/competition/issues/938",
+   "github": "qntjd0526",
+   "submitter": "잘게요",
+   "participant_key": "team:잘게요",
+   "participant_type": "team",
+   "display": "잘게요",
+   "members": [
+    "잘게요"
+   ],
+   "created_at": "2026-11-23T02:08:10+00:00",
+   "filename": "submission_daejeon-house-price_202611230207.csv",
+   "sha256": "6b2701f6be975f685a4c4faa5a06bacd7e97d6b7c20d41ac94dc21386b48a5d9",
+   "public_score": 2803.4952468782,
+   "private_enc": "gAAAAABrA6AgAfUmNTiPqHhlPEz33eGgs5dsc3lcLk6PJaDbSc_8Qp1vtIKnEnYW3OQxH6KfyfH65RTwDWOeaR7Pa0-SU3C_FAwRQXQZ23sLxYP3V0xZXKkursBGP5traLcPTTG6RjzQ",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -16904,8 +16926,8 @@
    "best_submission_id": 725,
    "best_at": "2026-11-22T14:47:07+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/932",
-   "n_submissions": 1,
-   "last_at": "2026-11-22T14:47:07+00:00",
+   "n_submissions": 2,
+   "last_at": "2026-11-23T02:08:10+00:00",
    "rank": 19
   },
   {
