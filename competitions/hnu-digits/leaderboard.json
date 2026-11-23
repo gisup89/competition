@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-23T16:22:41+00:00",
+ "updated_at": "2026-11-23T16:30:41+00:00",
  "finalized": false,
- "next_id": 197,
+ "next_id": 198,
  "submissions": [
   {
    "id": 1,
@@ -4529,6 +4529,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 197,
+   "source": "issue",
+   "number": 1028,
+   "url": "https://github.com/gisup89/competition/issues/1028",
+   "github": "leeminjun7145-glitch",
+   "submitter": "Minjun Lee",
+   "participant_key": "team:도스마스",
+   "participant_type": "team",
+   "display": "도스마스",
+   "members": [
+    "minkyu park",
+    "채채",
+    "예예",
+    "Minjun Lee"
+   ],
+   "created_at": "2026-11-23T16:30:21+00:00",
+   "filename": "submission_hnu-digits_202611231630.csv",
+   "sha256": "d0916bed71e583c4e4cd637be0d3d3448cc19ec3d503fb23cccc20d7a34c2505",
+   "public_score": 0.9741824441,
+   "private_enc": "gAAAAABrBGoxH-1o-lX4ANobSTmBRR1ySKp5UzHqYmBjMJNDGKUj2vaMuv3lxcoQApYMZyVdq_MBIM24RlzXe5GeJcVMOJl13exLen1WvgEkzI6ddv7vzSKaE0tXuaMzaAS5K6Pk_8sf",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4770,8 +4795,8 @@
    "best_submission_id": 196,
    "best_at": "2026-11-23T16:22:14+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1026",
-   "n_submissions": 2,
-   "last_at": "2026-11-23T16:22:14+00:00",
+   "n_submissions": 3,
+   "last_at": "2026-11-23T16:30:21+00:00",
    "rank": 15
   },
   {
