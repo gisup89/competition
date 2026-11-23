@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T14:14:36+00:00",
+ "updated_at": "2026-11-23T14:36:42+00:00",
  "finalized": false,
- "next_id": 761,
+ "next_id": 762,
  "submissions": [
   {
    "id": 1,
@@ -17324,6 +17324,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 761,
+   "source": "issue",
+   "number": 1004,
+   "url": "https://github.com/gisup89/competition/issues/1004",
+   "github": "kanghm5141-tech",
+   "submitter": "Hyeonmuk Kang",
+   "participant_key": "team:Hyeonmuk Kang",
+   "participant_type": "team",
+   "display": "Hyeonmuk Kang",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "created_at": "2026-11-23T14:36:17+00:00",
+   "filename": "submission_daejeon-house-price_202611231435.csv",
+   "sha256": "75762781a88bfa63e7aa169c5cadfe2f9ef6abecffebfcf86e17bd8b74001625",
+   "public_score": 2824.059918078,
+   "private_enc": "gAAAAABrBE96Ar7WvqqK5-8D4RiipMXQRNxPawm8SeAIMd_uL4ymVuHsoxNudAb6w-9wGmnZZgutQZRVizgzdF4P2vDVJAYixvglqaMkbOnxItz8T0Hq44xchid5OQXZ9dyA-96ZvhZy",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -17682,8 +17704,8 @@
    "best_submission_id": 529,
    "best_at": "2026-11-17T14:53:15+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/609",
-   "n_submissions": 4,
-   "last_at": "2026-11-23T02:53:52+00:00",
+   "n_submissions": 5,
+   "last_at": "2026-11-23T14:36:17+00:00",
    "rank": 23
   },
   {
