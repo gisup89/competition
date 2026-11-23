@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-23T14:21:13+00:00",
+ "updated_at": "2026-11-23T14:31:50+00:00",
  "finalized": false,
- "next_id": 191,
+ "next_id": 192,
  "submissions": [
   {
    "id": 1,
@@ -4384,6 +4384,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 191,
+   "source": "issue",
+   "number": 1001,
+   "url": "https://github.com/gisup89/competition/issues/1001",
+   "github": "cmj126819-ship-it",
+   "submitter": "배태인",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-23T14:31:25+00:00",
+   "filename": "submission_hnu-digits_202611231430.csv",
+   "sha256": "0d9e40b6cd39c1c0dfddf739356f8c793048b2812dc1450ab7ec6f0260026486",
+   "public_score": 0.991394148,
+   "private_enc": "gAAAAABrBE5WPnUftZvzJHseMq9oPBM949XFBweiEpbpurQS8qj2lnAIsLXkiBpDiOgR57ZVb3WT3z2-S1u61GBjAwJ7gA5NsEFl72MjJzAyXPOHBKDL4BptSTHjdTYXmsJJ-mnh9uaR",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4464,8 +4489,8 @@
    "best_submission_id": 162,
    "best_at": "2026-11-22T16:16:15+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/934",
-   "n_submissions": 16,
-   "last_at": "2026-11-23T10:55:30+00:00",
+   "n_submissions": 17,
+   "last_at": "2026-11-23T14:31:25+00:00",
    "rank": 5
   },
   {
