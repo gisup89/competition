@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T07:39:45+00:00",
+ "updated_at": "2026-11-23T07:39:59+00:00",
  "finalized": false,
- "next_id": 742,
+ "next_id": 743,
  "submissions": [
   {
    "id": 1,
@@ -16902,6 +16902,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 742,
+   "source": "issue",
+   "number": 962,
+   "url": "https://github.com/gisup89/competition/issues/962",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-23T07:39:31+00:00",
+   "filename": "r61_hedge_top3f_r12_3rd_1123_1634.csv",
+   "sha256": "0b935d0d5e02d51a8bf72ed607a7be9db9ee61d5e41e4ec81275fe67fde1175b",
+   "public_score": 2825.9662757848,
+   "private_enc": "gAAAAABrA-3PGZMg7fxSBZsWmZ1_PK3YxCkeOy2gJYz1W9HD93oR-wlIfphcx86s2zdP2TQd9tETQ0b4xfPrfemkp_7WrnioP5UIUUojlh8FdvGNmPDQLkvN5tz-JSk8ms0yWSg6vTY7",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -16931,8 +16953,8 @@
    "best_submission_id": 739,
    "best_at": "2026-11-23T07:39:00+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/959",
-   "n_submissions": 68,
-   "last_at": "2026-11-23T07:39:23+00:00",
+   "n_submissions": 69,
+   "last_at": "2026-11-23T07:39:31+00:00",
    "rank": 2
   },
   {
