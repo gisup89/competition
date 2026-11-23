@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T02:54:13+00:00",
+ "updated_at": "2026-11-23T03:08:52+00:00",
  "finalized": false,
- "next_id": 731,
+ "next_id": 732,
  "submissions": [
   {
    "id": 1,
@@ -16651,6 +16651,31 @@
    "note": "층 처리 개선 + 연식 변환, 반복CV 2758",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 731,
+   "source": "issue",
+   "number": 941,
+   "url": "https://github.com/gisup89/competition/issues/941",
+   "github": "jsudjdbsu-ship-it",
+   "submitter": "앤드뮐미스터",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-23T03:08:26+00:00",
+   "filename": "submission_daejeon-house-price_202611230308.csv",
+   "sha256": "201d4d95d4cce404cfb44fed46d745f64efe1fb39ca8713c23f94f77b3e73511",
+   "public_score": 2738.761125193,
+   "private_enc": "gAAAAABrA65EtstEH7raiXHpYTRYp_ltGgiy0D2sSGjBlBUPyb2gXKyGVtiTTabCzeUj7GOyRoc17OJBCNqHhcYjFnDX4JapW_Wtb8PFPpnsYMxQQklJpjIsVGRrqWnNFLGtissr0LVu",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -16713,8 +16738,8 @@
    "best_submission_id": 726,
    "best_at": "2026-11-22T14:57:18+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/933",
-   "n_submissions": 41,
-   "last_at": "2026-11-22T16:16:25+00:00",
+   "n_submissions": 42,
+   "last_at": "2026-11-23T03:08:26+00:00",
    "rank": 4
   },
   {
