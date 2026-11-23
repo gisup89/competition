@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T02:08:32+00:00",
+ "updated_at": "2026-11-23T02:54:13+00:00",
  "finalized": false,
- "next_id": 730,
+ "next_id": 731,
  "submissions": [
   {
    "id": 1,
@@ -16629,6 +16629,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 730,
+   "source": "issue",
+   "number": 940,
+   "url": "https://github.com/gisup89/competition/issues/940",
+   "github": "kanghm5141-tech",
+   "submitter": "Hyeonmuk Kang",
+   "participant_key": "team:Hyeonmuk Kang",
+   "participant_type": "team",
+   "display": "Hyeonmuk Kang",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "created_at": "2026-11-23T02:53:52+00:00",
+   "filename": "submission_daejeon-house-price_202611230253.csv",
+   "sha256": "21390e26a08c9c551c74154ee0fd54a21142831fb5fb9cd85c8cb667f921a510",
+   "public_score": 2829.9132753776,
+   "private_enc": "gAAAAABrA6rVhA6QeJlRju19qMEl8u6sxU-eQZ_4DLI5S6xTZX_oYuV48DTsJARc8yqx8boI42l39RBzL-FhgLFFxJ2A6a2Ir7pZlXuFioQYBW11RYzmUDauH7kVtDjs10xI_5RJfKrl",
+   "note": "층 처리 개선 + 연식 변환, 반복CV 2758",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -16987,8 +17009,8 @@
    "best_submission_id": 529,
    "best_at": "2026-11-17T14:53:15+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/609",
-   "n_submissions": 3,
-   "last_at": "2026-11-23T02:05:10+00:00",
+   "n_submissions": 4,
+   "last_at": "2026-11-23T02:53:52+00:00",
    "rank": 23
   },
   {
