@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-23T14:48:31+00:00",
+ "updated_at": "2026-11-23T14:48:35+00:00",
  "finalized": false,
- "next_id": 767,
+ "next_id": 768,
  "submissions": [
   {
    "id": 1,
@@ -17465,6 +17465,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 767,
+   "source": "issue",
+   "number": 1009,
+   "url": "https://github.com/gisup89/competition/issues/1009",
+   "github": "nenongkim",
+   "submitter": "경마2",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-23T14:47:57+00:00",
+   "filename": "submission_daejeon-house-price_202611231447.enc.2.csv",
+   "sha256": "f0a495399a8a3c42f403566fe382d107588884c508a0aed68b828079c3607f90",
+   "public_score": 2786.4332958633,
+   "private_enc": "gAAAAABrBFJDmaSWzNAogWNdBYDhUB5rUma926kPCaU0RKfR_j8IuimHBa5iJsI7l1Qu68ZahHbueQKf0v9NZBq6qQopmBWoKewYgZA_YZjCv-4RIxULgd4D1CN-Hnj9LjDtvwdnVcVa",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -17637,7 +17662,7 @@
    "best_submission_id": 766,
    "best_at": "2026-11-23T14:48:06+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1010",
-   "n_submissions": 66,
+   "n_submissions": 67,
    "last_at": "2026-11-23T14:48:06+00:00",
    "rank": 11
   },
