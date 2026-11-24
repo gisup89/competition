@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T02:21:46+00:00",
+ "updated_at": "2026-11-24T02:26:34+00:00",
  "finalized": false,
- "next_id": 203,
+ "next_id": 204,
  "submissions": [
   {
    "id": 1,
@@ -4671,6 +4671,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 203,
+   "source": "issue",
+   "number": 1044,
+   "url": "https://github.com/gisup89/competition/issues/1044",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-24T02:26:12+00:00",
+   "filename": "01_best02_ft.csv.csv",
+   "sha256": "15dfdc53ed73ff70fdb30c8c12d2f6f0e2cb38976b8aa32cb5619a9492b6891a",
+   "public_score": 0.9922547332,
+   "private_enc": "gAAAAABrBPXauiArFBrK5HnT7VdoKHMLjz-oLQThAzP7R88OB-ReQYfJ2wvFRxJAqlm_CGjLNx7KLQeTD4WbMoClnC9um-pOWVNQdyMiI9qMhDXmvFOrcBWfMgiSxMBTeS8LLmf1aDQF",
+   "note": "R7 best02 4모델 HNU 미세조정",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -4762,12 +4784,12 @@
    "members": [
     "TEST_동섭"
    ],
-   "best_public": 0.991394148,
-   "best_submission_id": 141,
-   "best_at": "2026-11-21T14:23:34+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/875",
-   "n_submissions": 35,
-   "last_at": "2026-11-23T07:27:15+00:00",
+   "best_public": 0.9922547332,
+   "best_submission_id": 203,
+   "best_at": "2026-11-24T02:26:12+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1044",
+   "n_submissions": 36,
+   "last_at": "2026-11-24T02:26:12+00:00",
    "rank": 6
   },
   {
