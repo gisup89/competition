@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T02:40:10+00:00",
+ "updated_at": "2026-11-24T02:50:02+00:00",
  "finalized": false,
- "next_id": 210,
+ "next_id": 211,
  "submissions": [
   {
    "id": 1,
@@ -4831,6 +4831,31 @@
    "note": "R7 미세조정 6모델×3시드",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 210,
+   "source": "issue",
+   "number": 1053,
+   "url": "https://github.com/gisup89/competition/issues/1053",
+   "github": "jsjsdhdjdisk-gif",
+   "submitter": "돌굶",
+   "participant_key": "team:대방어",
+   "participant_type": "team",
+   "display": "대방어",
+   "members": [
+    "냐옹",
+    "돌굶",
+    "하가우",
+    "이마루"
+   ],
+   "created_at": "2026-11-24T02:49:33+00:00",
+   "filename": "submission_hnu-digits_202611240247.csv",
+   "sha256": "0e22ad9f1d0e726ce631e97ddea5c19ec586e4e1cd46eabed29842c1060959ef",
+   "public_score": 0.9492254733,
+   "private_enc": "gAAAAABrBPtaL36ENM_KxUBSwlZWIq7xrjIfKqDqUMdN8wU6lESULphJOUeL1eBkg5kKy7zrZhjI8ZQwXyXhIRQohIW9fJn-0aFPuWYmRsCcokd1ZYnqLodP7D5JOFIkeVFsIm6GYKg0",
+   "note": "손글씨",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5123,6 +5148,24 @@
    "rank": 18
   },
   {
+   "key": "team:대방어",
+   "display": "대방어",
+   "type": "team",
+   "members": [
+    "냐옹",
+    "돌굶",
+    "하가우",
+    "이마루"
+   ],
+   "best_public": 0.9492254733,
+   "best_submission_id": 210,
+   "best_at": "2026-11-24T02:49:33+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1053",
+   "n_submissions": 3,
+   "last_at": "2026-11-24T02:49:33+00:00",
+   "rank": 19
+  },
+  {
    "key": "team:내닉네임뭐냐",
    "display": "내닉네임뭐냐",
    "type": "team",
@@ -5135,24 +5178,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/833",
    "n_submissions": 1,
    "last_at": "2026-11-20T13:10:49+00:00",
-   "rank": 19
-  },
-  {
-   "key": "team:대방어",
-   "display": "대방어",
-   "type": "team",
-   "members": [
-    "냐옹",
-    "돌굶",
-    "하가우",
-    "이마루"
-   ],
-   "best_public": 0.9199655766,
-   "best_submission_id": 208,
-   "best_at": "2026-11-24T02:39:20+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1050",
-   "n_submissions": 2,
-   "last_at": "2026-11-24T02:39:20+00:00",
    "rank": 20
   },
   {
