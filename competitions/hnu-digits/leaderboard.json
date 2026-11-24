@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T14:42:40+00:00",
+ "updated_at": "2026-11-24T14:43:52+00:00",
  "finalized": false,
- "next_id": 237,
+ "next_id": 238,
  "submissions": [
   {
    "id": 1,
@@ -5453,6 +5453,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 237,
+   "source": "issue",
+   "number": 1103,
+   "url": "https://github.com/gisup89/competition/issues/1103",
+   "github": "kanghm5141-tech",
+   "submitter": "Hyeonmuk Kang",
+   "participant_key": "team:Hyeonmuk Kang",
+   "participant_type": "team",
+   "display": "Hyeonmuk Kang",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "created_at": "2026-11-24T14:43:26+00:00",
+   "filename": "submission_hnu-digits_202611241443.csv",
+   "sha256": "a36951ea20bd6ad5f6a42276b734e751f3b548bb0f8b1722117401e77103bf16",
+   "public_score": 0.9793459552,
+   "private_enc": "gAAAAABrBaKoyKTKkGqdoVy_syrIR-bj6KMmJUGJFBKjeYpdar6hSjL7746SKFo4nndhhfeqAYeVZwES-QOu7XOsmrOwCu7W8tafTP5fPFwQErBdX0wptoPTCDXn9rMxYxzt7TWAh4xH",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5721,12 +5743,12 @@
    "members": [
     "Hyeonmuk Kang"
    ],
-   "best_public": 0.9776247849,
-   "best_submission_id": 236,
-   "best_at": "2026-11-24T14:42:17+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1102",
-   "n_submissions": 1,
-   "last_at": "2026-11-24T14:42:17+00:00",
+   "best_public": 0.9793459552,
+   "best_submission_id": 237,
+   "best_at": "2026-11-24T14:43:26+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1103",
+   "n_submissions": 2,
+   "last_at": "2026-11-24T14:43:26+00:00",
    "rank": 17
   },
   {
