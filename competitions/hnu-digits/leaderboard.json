@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T04:26:16+00:00",
+ "updated_at": "2026-11-24T04:27:40+00:00",
  "finalized": false,
- "next_id": 217,
+ "next_id": 218,
  "submissions": [
   {
    "id": 1,
@@ -4995,6 +4995,29 @@
    "note": "v23",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 217,
+   "source": "issue",
+   "number": 1063,
+   "url": "https://github.com/gisup89/competition/issues/1063",
+   "github": "Ts-ux17",
+   "submitter": "1s17",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-24T04:27:16+00:00",
+   "filename": "submission_hnu-digits_202611240426.csv",
+   "sha256": "d0186a8312462f06841c7c055ba19a50bdb1101beb12f2a22cd7faad70190851",
+   "public_score": 0.987091222,
+   "private_enc": "gAAAAABrBRI8wGEujibLdb_Y66jBxYpNfMOz3MNLLb3nFIMF5typ7hHc1xL5m1F0SsooUqU4skjggs65aAK3gD0LVF0d14ALCyI8QA6eD-2938TB-m5l0RHAlzbzsuOS3WMWL94Jh4uG",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5144,6 +5167,22 @@
    "rank": 9
   },
   {
+   "key": "team:Tutle",
+   "display": "Tutle",
+   "type": "team",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "best_public": 0.987091222,
+   "best_submission_id": 217,
+   "best_at": "2026-11-24T04:27:16+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1063",
+   "n_submissions": 10,
+   "last_at": "2026-11-24T04:27:16+00:00",
+   "rank": 10
+  },
+  {
    "key": "team:중앙값",
    "display": "중앙값",
    "type": "team",
@@ -5156,7 +5195,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/828",
    "n_submissions": 3,
    "last_at": "2026-11-20T11:39:09+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:정 확 한",
@@ -5174,22 +5213,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/620",
    "n_submissions": 5,
    "last_at": "2026-11-17T16:33:42+00:00",
-   "rank": 11
-  },
-  {
-   "key": "team:Tutle",
-   "display": "Tutle",
-   "type": "team",
-   "members": [
-    "1s17",
-    "Cocomelon"
-   ],
-   "best_public": 0.9836488812,
-   "best_submission_id": 212,
-   "best_at": "2026-11-24T02:53:57+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1056",
-   "n_submissions": 9,
-   "last_at": "2026-11-24T02:53:57+00:00",
    "rank": 12
   },
   {
