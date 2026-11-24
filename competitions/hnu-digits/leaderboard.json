@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T19:15:21+00:00",
+ "updated_at": "2026-11-24T23:34:56+00:00",
  "finalized": false,
- "next_id": 246,
+ "next_id": 247,
  "submissions": [
   {
    "id": 1,
@@ -5653,6 +5653,29 @@
    "note": "R7 최고조합+R6 VGG 15ep 미세조정x3",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 246,
+   "source": "issue",
+   "number": 1138,
+   "url": "https://github.com/gisup89/competition/issues/1138",
+   "github": "eunseokang05-tech",
+   "submitter": "jin25",
+   "participant_key": "team:안녕하세요다전공입니다잘부탁드립니다",
+   "participant_type": "team",
+   "display": "안녕하세요다전공입니다잘부탁드립니다",
+   "members": [
+    "jin25",
+    "hoyhoy"
+   ],
+   "created_at": "2026-11-24T23:34:24+00:00",
+   "filename": "submission_hnu-digits_202611242334.csv",
+   "sha256": "747d70312dc3e75d2b14708d98d78438b477d7c064b7c14b7daaee559d129ca3",
+   "public_score": 0.9862306368,
+   "private_enc": "gAAAAABrBh8gJwFUg9ht1KAgGPsA_6G-GgwwoyNN25exioay6JE3e7fWG7OAs_BO5YOgFhAgpF0mK1XT-ab4koMTWLjE5lvJlI-U69U_PZ2B7fZis5P1bAOocY7XRzVwph-AoDEbdIkU",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5818,6 +5841,22 @@
    "rank": 10
   },
   {
+   "key": "team:안녕하세요다전공입니다잘부탁드립니다",
+   "display": "안녕하세요다전공입니다잘부탁드립니다",
+   "type": "team",
+   "members": [
+    "jin25",
+    "hoyhoy"
+   ],
+   "best_public": 0.9862306368,
+   "best_submission_id": 246,
+   "best_at": "2026-11-24T23:34:24+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1138",
+   "n_submissions": 11,
+   "last_at": "2026-11-24T23:34:24+00:00",
+   "rank": 11
+  },
+  {
    "key": "team:중앙값",
    "display": "중앙값",
    "type": "team",
@@ -5830,7 +5869,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/828",
    "n_submissions": 3,
    "last_at": "2026-11-20T11:39:09+00:00",
-   "rank": 11
+   "rank": 12
   },
   {
    "key": "team:정 확 한",
@@ -5848,7 +5887,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/620",
    "n_submissions": 5,
    "last_at": "2026-11-17T16:33:42+00:00",
-   "rank": 12
+   "rank": 13
   },
   {
    "key": "team:71M",
@@ -5863,7 +5902,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/1089",
    "n_submissions": 17,
    "last_at": "2026-11-24T14:52:09+00:00",
-   "rank": 13
+   "rank": 14
   },
   {
    "key": "team:캥거루근육단단",
@@ -5878,7 +5917,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/993",
    "n_submissions": 1,
    "last_at": "2026-11-23T12:52:08+00:00",
-   "rank": 14
+   "rank": 15
   },
   {
    "key": "team:도스마스",
@@ -5896,22 +5935,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/1054",
    "n_submissions": 4,
    "last_at": "2026-11-24T02:51:03+00:00",
-   "rank": 15
-  },
-  {
-   "key": "team:안녕하세요다전공입니다잘부탁드립니다",
-   "display": "안녕하세요다전공입니다잘부탁드립니다",
-   "type": "team",
-   "members": [
-    "jin25",
-    "hoyhoy"
-   ],
-   "best_public": 0.9802065404,
-   "best_submission_id": 183,
-   "best_at": "2026-11-23T12:26:22+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/989",
-   "n_submissions": 10,
-   "last_at": "2026-11-24T01:15:08+00:00",
    "rank": 16
   },
   {
