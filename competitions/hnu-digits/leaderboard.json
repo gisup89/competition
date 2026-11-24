@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-24T02:51:36+00:00",
+ "updated_at": "2026-11-24T02:54:20+00:00",
  "finalized": false,
- "next_id": 212,
+ "next_id": 213,
  "submissions": [
   {
    "id": 1,
@@ -4881,6 +4881,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 212,
+   "source": "issue",
+   "number": 1056,
+   "url": "https://github.com/gisup89/competition/issues/1056",
+   "github": "Ts-ux17",
+   "submitter": "1s17",
+   "participant_key": "team:Tutle",
+   "participant_type": "team",
+   "display": "Tutle",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "created_at": "2026-11-24T02:53:57+00:00",
+   "filename": "submission_hnu-digits_202611240253.csv",
+   "sha256": "9427c569497500d5bba8b303d5aa1d12808d59378667bb40ae96ecdc01a6af22",
+   "public_score": 0.9836488812,
+   "private_enc": "gAAAAABrBPxcy7riO0G47hT5jYe7gfx_xsvBSpBR14FnZRjaaUp6HzMCmzAZUrm8evJpS7p_gPldH6EKNypx55IWqFNiDY8SWZVKt105DB1seicVS1H6wi_MqY-LldO3JVAEn1iUYNSr",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5063,6 +5086,22 @@
    "rank": 11
   },
   {
+   "key": "team:Tutle",
+   "display": "Tutle",
+   "type": "team",
+   "members": [
+    "1s17",
+    "Cocomelon"
+   ],
+   "best_public": 0.9836488812,
+   "best_submission_id": 212,
+   "best_at": "2026-11-24T02:53:57+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1056",
+   "n_submissions": 9,
+   "last_at": "2026-11-24T02:53:57+00:00",
+   "rank": 12
+  },
+  {
    "key": "team:71M",
    "display": "71M",
    "type": "team",
@@ -5075,7 +5114,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/754",
    "n_submissions": 13,
    "last_at": "2026-11-23T14:20:48+00:00",
-   "rank": 12
+   "rank": 13
   },
   {
    "key": "team:캥거루근육단단",
@@ -5090,7 +5129,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/993",
    "n_submissions": 1,
    "last_at": "2026-11-23T12:52:08+00:00",
-   "rank": 13
+   "rank": 14
   },
   {
    "key": "team:도스마스",
@@ -5108,7 +5147,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/1054",
    "n_submissions": 4,
    "last_at": "2026-11-24T02:51:03+00:00",
-   "rank": 14
+   "rank": 15
   },
   {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
@@ -5124,7 +5163,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/989",
    "n_submissions": 10,
    "last_at": "2026-11-24T01:15:08+00:00",
-   "rank": 15
+   "rank": 16
   },
   {
    "key": "team:Yulia",
@@ -5139,7 +5178,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/648",
    "n_submissions": 1,
    "last_at": "2026-11-18T04:41:08+00:00",
-   "rank": 16
+   "rank": 17
   },
   {
    "key": "team:잘게요",
@@ -5154,22 +5193,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/1003",
    "n_submissions": 4,
    "last_at": "2026-11-24T02:01:34+00:00",
-   "rank": 17
-  },
-  {
-   "key": "team:Tutle",
-   "display": "Tutle",
-   "type": "team",
-   "members": [
-    "1s17",
-    "Cocomelon"
-   ],
-   "best_public": 0.9604130809,
-   "best_submission_id": 187,
-   "best_at": "2026-11-23T13:59:14+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/996",
-   "n_submissions": 8,
-   "last_at": "2026-11-23T14:15:56+00:00",
    "rank": 18
   },
   {
