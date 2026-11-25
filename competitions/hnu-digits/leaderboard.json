@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-25T03:15:03+00:00",
+ "updated_at": "2026-11-25T05:04:28+00:00",
  "finalized": false,
- "next_id": 251,
+ "next_id": 252,
  "submissions": [
   {
    "id": 1,
@@ -5768,6 +5768,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 251,
+   "source": "issue",
+   "number": 1154,
+   "url": "https://github.com/gisup89/competition/issues/1154",
+   "github": "hyunjeong27",
+   "submitter": "마루",
+   "participant_key": "team:마루킁킁",
+   "participant_type": "team",
+   "display": "마루킁킁",
+   "members": [
+    "치치",
+    "마루",
+    "루나"
+   ],
+   "created_at": "2026-11-25T05:04:10+00:00",
+   "filename": "submission_hnu-digits_202611240449.csv",
+   "sha256": "f52feaec906c59fa31f4a2017fce1c984a39777068f73afa75e71b80daf3cd2f",
+   "public_score": 0.9707401033,
+   "private_enc": "gAAAAABrBmxcjVIAcALvADZ-TzDPb8iZN8V8vJnJg_hgd1Q52bn6tnljSD5zi5IVXjq04Gv8w6VOjVHErPrruEmw6eC6N4bUlEEkORUj_Ugwn3psjFtm0An6CotOiXOAoQLIOXoAPG2U",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5880,8 +5904,8 @@
    "best_submission_id": 240,
    "best_at": "2026-11-24T16:46:31+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1132",
-   "n_submissions": 20,
-   "last_at": "2026-11-25T03:14:36+00:00",
+   "n_submissions": 21,
+   "last_at": "2026-11-25T05:04:10+00:00",
    "rank": 7
   },
   {
