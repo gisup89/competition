@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-25T01:47:33+00:00",
+ "updated_at": "2026-11-25T01:53:22+00:00",
  "finalized": false,
- "next_id": 249,
+ "next_id": 250,
  "submissions": [
   {
    "id": 1,
@@ -5722,6 +5722,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 249,
+   "source": "issue",
+   "number": 1144,
+   "url": "https://github.com/gisup89/competition/issues/1144",
+   "github": "kanghm5141-tech",
+   "submitter": "Hyeonmuk Kang",
+   "participant_key": "team:Hyeonmuk Kang",
+   "participant_type": "team",
+   "display": "Hyeonmuk Kang",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "created_at": "2026-11-25T01:52:58+00:00",
+   "filename": "submission_hnu-digits_202611250152.csv",
+   "sha256": "623160f1c6dd82aade661eb99b0cd5103edc838472876f7cfd64201a6ae167c2",
+   "public_score": 0.9922547332,
+   "private_enc": "gAAAAABrBj-S2dBVA0YlrWXiO2cUrO4KUy-jpFjdYeW9wW8nro7CfJVHx6V95LcCB6YHff-lmwYlXTN4ffZBxDzI4mTSkKHh5h4jVjpiJUt_dcNs6TVqu-nEWrqwVJXZyP88c4mLZJN3",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -5839,6 +5861,21 @@
    "rank": 7
   },
   {
+   "key": "team:Hyeonmuk Kang",
+   "display": "Hyeonmuk Kang",
+   "type": "team",
+   "members": [
+    "Hyeonmuk Kang"
+   ],
+   "best_public": 0.9922547332,
+   "best_submission_id": 249,
+   "best_at": "2026-11-25T01:52:58+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1144",
+   "n_submissions": 3,
+   "last_at": "2026-11-25T01:52:58+00:00",
+   "rank": 8
+  },
+  {
    "key": "team:TEST_하윤",
    "display": "TEST_하윤",
    "type": "team",
@@ -5851,7 +5888,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/976",
    "n_submissions": 20,
    "last_at": "2026-11-24T04:56:54+00:00",
-   "rank": 8
+   "rank": 9
   },
   {
    "key": "team:홍성민왕국",
@@ -5868,7 +5905,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/858",
    "n_submissions": 16,
    "last_at": "2026-11-25T01:15:58+00:00",
-   "rank": 9
+   "rank": 10
   },
   {
    "key": "team:Tutle",
@@ -5884,7 +5921,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/1063",
    "n_submissions": 11,
    "last_at": "2026-11-24T04:38:14+00:00",
-   "rank": 10
+   "rank": 11
   },
   {
    "key": "team:안녕하세요다전공입니다잘부탁드립니다",
@@ -5900,7 +5937,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/1138",
    "n_submissions": 11,
    "last_at": "2026-11-24T23:34:24+00:00",
-   "rank": 11
+   "rank": 12
   },
   {
    "key": "team:중앙값",
@@ -5915,7 +5952,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/828",
    "n_submissions": 3,
    "last_at": "2026-11-20T11:39:09+00:00",
-   "rank": 12
+   "rank": 13
   },
   {
    "key": "team:정 확 한",
@@ -5933,7 +5970,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/620",
    "n_submissions": 5,
    "last_at": "2026-11-17T16:33:42+00:00",
-   "rank": 13
+   "rank": 14
   },
   {
    "key": "team:71M",
@@ -5948,7 +5985,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/1089",
    "n_submissions": 17,
    "last_at": "2026-11-24T14:52:09+00:00",
-   "rank": 14
+   "rank": 15
   },
   {
    "key": "team:캥거루근육단단",
@@ -5963,7 +6000,7 @@
    "best_url": "https://github.com/gisup89/competition/issues/993",
    "n_submissions": 1,
    "last_at": "2026-11-23T12:52:08+00:00",
-   "rank": 15
+   "rank": 16
   },
   {
    "key": "team:도스마스",
@@ -5981,21 +6018,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/1054",
    "n_submissions": 4,
    "last_at": "2026-11-24T02:51:03+00:00",
-   "rank": 16
-  },
-  {
-   "key": "team:Hyeonmuk Kang",
-   "display": "Hyeonmuk Kang",
-   "type": "team",
-   "members": [
-    "Hyeonmuk Kang"
-   ],
-   "best_public": 0.9793459552,
-   "best_submission_id": 237,
-   "best_at": "2026-11-24T14:43:26+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1103",
-   "n_submissions": 2,
-   "last_at": "2026-11-24T14:43:26+00:00",
    "rank": 17
   },
   {
