@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-25T14:26:14+00:00",
+ "updated_at": "2026-11-25T14:27:38+00:00",
  "finalized": false,
- "next_id": 265,
+ "next_id": 266,
  "submissions": [
   {
    "id": 1,
@@ -6085,6 +6085,30 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 265,
+   "source": "issue",
+   "number": 1182,
+   "url": "https://github.com/gisup89/competition/issues/1182",
+   "github": "bubin-kim",
+   "submitter": "bubin",
+   "participant_key": "team:홍성민왕국",
+   "participant_type": "team",
+   "display": "홍성민왕국",
+   "members": [
+    "bubin",
+    "김태연",
+    "홍성민"
+   ],
+   "created_at": "2026-11-25T14:27:15+00:00",
+   "filename": "submission_hnu-digits_202611251427.csv",
+   "sha256": "8e7278c8cba592c26e105a8590ec15cd7ffa435176c232e3a66a39b86bb89eb9",
+   "public_score": 0.9879518072,
+   "private_enc": "gAAAAABrBvBaBUcpy9Prgnn6eHlYLay-DH5_zNm62iN6pBxpgcv6irb9-AH7Te_78uA01fa1PntjT73nsXPNUz6Zt9x6RbcWtxKlUSSKDm9hV6jr0-7GNjm71Q0ZIAGHrfRXdwr0KUhD",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6244,8 +6268,8 @@
    "best_submission_id": 139,
    "best_at": "2026-11-21T03:55:09+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/858",
-   "n_submissions": 17,
-   "last_at": "2026-11-25T14:25:50+00:00",
+   "n_submissions": 18,
+   "last_at": "2026-11-25T14:27:15+00:00",
    "rank": 10
   },
   {
