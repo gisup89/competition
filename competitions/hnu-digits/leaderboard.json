@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-26T12:14:25+00:00",
+ "updated_at": "2026-11-26T12:42:55+00:00",
  "finalized": false,
- "next_id": 286,
+ "next_id": 287,
  "submissions": [
   {
    "id": 1,
@@ -6561,6 +6561,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 286,
+   "source": "issue",
+   "number": 1233,
+   "url": "https://github.com/gisup89/competition/issues/1233",
+   "github": "fjfjdidi4-lgtm",
+   "submitter": "fjfjdidi4",
+   "participant_key": "team:fjfjdidi4",
+   "participant_type": "team",
+   "display": "fjfjdidi4",
+   "members": [
+    "fjfjdidi4"
+   ],
+   "created_at": "2026-11-26T12:42:32+00:00",
+   "filename": "submission_hnu-digits_202611261242.csv",
+   "sha256": "ca22e0fc421ac360c7fd8861c38ecbce7af9ff84d0f747ebdc59f562d1bfa091",
+   "public_score": 0.9225473322,
+   "private_enc": "gAAAAABrCClPnv40IQrUBhjt8zV03W9M3RW3Mn-EgB5og1wVrnwZo1CgUr8zsDAQ6HEyGDdYza3DX3YBrp4-uTCRRMrLMZbp98jiqifhG-sn6-RWu0MQbabHIRhBRpICZ3pHrW8GEhqy",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6937,12 +6959,12 @@
    "members": [
     "fjfjdidi4"
    ],
-   "best_public": 0.9208261618,
-   "best_submission_id": 285,
-   "best_at": "2026-11-26T12:14:00+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1232",
-   "n_submissions": 2,
-   "last_at": "2026-11-26T12:14:00+00:00",
+   "best_public": 0.9225473322,
+   "best_submission_id": 286,
+   "best_at": "2026-11-26T12:42:32+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1233",
+   "n_submissions": 3,
+   "last_at": "2026-11-26T12:42:32+00:00",
    "rank": 24
   },
   {
