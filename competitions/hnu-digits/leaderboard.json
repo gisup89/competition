@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-27T09:36:19+00:00",
+ "updated_at": "2026-11-27T09:46:23+00:00",
  "finalized": false,
- "next_id": 311,
+ "next_id": 312,
  "submissions": [
   {
    "id": 1,
@@ -7131,6 +7131,29 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 311,
+   "source": "issue",
+   "number": 1298,
+   "url": "https://github.com/gisup89/competition/issues/1298",
+   "github": "eunseokang05-tech",
+   "submitter": "jin25",
+   "participant_key": "team:안녕하세요다전공입니다잘부탁드립니다",
+   "participant_type": "team",
+   "display": "안녕하세요다전공입니다잘부탁드립니다",
+   "members": [
+    "jin25",
+    "hoyhoy"
+   ],
+   "created_at": "2026-11-27T09:46:04+00:00",
+   "filename": "submission_hnu-digits_202611270945.csv",
+   "sha256": "1ab9812524a380dd998c421114e9ad59cacfcfadc97a1d277cf47a97b597a032",
+   "public_score": 0.9716006885,
+   "private_enc": "gAAAAABrCVFvZeVfV5ggKAszji4YqXZuJ8o-7AXZnDOCA6hteHVx6mLI_244mTgvIsb-sCrQouv7P3Ws32JhgLF0RjLCdJk4afd2YiQ6FMF8iWJyifwhhsfmLttiRj8pTkFLEz9rWmuH",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7322,8 +7345,8 @@
    "best_submission_id": 246,
    "best_at": "2026-11-24T23:34:24+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1138",
-   "n_submissions": 14,
-   "last_at": "2026-11-26T12:49:10+00:00",
+   "n_submissions": 15,
+   "last_at": "2026-11-27T09:46:04+00:00",
    "rank": 12
   },
   {
