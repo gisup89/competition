@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-27T12:02:16+00:00",
+ "updated_at": "2026-11-27T12:39:20+00:00",
  "finalized": false,
- "next_id": 314,
+ "next_id": 315,
  "submissions": [
   {
    "id": 1,
@@ -7200,6 +7200,28 @@
    "note": "R9 ARDIS+CVL 외부데이터 + 의사라벨 미세조정 6모델(시드42)",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 314,
+   "source": "issue",
+   "number": 1302,
+   "url": "https://github.com/gisup89/competition/issues/1302",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-27T12:38:53+00:00",
+   "filename": "04_r9x6_plus_plft18.csv.csv",
+   "sha256": "78f81a451d3fe96299e364dbd994c82d1eb9dc2d7bdee63a0b8456f9db983dc7",
+   "public_score": 0.9939759036,
+   "private_enc": "gAAAAABrCXn4XJoRGFWZ8kSuybxob0dSmDiLQ6h3L3QqxecfbUHoH4aCyxZa6mD0EiANQ-AwkdUUTLmrNjRKcaW4k-AvnUOpkKyp2V46RZPEAgwHy0PnajXlbnBVasgbCmv6xIz5q-yU",
+   "note": "R9 ARDIS+CVL 6모델 + R8 의사라벨 18모델 평균",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7267,6 +7289,21 @@
    "rank": 4
   },
   {
+   "key": "team:TEST_동섭",
+   "display": "TEST_동섭",
+   "type": "team",
+   "members": [
+    "TEST_동섭"
+   ],
+   "best_public": 0.9939759036,
+   "best_submission_id": 314,
+   "best_at": "2026-11-27T12:38:53+00:00",
+   "best_url": "https://github.com/gisup89/competition/issues/1302",
+   "n_submissions": 49,
+   "last_at": "2026-11-27T12:38:53+00:00",
+   "rank": 5
+  },
+  {
    "key": "team:TEST_지영",
    "display": "TEST_지영",
    "type": "team",
@@ -7279,21 +7316,6 @@
    "best_url": "https://github.com/gisup89/competition/issues/573",
    "n_submissions": 7,
    "last_at": "2026-11-18T12:42:06+00:00",
-   "rank": 5
-  },
-  {
-   "key": "team:TEST_동섭",
-   "display": "TEST_동섭",
-   "type": "team",
-   "members": [
-    "TEST_동섭"
-   ],
-   "best_public": 0.9931153184,
-   "best_submission_id": 209,
-   "best_at": "2026-11-24T02:39:43+00:00",
-   "best_url": "https://github.com/gisup89/competition/issues/1051",
-   "n_submissions": 48,
-   "last_at": "2026-11-27T12:01:52+00:00",
    "rank": 6
   },
   {
