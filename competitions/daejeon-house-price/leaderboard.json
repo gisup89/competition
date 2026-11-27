@@ -3,9 +3,9 @@
  "metric": "rmse",
  "metric_name": "RMSE",
  "higher_is_better": false,
- "updated_at": "2026-11-27T14:36:26+00:00",
+ "updated_at": "2026-11-27T14:36:54+00:00",
  "finalized": false,
- "next_id": 937,
+ "next_id": 938,
  "submissions": [
   {
    "id": 1,
@@ -21422,6 +21422,31 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 937,
+   "source": "issue",
+   "number": 1311,
+   "url": "https://github.com/gisup89/competition/issues/1311",
+   "github": "taeun1021-blip",
+   "submitter": "KT",
+   "participant_key": "team:노라조",
+   "participant_type": "team",
+   "display": "노라조",
+   "members": [
+    "KT",
+    "숱많은 스님",
+    "배태인",
+    "앤드뮐미스터"
+   ],
+   "created_at": "2026-11-27T14:36:32+00:00",
+   "filename": "B_683_50_929_50.csv",
+   "sha256": "ce1b81f045656f07f06a7d03b6964aec940e97308802287c6710745c8acf8452",
+   "public_score": 2808.5038511595,
+   "private_enc": "gAAAAABrCZWGIF39b8E7q0pc1eu0jxC_wL0OX2TOwtzIumnNFXMf_HbD_cVs0Z8uOuYTxj0MGDFNlxy4UMHAjwnqj-E3fYnIUNAkEgHMZHPDxzRxACoTDWp_Es5WPeIXMbeCjpwb1Owv",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -21499,8 +21524,8 @@
    "best_submission_id": 745,
    "best_at": "2026-11-23T08:40:31+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/965",
-   "n_submissions": 59,
-   "last_at": "2026-11-27T14:36:02+00:00",
+   "n_submissions": 60,
+   "last_at": "2026-11-27T14:36:32+00:00",
    "rank": 5
   },
   {
