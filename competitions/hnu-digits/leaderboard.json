@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-27T13:04:17+00:00",
+ "updated_at": "2026-11-27T13:55:05+00:00",
  "finalized": false,
- "next_id": 316,
+ "next_id": 317,
  "submissions": [
   {
    "id": 1,
@@ -7244,6 +7244,31 @@
    "note": "R9 ARDIS+CVL 18모델(시드3) + R8 의사라벨 18모델",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 316,
+   "source": "issue",
+   "number": 1304,
+   "url": "https://github.com/gisup89/competition/issues/1304",
+   "github": "leesooin1438-dev",
+   "submitter": "트로이경마4",
+   "participant_key": "team:트로이경마",
+   "participant_type": "team",
+   "display": "트로이경마",
+   "members": [
+    "경마1",
+    "경마2",
+    "트로이경마4",
+    "트로이경마3"
+   ],
+   "created_at": "2026-11-27T13:54:45+00:00",
+   "filename": "submission_hnu-digits_202611271354.csv",
+   "sha256": "3cf54222579b0926c7ae1e412404457d05d2c7dd4b2aab208ea45c8767833892",
+   "public_score": 0.991394148,
+   "private_enc": "gAAAAABrCYu5J5w84rp45muNAFYGTQ5U4qahCyyGdB5GA9DdxkQW9r9ZS87QZQBmPs9Pal5bGjTSPJNE7SeGPM5_zLl7dBLaot-_YHiOEJkm36HPIRbY5IeDoIVU7xmHfRg9kyZZ0viC",
+   "note": "",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7354,8 +7379,8 @@
    "best_submission_id": 233,
    "best_at": "2026-11-24T14:08:10+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1098",
-   "n_submissions": 30,
-   "last_at": "2026-11-27T09:35:54+00:00",
+   "n_submissions": 31,
+   "last_at": "2026-11-27T13:54:45+00:00",
    "rank": 7
   },
   {
