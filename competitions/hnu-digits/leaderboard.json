@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-27T01:28:38+00:00",
+ "updated_at": "2026-11-27T06:02:07+00:00",
  "finalized": false,
- "next_id": 296,
+ "next_id": 297,
  "submissions": [
   {
    "id": 1,
@@ -6794,6 +6794,28 @@
    "note": "",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 296,
+   "source": "issue",
+   "number": 1275,
+   "url": "https://github.com/gisup89/competition/issues/1275",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-27T06:01:40+00:00",
+   "filename": "01_plft18.csv.csv",
+   "sha256": "57886608f204e28578d89438bf00a54f02e48868299d1bd5c7d9e86c6ab9ab5d",
+   "public_score": 0.9931153184,
+   "private_enc": "gAAAAABrCRzf0ARM-qEQEXn1mUHSyeVMIBjSv0Zr_HS33rUJnQC4V4gTwr9jUgAqKv2DIUfpbw00IcX3afZy8rReOFBJSC_7wJYYNRbrc1ibgZnhasC_WzUgyWGPUYpF06QruyYQgDlY",
+   "note": "R8 테스트 의사라벨(확신>=0.99, 교사=05_ft6_3seeds) 미세조정 18모델",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -6871,8 +6893,8 @@
    "best_submission_id": 209,
    "best_at": "2026-11-24T02:39:43+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1051",
-   "n_submissions": 45,
-   "last_at": "2026-11-24T19:14:57+00:00",
+   "n_submissions": 46,
+   "last_at": "2026-11-27T06:01:40+00:00",
    "rank": 5
   },
   {
