@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-27T12:39:20+00:00",
+ "updated_at": "2026-11-27T13:04:17+00:00",
  "finalized": false,
- "next_id": 315,
+ "next_id": 316,
  "submissions": [
   {
    "id": 1,
@@ -7222,6 +7222,28 @@
    "note": "R9 ARDIS+CVL 6모델 + R8 의사라벨 18모델 평균",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 315,
+   "source": "issue",
+   "number": 1303,
+   "url": "https://github.com/gisup89/competition/issues/1303",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-27T13:03:52+00:00",
+   "filename": "05_r9x18_plus_plft18.csv.csv",
+   "sha256": "f24d571bf31fb0d560f929c2036cef3cf80e7111aa86fe41d8483cab1e452239",
+   "public_score": 0.9939759036,
+   "private_enc": "gAAAAABrCX_RfOJumMclKpnLiANLwniRpm6Q45z367WcYHrmFVJGnn9R15GRpTpBF2TcVrc8orYK06b1nNkQEnuHy7y6_gdOfWC_PvyxYUQYIFRssd7kqoksNCAMPmQS2PyedwzBO_5f",
+   "note": "R9 ARDIS+CVL 18모델(시드3) + R8 의사라벨 18모델",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7299,8 +7321,8 @@
    "best_submission_id": 314,
    "best_at": "2026-11-27T12:38:53+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1302",
-   "n_submissions": 49,
-   "last_at": "2026-11-27T12:38:53+00:00",
+   "n_submissions": 50,
+   "last_at": "2026-11-27T13:03:52+00:00",
    "rank": 5
   },
   {
