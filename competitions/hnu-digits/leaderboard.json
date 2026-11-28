@@ -3,9 +3,9 @@
  "metric": "accuracy",
  "metric_name": "Accuracy",
  "higher_is_better": true,
- "updated_at": "2026-11-28T06:39:31+00:00",
+ "updated_at": "2026-11-28T06:40:04+00:00",
  "finalized": false,
- "next_id": 323,
+ "next_id": 324,
  "submissions": [
   {
    "id": 1,
@@ -7412,6 +7412,28 @@
    "note": "R10 의사라벨 2회차(교사 05_r9x18_plus_plft18)+ARDIS/CVL: 01_r10x18",
    "status": "scored",
    "duplicate_of": null
+  },
+  {
+   "id": 323,
+   "source": "issue",
+   "number": 1344,
+   "url": "https://github.com/gisup89/competition/issues/1344",
+   "github": "idseop",
+   "submitter": "TEST_동섭",
+   "participant_key": "team:TEST_동섭",
+   "participant_type": "team",
+   "display": "TEST_동섭",
+   "members": [
+    "TEST_동섭"
+   ],
+   "created_at": "2026-11-28T06:39:41+00:00",
+   "filename": "02_r10x18_plus_r8x18.csv.csv",
+   "sha256": "5d5722b881b22622d18b9be4bccb75fa001b59b753799e4a9784469efe929e51",
+   "public_score": 0.9939759036,
+   "private_enc": "gAAAAABrCndE23KCT0wDW_xAIbn-FHp6tqGoDgCyxQeb8e2KVQqQ3OhOoHGbKRWQ6Pz1DYkBaMCLiJI1gUnESJ_ti8gJGHHvG3ja1qiplijj6-toU3-Dc88mNL7WriDNQNFm9wm6mKIm",
+   "note": "R10 의사라벨 2회차(교사 05_r9x18_plus_plft18)+ARDIS/CVL: 02_r10x18_plus_r8x18",
+   "status": "scored",
+   "duplicate_of": null
   }
  ],
  "public_leaderboard": [
@@ -7506,8 +7528,8 @@
    "best_submission_id": 314,
    "best_at": "2026-11-27T12:38:53+00:00",
    "best_url": "https://github.com/gisup89/competition/issues/1302",
-   "n_submissions": 51,
-   "last_at": "2026-11-28T06:39:10+00:00",
+   "n_submissions": 52,
+   "last_at": "2026-11-28T06:39:41+00:00",
    "rank": 6
   },
   {
